@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.js"),
+      entry: path.resolve(__dirname, "src/index.jsx"),
       name: "ApptasticUI",
       formats: ["es", "cjs"],
       fileName: (format) => (format === "es" ? "index.mjs" : "index.cjs"),
