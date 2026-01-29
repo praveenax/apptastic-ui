@@ -1,0 +1,1701 @@
+import pt, { forwardRef as Jt, useState as Ge, useEffect as vt, useRef as Gt, useCallback as Xt } from "react";
+function gt(e) {
+  return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e;
+}
+var ae = { exports: {} }, X = {};
+var Xe;
+function Zt() {
+  if (Xe) return X;
+  Xe = 1;
+  var e = pt, r = /* @__PURE__ */ Symbol.for("react.element"), n = /* @__PURE__ */ Symbol.for("react.fragment"), a = Object.prototype.hasOwnProperty, s = e.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, l = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function d(p, f, o) {
+    var c, h = {}, b = null, x = null;
+    o !== void 0 && (b = "" + o), f.key !== void 0 && (b = "" + f.key), f.ref !== void 0 && (x = f.ref);
+    for (c in f) a.call(f, c) && !l.hasOwnProperty(c) && (h[c] = f[c]);
+    if (p && p.defaultProps) for (c in f = p.defaultProps, f) h[c] === void 0 && (h[c] = f[c]);
+    return { $$typeof: r, type: p, key: b, ref: x, props: h, _owner: s.current };
+  }
+  return X.Fragment = n, X.jsx = d, X.jsxs = d, X;
+}
+var Z = {};
+var Ze;
+function $t() {
+  return Ze || (Ze = 1, process.env.NODE_ENV !== "production" && (function() {
+    var e = pt, r = /* @__PURE__ */ Symbol.for("react.element"), n = /* @__PURE__ */ Symbol.for("react.portal"), a = /* @__PURE__ */ Symbol.for("react.fragment"), s = /* @__PURE__ */ Symbol.for("react.strict_mode"), l = /* @__PURE__ */ Symbol.for("react.profiler"), d = /* @__PURE__ */ Symbol.for("react.provider"), p = /* @__PURE__ */ Symbol.for("react.context"), f = /* @__PURE__ */ Symbol.for("react.forward_ref"), o = /* @__PURE__ */ Symbol.for("react.suspense"), c = /* @__PURE__ */ Symbol.for("react.suspense_list"), h = /* @__PURE__ */ Symbol.for("react.memo"), b = /* @__PURE__ */ Symbol.for("react.lazy"), x = /* @__PURE__ */ Symbol.for("react.offscreen"), R = Symbol.iterator, A = "@@iterator";
+    function I(t) {
+      if (t === null || typeof t != "object")
+        return null;
+      var i = R && t[R] || t[A];
+      return typeof i == "function" ? i : null;
+    }
+    var W = e.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    function j(t) {
+      {
+        for (var i = arguments.length, u = new Array(i > 1 ? i - 1 : 0), w = 1; w < i; w++)
+          u[w - 1] = arguments[w];
+        N("error", t, u);
+      }
+    }
+    function N(t, i, u) {
+      {
+        var w = W.ReactDebugCurrentFrame, y = w.getStackAddendum();
+        y !== "" && (i += "%s", u = u.concat([y]));
+        var C = u.map(function(g) {
+          return String(g);
+        });
+        C.unshift("Warning: " + i), Function.prototype.apply.call(console[t], console, C);
+      }
+    }
+    var Y = !1, H = !1, de = !1, he = !1, we = !1, Q;
+    Q = /* @__PURE__ */ Symbol.for("react.module.reference");
+    function ee(t) {
+      return !!(typeof t == "string" || typeof t == "function" || t === a || t === l || we || t === s || t === o || t === c || he || t === x || Y || H || de || typeof t == "object" && t !== null && (t.$$typeof === b || t.$$typeof === h || t.$$typeof === d || t.$$typeof === p || t.$$typeof === f || // This needs to include all possible module reference object
+      // types supported by any Flight configuration anywhere since
+      // we don't know which Flight build this will end up being used
+      // with.
+      t.$$typeof === Q || t.getModuleId !== void 0));
+    }
+    function te(t, i, u) {
+      var w = t.displayName;
+      if (w)
+        return w;
+      var y = i.displayName || i.name || "";
+      return y !== "" ? u + "(" + y + ")" : u;
+    }
+    function M(t) {
+      return t.displayName || "Context";
+    }
+    function F(t) {
+      if (t == null)
+        return null;
+      if (typeof t.tag == "number" && j("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof t == "function")
+        return t.displayName || t.name || null;
+      if (typeof t == "string")
+        return t;
+      switch (t) {
+        case a:
+          return "Fragment";
+        case n:
+          return "Portal";
+        case l:
+          return "Profiler";
+        case s:
+          return "StrictMode";
+        case o:
+          return "Suspense";
+        case c:
+          return "SuspenseList";
+      }
+      if (typeof t == "object")
+        switch (t.$$typeof) {
+          case p:
+            var i = t;
+            return M(i) + ".Consumer";
+          case d:
+            var u = t;
+            return M(u._context) + ".Provider";
+          case f:
+            return te(t, t.render, "ForwardRef");
+          case h:
+            var w = t.displayName || null;
+            return w !== null ? w : F(t.type) || "Memo";
+          case b: {
+            var y = t, C = y._payload, g = y._init;
+            try {
+              return F(g(C));
+            } catch {
+              return null;
+            }
+          }
+        }
+      return null;
+    }
+    var V = Object.assign, J = 0, Re, Se, Oe, xe, Pe, Te, Le;
+    function Ae() {
+    }
+    Ae.__reactDisabledLog = !0;
+    function kt() {
+      {
+        if (J === 0) {
+          Re = console.log, Se = console.info, Oe = console.warn, xe = console.error, Pe = console.group, Te = console.groupCollapsed, Le = console.groupEnd;
+          var t = {
+            configurable: !0,
+            enumerable: !0,
+            value: Ae,
+            writable: !0
+          };
+          Object.defineProperties(console, {
+            info: t,
+            log: t,
+            warn: t,
+            error: t,
+            group: t,
+            groupCollapsed: t,
+            groupEnd: t
+          });
+        }
+        J++;
+      }
+    }
+    function Ct() {
+      {
+        if (J--, J === 0) {
+          var t = {
+            configurable: !0,
+            enumerable: !0,
+            writable: !0
+          };
+          Object.defineProperties(console, {
+            log: V({}, t, {
+              value: Re
+            }),
+            info: V({}, t, {
+              value: Se
+            }),
+            warn: V({}, t, {
+              value: Oe
+            }),
+            error: V({}, t, {
+              value: xe
+            }),
+            group: V({}, t, {
+              value: Pe
+            }),
+            groupCollapsed: V({}, t, {
+              value: Te
+            }),
+            groupEnd: V({}, t, {
+              value: Le
+            })
+          });
+        }
+        J < 0 && j("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+      }
+    }
+    var pe = W.ReactCurrentDispatcher, ve;
+    function re(t, i, u) {
+      {
+        if (ve === void 0)
+          try {
+            throw Error();
+          } catch (y) {
+            var w = y.stack.trim().match(/\n( *(at )?)/);
+            ve = w && w[1] || "";
+          }
+        return `
+` + ve + t;
+      }
+    }
+    var ge = !1, ne;
+    {
+      var _t = typeof WeakMap == "function" ? WeakMap : Map;
+      ne = new _t();
+    }
+    function We(t, i) {
+      if (!t || ge)
+        return "";
+      {
+        var u = ne.get(t);
+        if (u !== void 0)
+          return u;
+      }
+      var w;
+      ge = !0;
+      var y = Error.prepareStackTrace;
+      Error.prepareStackTrace = void 0;
+      var C;
+      C = pe.current, pe.current = null, kt();
+      try {
+        if (i) {
+          var g = function() {
+            throw Error();
+          };
+          if (Object.defineProperty(g.prototype, "props", {
+            set: function() {
+              throw Error();
+            }
+          }), typeof Reflect == "object" && Reflect.construct) {
+            try {
+              Reflect.construct(g, []);
+            } catch (T) {
+              w = T;
+            }
+            Reflect.construct(t, [], g);
+          } else {
+            try {
+              g.call();
+            } catch (T) {
+              w = T;
+            }
+            t.call(g.prototype);
+          }
+        } else {
+          try {
+            throw Error();
+          } catch (T) {
+            w = T;
+          }
+          t();
+        }
+      } catch (T) {
+        if (T && w && typeof T.stack == "string") {
+          for (var v = T.stack.split(`
+`), P = w.stack.split(`
+`), S = v.length - 1, O = P.length - 1; S >= 1 && O >= 0 && v[S] !== P[O]; )
+            O--;
+          for (; S >= 1 && O >= 0; S--, O--)
+            if (v[S] !== P[O]) {
+              if (S !== 1 || O !== 1)
+                do
+                  if (S--, O--, O < 0 || v[S] !== P[O]) {
+                    var D = `
+` + v[S].replace(" at new ", " at ");
+                    return t.displayName && D.includes("<anonymous>") && (D = D.replace("<anonymous>", t.displayName)), typeof t == "function" && ne.set(t, D), D;
+                  }
+                while (S >= 1 && O >= 0);
+              break;
+            }
+        }
+      } finally {
+        ge = !1, pe.current = C, Ct(), Error.prepareStackTrace = y;
+      }
+      var U = t ? t.displayName || t.name : "", B = U ? re(U) : "";
+      return typeof t == "function" && ne.set(t, B), B;
+    }
+    function Et(t, i, u) {
+      return We(t, !1);
+    }
+    function jt(t) {
+      var i = t.prototype;
+      return !!(i && i.isReactComponent);
+    }
+    function ie(t, i, u) {
+      if (t == null)
+        return "";
+      if (typeof t == "function")
+        return We(t, jt(t));
+      if (typeof t == "string")
+        return re(t);
+      switch (t) {
+        case o:
+          return re("Suspense");
+        case c:
+          return re("SuspenseList");
+      }
+      if (typeof t == "object")
+        switch (t.$$typeof) {
+          case f:
+            return Et(t.render);
+          case h:
+            return ie(t.type, i, u);
+          case b: {
+            var w = t, y = w._payload, C = w._init;
+            try {
+              return ie(C(y), i, u);
+            } catch {
+            }
+          }
+        }
+      return "";
+    }
+    var G = Object.prototype.hasOwnProperty, De = {}, Ie = W.ReactDebugCurrentFrame;
+    function oe(t) {
+      if (t) {
+        var i = t._owner, u = ie(t.type, t._source, i ? i.type : null);
+        Ie.setExtraStackFrame(u);
+      } else
+        Ie.setExtraStackFrame(null);
+    }
+    function Rt(t, i, u, w, y) {
+      {
+        var C = Function.call.bind(G);
+        for (var g in t)
+          if (C(t, g)) {
+            var v = void 0;
+            try {
+              if (typeof t[g] != "function") {
+                var P = Error((w || "React class") + ": " + u + " type `" + g + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof t[g] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                throw P.name = "Invariant Violation", P;
+              }
+              v = t[g](i, g, w, u, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+            } catch (S) {
+              v = S;
+            }
+            v && !(v instanceof Error) && (oe(y), j("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", w || "React class", u, g, typeof v), oe(null)), v instanceof Error && !(v.message in De) && (De[v.message] = !0, oe(y), j("Failed %s type: %s", u, v.message), oe(null));
+          }
+      }
+    }
+    var St = Array.isArray;
+    function me(t) {
+      return St(t);
+    }
+    function Ot(t) {
+      {
+        var i = typeof Symbol == "function" && Symbol.toStringTag, u = i && t[Symbol.toStringTag] || t.constructor.name || "Object";
+        return u;
+      }
+    }
+    function xt(t) {
+      try {
+        return Fe(t), !1;
+      } catch {
+        return !0;
+      }
+    }
+    function Fe(t) {
+      return "" + t;
+    }
+    function Ne(t) {
+      if (xt(t))
+        return j("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", Ot(t)), Fe(t);
+    }
+    var He = W.ReactCurrentOwner, Pt = {
+      key: !0,
+      ref: !0,
+      __self: !0,
+      __source: !0
+    }, Me, Ve;
+    function Tt(t) {
+      if (G.call(t, "ref")) {
+        var i = Object.getOwnPropertyDescriptor(t, "ref").get;
+        if (i && i.isReactWarning)
+          return !1;
+      }
+      return t.ref !== void 0;
+    }
+    function Lt(t) {
+      if (G.call(t, "key")) {
+        var i = Object.getOwnPropertyDescriptor(t, "key").get;
+        if (i && i.isReactWarning)
+          return !1;
+      }
+      return t.key !== void 0;
+    }
+    function At(t, i) {
+      typeof t.ref == "string" && He.current;
+    }
+    function Wt(t, i) {
+      {
+        var u = function() {
+          Me || (Me = !0, j("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", i));
+        };
+        u.isReactWarning = !0, Object.defineProperty(t, "key", {
+          get: u,
+          configurable: !0
+        });
+      }
+    }
+    function Dt(t, i) {
+      {
+        var u = function() {
+          Ve || (Ve = !0, j("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", i));
+        };
+        u.isReactWarning = !0, Object.defineProperty(t, "ref", {
+          get: u,
+          configurable: !0
+        });
+      }
+    }
+    var It = function(t, i, u, w, y, C, g) {
+      var v = {
+        // This tag allows us to uniquely identify this as a React Element
+        $$typeof: r,
+        // Built-in properties that belong on the element
+        type: t,
+        key: i,
+        ref: u,
+        props: g,
+        // Record the component responsible for creating this element.
+        _owner: C
+      };
+      return v._store = {}, Object.defineProperty(v._store, "validated", {
+        configurable: !1,
+        enumerable: !1,
+        writable: !0,
+        value: !1
+      }), Object.defineProperty(v, "_self", {
+        configurable: !1,
+        enumerable: !1,
+        writable: !1,
+        value: w
+      }), Object.defineProperty(v, "_source", {
+        configurable: !1,
+        enumerable: !1,
+        writable: !1,
+        value: y
+      }), Object.freeze && (Object.freeze(v.props), Object.freeze(v)), v;
+    };
+    function Ft(t, i, u, w, y) {
+      {
+        var C, g = {}, v = null, P = null;
+        u !== void 0 && (Ne(u), v = "" + u), Lt(i) && (Ne(i.key), v = "" + i.key), Tt(i) && (P = i.ref, At(i, y));
+        for (C in i)
+          G.call(i, C) && !Pt.hasOwnProperty(C) && (g[C] = i[C]);
+        if (t && t.defaultProps) {
+          var S = t.defaultProps;
+          for (C in S)
+            g[C] === void 0 && (g[C] = S[C]);
+        }
+        if (v || P) {
+          var O = typeof t == "function" ? t.displayName || t.name || "Unknown" : t;
+          v && Wt(g, O), P && Dt(g, O);
+        }
+        return It(t, v, P, y, w, He.current, g);
+      }
+    }
+    var be = W.ReactCurrentOwner, Be = W.ReactDebugCurrentFrame;
+    function q(t) {
+      if (t) {
+        var i = t._owner, u = ie(t.type, t._source, i ? i.type : null);
+        Be.setExtraStackFrame(u);
+      } else
+        Be.setExtraStackFrame(null);
+    }
+    var ye;
+    ye = !1;
+    function ke(t) {
+      return typeof t == "object" && t !== null && t.$$typeof === r;
+    }
+    function ze() {
+      {
+        if (be.current) {
+          var t = F(be.current.type);
+          if (t)
+            return `
+
+Check the render method of \`` + t + "`.";
+        }
+        return "";
+      }
+    }
+    function Nt(t) {
+      return "";
+    }
+    var Ke = {};
+    function Ht(t) {
+      {
+        var i = ze();
+        if (!i) {
+          var u = typeof t == "string" ? t : t.displayName || t.name;
+          u && (i = `
+
+Check the top-level render call using <` + u + ">.");
+        }
+        return i;
+      }
+    }
+    function Ye(t, i) {
+      {
+        if (!t._store || t._store.validated || t.key != null)
+          return;
+        t._store.validated = !0;
+        var u = Ht(i);
+        if (Ke[u])
+          return;
+        Ke[u] = !0;
+        var w = "";
+        t && t._owner && t._owner !== be.current && (w = " It was passed a child from " + F(t._owner.type) + "."), q(t), j('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', u, w), q(null);
+      }
+    }
+    function qe(t, i) {
+      {
+        if (typeof t != "object")
+          return;
+        if (me(t))
+          for (var u = 0; u < t.length; u++) {
+            var w = t[u];
+            ke(w) && Ye(w, i);
+          }
+        else if (ke(t))
+          t._store && (t._store.validated = !0);
+        else if (t) {
+          var y = I(t);
+          if (typeof y == "function" && y !== t.entries)
+            for (var C = y.call(t), g; !(g = C.next()).done; )
+              ke(g.value) && Ye(g.value, i);
+        }
+      }
+    }
+    function Mt(t) {
+      {
+        var i = t.type;
+        if (i == null || typeof i == "string")
+          return;
+        var u;
+        if (typeof i == "function")
+          u = i.propTypes;
+        else if (typeof i == "object" && (i.$$typeof === f || // Note: Memo only checks outer props here.
+        // Inner props are checked in the reconciler.
+        i.$$typeof === h))
+          u = i.propTypes;
+        else
+          return;
+        if (u) {
+          var w = F(i);
+          Rt(u, t.props, "prop", w, t);
+        } else if (i.PropTypes !== void 0 && !ye) {
+          ye = !0;
+          var y = F(i);
+          j("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", y || "Unknown");
+        }
+        typeof i.getDefaultProps == "function" && !i.getDefaultProps.isReactClassApproved && j("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+      }
+    }
+    function Vt(t) {
+      {
+        for (var i = Object.keys(t.props), u = 0; u < i.length; u++) {
+          var w = i[u];
+          if (w !== "children" && w !== "key") {
+            q(t), j("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", w), q(null);
+            break;
+          }
+        }
+        t.ref !== null && (q(t), j("Invalid attribute `ref` supplied to `React.Fragment`."), q(null));
+      }
+    }
+    var Ue = {};
+    function Je(t, i, u, w, y, C) {
+      {
+        var g = ee(t);
+        if (!g) {
+          var v = "";
+          (t === void 0 || typeof t == "object" && t !== null && Object.keys(t).length === 0) && (v += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
+          var P = Nt();
+          P ? v += P : v += ze();
+          var S;
+          t === null ? S = "null" : me(t) ? S = "array" : t !== void 0 && t.$$typeof === r ? (S = "<" + (F(t.type) || "Unknown") + " />", v = " Did you accidentally export a JSX literal instead of a component?") : S = typeof t, j("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", S, v);
+        }
+        var O = Ft(t, i, u, y, C);
+        if (O == null)
+          return O;
+        if (g) {
+          var D = i.children;
+          if (D !== void 0)
+            if (w)
+              if (me(D)) {
+                for (var U = 0; U < D.length; U++)
+                  qe(D[U], t);
+                Object.freeze && Object.freeze(D);
+              } else
+                j("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+            else
+              qe(D, t);
+        }
+        if (G.call(i, "key")) {
+          var B = F(t), T = Object.keys(i).filter(function(Ut) {
+            return Ut !== "key";
+          }), Ce = T.length > 0 ? "{key: someKey, " + T.join(": ..., ") + ": ...}" : "{key: someKey}";
+          if (!Ue[B + Ce]) {
+            var qt = T.length > 0 ? "{" + T.join(": ..., ") + ": ...}" : "{}";
+            j(`A props object containing a "key" prop is being spread into JSX:
+  let props = %s;
+  <%s {...props} />
+React keys must be passed directly to JSX without using spread:
+  let props = %s;
+  <%s key={someKey} {...props} />`, Ce, B, qt, B), Ue[B + Ce] = !0;
+          }
+        }
+        return t === a ? Vt(O) : Mt(O), O;
+      }
+    }
+    function Bt(t, i, u) {
+      return Je(t, i, u, !0);
+    }
+    function zt(t, i, u) {
+      return Je(t, i, u, !1);
+    }
+    var Kt = zt, Yt = Bt;
+    Z.Fragment = a, Z.jsx = Kt, Z.jsxs = Yt;
+  })()), Z;
+}
+var $e;
+function Qt() {
+  return $e || ($e = 1, process.env.NODE_ENV === "production" ? ae.exports = Zt() : ae.exports = $t()), ae.exports;
+}
+var m = Qt(), _e = { exports: {} };
+var Qe;
+function er() {
+  return Qe || (Qe = 1, (function(e) {
+    (function() {
+      var r = {}.hasOwnProperty;
+      function n() {
+        for (var l = "", d = 0; d < arguments.length; d++) {
+          var p = arguments[d];
+          p && (l = s(l, a(p)));
+        }
+        return l;
+      }
+      function a(l) {
+        if (typeof l == "string" || typeof l == "number")
+          return l;
+        if (typeof l != "object")
+          return "";
+        if (Array.isArray(l))
+          return n.apply(null, l);
+        if (l.toString !== Object.prototype.toString && !l.toString.toString().includes("[native code]"))
+          return l.toString();
+        var d = "";
+        for (var p in l)
+          r.call(l, p) && l[p] && (d = s(d, p));
+        return d;
+      }
+      function s(l, d) {
+        return d ? l ? l + " " + d : l + d : l;
+      }
+      e.exports ? (n.default = n, e.exports = n) : window.classNames = n;
+    })();
+  })(_e)), _e.exports;
+}
+var tr = er();
+const mt = /* @__PURE__ */ gt(tr);
+var se = { exports: {} }, ce = { exports: {} }, Ee, et;
+function rr() {
+  if (et) return Ee;
+  et = 1;
+  var e = 1e3, r = e * 60, n = r * 60, a = n * 24, s = a * 365.25;
+  Ee = function(o, c) {
+    c = c || {};
+    var h = typeof o;
+    if (h === "string" && o.length > 0)
+      return l(o);
+    if (h === "number" && isNaN(o) === !1)
+      return c.long ? p(o) : d(o);
+    throw new Error(
+      "val is not a non-empty string or a valid number. val=" + JSON.stringify(o)
+    );
+  };
+  function l(o) {
+    if (o = String(o), !(o.length > 100)) {
+      var c = /^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(
+        o
+      );
+      if (c) {
+        var h = parseFloat(c[1]), b = (c[2] || "ms").toLowerCase();
+        switch (b) {
+          case "years":
+          case "year":
+          case "yrs":
+          case "yr":
+          case "y":
+            return h * s;
+          case "days":
+          case "day":
+          case "d":
+            return h * a;
+          case "hours":
+          case "hour":
+          case "hrs":
+          case "hr":
+          case "h":
+            return h * n;
+          case "minutes":
+          case "minute":
+          case "mins":
+          case "min":
+          case "m":
+            return h * r;
+          case "seconds":
+          case "second":
+          case "secs":
+          case "sec":
+          case "s":
+            return h * e;
+          case "milliseconds":
+          case "millisecond":
+          case "msecs":
+          case "msec":
+          case "ms":
+            return h;
+          default:
+            return;
+        }
+      }
+    }
+  }
+  function d(o) {
+    return o >= a ? Math.round(o / a) + "d" : o >= n ? Math.round(o / n) + "h" : o >= r ? Math.round(o / r) + "m" : o >= e ? Math.round(o / e) + "s" : o + "ms";
+  }
+  function p(o) {
+    return f(o, a, "day") || f(o, n, "hour") || f(o, r, "minute") || f(o, e, "second") || o + " ms";
+  }
+  function f(o, c, h) {
+    if (!(o < c))
+      return o < c * 1.5 ? Math.floor(o / c) + " " + h : Math.ceil(o / c) + " " + h + "s";
+  }
+  return Ee;
+}
+var tt;
+function nr() {
+  return tt || (tt = 1, (function(e, r) {
+    r = e.exports = s.debug = s.default = s, r.coerce = f, r.disable = d, r.enable = l, r.enabled = p, r.humanize = rr(), r.names = [], r.skips = [], r.formatters = {};
+    var n;
+    function a(o) {
+      var c = 0, h;
+      for (h in o)
+        c = (c << 5) - c + o.charCodeAt(h), c |= 0;
+      return r.colors[Math.abs(c) % r.colors.length];
+    }
+    function s(o) {
+      function c() {
+        if (c.enabled) {
+          var h = c, b = +/* @__PURE__ */ new Date(), x = b - (n || b);
+          h.diff = x, h.prev = n, h.curr = b, n = b;
+          for (var R = new Array(arguments.length), A = 0; A < R.length; A++)
+            R[A] = arguments[A];
+          R[0] = r.coerce(R[0]), typeof R[0] != "string" && R.unshift("%O");
+          var I = 0;
+          R[0] = R[0].replace(/%([a-zA-Z%])/g, function(j, N) {
+            if (j === "%%") return j;
+            I++;
+            var Y = r.formatters[N];
+            if (typeof Y == "function") {
+              var H = R[I];
+              j = Y.call(h, H), R.splice(I, 1), I--;
+            }
+            return j;
+          }), r.formatArgs.call(h, R);
+          var W = c.log || r.log || console.log.bind(console);
+          W.apply(h, R);
+        }
+      }
+      return c.namespace = o, c.enabled = r.enabled(o), c.useColors = r.useColors(), c.color = a(o), typeof r.init == "function" && r.init(c), c;
+    }
+    function l(o) {
+      r.save(o), r.names = [], r.skips = [];
+      for (var c = (typeof o == "string" ? o : "").split(/[\s,]+/), h = c.length, b = 0; b < h; b++)
+        c[b] && (o = c[b].replace(/\*/g, ".*?"), o[0] === "-" ? r.skips.push(new RegExp("^" + o.substr(1) + "$")) : r.names.push(new RegExp("^" + o + "$")));
+    }
+    function d() {
+      r.enable("");
+    }
+    function p(o) {
+      var c, h;
+      for (c = 0, h = r.skips.length; c < h; c++)
+        if (r.skips[c].test(o))
+          return !1;
+      for (c = 0, h = r.names.length; c < h; c++)
+        if (r.names[c].test(o))
+          return !0;
+      return !1;
+    }
+    function f(o) {
+      return o instanceof Error ? o.stack || o.message : o;
+    }
+  })(ce, ce.exports)), ce.exports;
+}
+var rt;
+function ir() {
+  return rt || (rt = 1, (function(e, r) {
+    r = e.exports = nr(), r.log = s, r.formatArgs = a, r.save = l, r.load = d, r.useColors = n, r.storage = typeof chrome < "u" && typeof chrome.storage < "u" ? chrome.storage.local : p(), r.colors = [
+      "lightseagreen",
+      "forestgreen",
+      "goldenrod",
+      "dodgerblue",
+      "darkorchid",
+      "crimson"
+    ];
+    function n() {
+      return typeof window < "u" && window.process && window.process.type === "renderer" ? !0 : typeof document < "u" && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance || // is firebug? http://stackoverflow.com/a/398120/376773
+      typeof window < "u" && window.console && (window.console.firebug || window.console.exception && window.console.table) || // is firefox >= v31?
+      // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+      typeof navigator < "u" && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31 || // double check webkit in userAgent just in case we are in a worker
+      typeof navigator < "u" && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/);
+    }
+    r.formatters.j = function(f) {
+      try {
+        return JSON.stringify(f);
+      } catch (o) {
+        return "[UnexpectedJSONParseError]: " + o.message;
+      }
+    };
+    function a(f) {
+      var o = this.useColors;
+      if (f[0] = (o ? "%c" : "") + this.namespace + (o ? " %c" : " ") + f[0] + (o ? "%c " : " ") + "+" + r.humanize(this.diff), !!o) {
+        var c = "color: " + this.color;
+        f.splice(1, 0, c, "color: inherit");
+        var h = 0, b = 0;
+        f[0].replace(/%[a-zA-Z%]/g, function(x) {
+          x !== "%%" && (h++, x === "%c" && (b = h));
+        }), f.splice(b, 0, c);
+      }
+    }
+    function s() {
+      return typeof console == "object" && console.log && Function.prototype.apply.call(console.log, console, arguments);
+    }
+    function l(f) {
+      try {
+        f == null ? r.storage.removeItem("debug") : r.storage.debug = f;
+      } catch {
+      }
+    }
+    function d() {
+      var f;
+      try {
+        f = r.storage.debug;
+      } catch {
+      }
+      return !f && typeof process < "u" && "env" in process && (f = process.env.DEBUG), f;
+    }
+    r.enable(d());
+    function p() {
+      try {
+        return window.localStorage;
+      } catch {
+      }
+    }
+  })(se, se.exports)), se.exports;
+}
+var je, nt;
+function or() {
+  if (nt) return je;
+  nt = 1;
+  var e = ir()("jsonp");
+  je = a;
+  var r = 0;
+  function n() {
+  }
+  function a(s, l, d) {
+    typeof l == "function" && (d = l, l = {}), l || (l = {});
+    var p = l.prefix || "__jp", f = l.name || p + r++, o = l.param || "callback", c = l.timeout != null ? l.timeout : 6e4, h = encodeURIComponent, b = document.getElementsByTagName("script")[0] || document.head, x, R;
+    c && (R = setTimeout(function() {
+      A(), d && d(new Error("Timeout"));
+    }, c));
+    function A() {
+      x.parentNode && x.parentNode.removeChild(x), window[f] = n, R && clearTimeout(R);
+    }
+    function I() {
+      window[f] && A();
+    }
+    return window[f] = function(W) {
+      e("jsonp got", W), A(), d && d(null, W);
+    }, s += (~s.indexOf("?") ? "&" : "?") + o + "=" + h(f), s = s.replace("?&", "?"), e('jsonp req "%s"', s), x = document.createElement("script"), x.src = s, b.parentNode.insertBefore(x, b), I;
+  }
+  return je;
+}
+var ar = or();
+const z = /* @__PURE__ */ gt(ar);
+var sr = Object.defineProperty, cr = Object.defineProperties, ur = Object.getOwnPropertyDescriptors, ue = Object.getOwnPropertySymbols, bt = Object.prototype.hasOwnProperty, yt = Object.prototype.propertyIsEnumerable, it = (e, r, n) => r in e ? sr(e, r, { enumerable: !0, configurable: !0, writable: !0, value: n }) : e[r] = n, L = (e, r) => {
+  for (var n in r || (r = {}))
+    bt.call(r, n) && it(e, n, r[n]);
+  if (ue)
+    for (var n of ue(r))
+      yt.call(r, n) && it(e, n, r[n]);
+  return e;
+}, le = (e, r) => cr(e, ur(r)), fe = (e, r) => {
+  var n = {};
+  for (var a in e)
+    bt.call(e, a) && r.indexOf(a) < 0 && (n[a] = e[a]);
+  if (e != null && ue)
+    for (var a of ue(e))
+      r.indexOf(a) < 0 && yt.call(e, a) && (n[a] = e[a]);
+  return n;
+};
+function $(e) {
+  return (n) => {
+    var a = n, {
+      bgStyle: s = {},
+      borderRadius: l = 0,
+      iconFillColor: d = "white",
+      round: p = !1,
+      size: f = 64
+    } = a, o = fe(a, [
+      "bgStyle",
+      "borderRadius",
+      "iconFillColor",
+      "round",
+      "size"
+    ]);
+    return /* @__PURE__ */ m.jsxs("svg", le(L({ viewBox: "0 0 64 64", width: f, height: f }, o), { children: [
+      p ? /* @__PURE__ */ m.jsx("circle", { cx: "32", cy: "32", r: "32", fill: e.color, style: s }) : /* @__PURE__ */ m.jsx(
+        "rect",
+        {
+          width: "64",
+          height: "64",
+          rx: l,
+          ry: l,
+          fill: e.color,
+          style: s
+        }
+      ),
+      /* @__PURE__ */ m.jsx("path", { d: e.path, fill: d })
+    ] }));
+  };
+}
+class lr extends Error {
+  constructor(r) {
+    super(r), this.name = "AssertionError";
+  }
+}
+function _(e, r) {
+  if (!e)
+    throw new lr(r);
+}
+function k(e) {
+  const r = Object.entries(e).filter(([, n]) => n != null).map(([n, a]) => `${encodeURIComponent(n)}=${encodeURIComponent(String(a))}`);
+  return r.length > 0 ? `?${r.join("&")}` : "";
+}
+const fr = (e) => !!e && (typeof e == "object" || typeof e == "function") && "then" in e && typeof e.then == "function", dr = (e, r) => ({
+  left: window.outerWidth / 2 + (window.screenX || window.screenLeft || 0) - e / 2,
+  top: window.outerHeight / 2 + (window.screenY || window.screenTop || 0) - r / 2
+}), hr = (e, r) => ({
+  top: (window.screen.height - r) / 2,
+  left: (window.screen.width - e) / 2
+});
+function wr(e, r, n) {
+  var a = r, { height: s, width: l } = a, d = fe(a, ["height", "width"]);
+  const p = L({
+    height: s,
+    width: l,
+    location: "no",
+    toolbar: "no",
+    status: "no",
+    directories: "no",
+    menubar: "no",
+    scrollbars: "yes",
+    resizable: "no",
+    centerscreen: "yes",
+    chrome: "yes"
+  }, d), f = window.open(
+    e,
+    "",
+    Object.keys(p).map((o) => `${o}=${p[o]}`).join(", ")
+  );
+  if (n) {
+    const o = window.setInterval(() => {
+      try {
+        (f === null || f.closed) && (window.clearInterval(o), n(f));
+      } catch (c) {
+        console.error(c);
+      }
+    }, 1e3);
+  }
+  return f;
+}
+function pr(e) {
+  var r = e, {
+    beforeOnClick: n,
+    children: a,
+    className: s,
+    disabled: l,
+    disabledStyle: d = { opacity: 0.6 },
+    forwardedRef: p,
+    htmlTitle: f,
+    networkLink: o,
+    networkName: c,
+    onClick: h,
+    onShareWindowClose: b,
+    openShareDialogOnClick: x = !0,
+    opts: R,
+    resetButtonStyle: A = !0,
+    style: I,
+    title: W,
+    url: j,
+    windowHeight: N = 400,
+    windowPosition: Y = "windowCenter",
+    windowWidth: H = 550
+  } = r, de = fe(r, [
+    "beforeOnClick",
+    "children",
+    "className",
+    "disabled",
+    "disabledStyle",
+    "forwardedRef",
+    "htmlTitle",
+    "networkLink",
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    "networkName",
+    // deconstructed from ...rest to prevent passing it to the button element
+    "onClick",
+    "onShareWindowClose",
+    "openShareDialogOnClick",
+    "opts",
+    "resetButtonStyle",
+    "style",
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    "title",
+    // deconstructed from ...rest to prevent passing it to the button element
+    "url",
+    "windowHeight",
+    "windowPosition",
+    "windowWidth"
+  ]);
+  const he = async (ee) => {
+    const te = o(j, R);
+    if (!l) {
+      if (ee.preventDefault(), n) {
+        const M = n();
+        fr(M) && await M;
+      }
+      if (x) {
+        const M = L({
+          height: N,
+          width: H
+        }, Y === "windowCenter" ? dr(H, N) : hr(H, N));
+        wr(te, M, b);
+      }
+      h && h(ee, te);
+    }
+  }, we = mt(
+    "react-share__ShareButton",
+    {
+      "react-share__ShareButton--disabled": !!l,
+      disabled: !!l
+    },
+    s
+  ), Q = L(L(A ? {
+    backgroundColor: "transparent",
+    border: "none",
+    padding: 0,
+    font: "inherit",
+    color: "inherit",
+    cursor: "pointer"
+  } : {}, I), l && d);
+  return /* @__PURE__ */ m.jsx(
+    "button",
+    le(L({}, de), {
+      className: we,
+      onClick: he,
+      ref: p,
+      style: Q,
+      title: f,
+      children: a
+    })
+  );
+}
+function E(e, r, n, a) {
+  const s = (l, d) => {
+    const p = n(l), f = L({}, l);
+    return Object.keys(p).forEach((c) => {
+      delete f[c];
+    }), /* @__PURE__ */ m.jsx(
+      pr,
+      le(L(L({}, a), f), {
+        forwardedRef: d,
+        networkName: e,
+        networkLink: r,
+        opts: p
+      })
+    );
+  };
+  return s.displayName = `ShareButton-${e}`, Jt(s);
+}
+function vr(e, { title: r, separator: n }) {
+  return _(e, "bluesky.url"), "https://bsky.app/intent/compose" + k({
+    text: r ? r + n + e : e
+  });
+}
+E(
+  "bluesky",
+  vr,
+  (e) => ({
+    title: e.title,
+    separator: e.separator || " "
+  }),
+  {
+    windowWidth: 660,
+    windowHeight: 460,
+    windowPosition: "windowCenter"
+  }
+);
+function gr(e, { subject: r, body: n, separator: a }) {
+  return "mailto:" + k({ subject: r, body: n ? n + a + e : e });
+}
+E(
+  "email",
+  gr,
+  (e) => ({
+    subject: e.subject,
+    body: e.body,
+    separator: e.separator || " "
+  }),
+  {
+    openShareDialogOnClick: !1,
+    onClick: (e, r) => {
+      window.location.href = r;
+    }
+  }
+);
+const ot = $({
+  color: "#0965FE",
+  path: "M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z"
+});
+function mr(e, { appId: r, redirectUri: n, to: a }) {
+  return "https://www.facebook.com/dialog/send" + k({
+    link: e,
+    redirect_uri: n || e,
+    app_id: r,
+    to: a
+  });
+}
+E(
+  "facebookmessenger",
+  mr,
+  (e) => ({
+    appId: e.appId,
+    redirectUri: e.redirectUri,
+    to: e.to
+  }),
+  {
+    windowWidth: 1e3,
+    windowHeight: 820
+  }
+);
+function br(e, { hashtag: r }) {
+  return _(e, "facebook.url"), "https://www.facebook.com/sharer/sharer.php" + k({ u: e, hashtag: r });
+}
+const at = E(
+  "facebook",
+  br,
+  (e) => ({ hashtag: e.hashtag }),
+  {
+    windowWidth: 550,
+    windowHeight: 400
+  }
+);
+function yr() {
+  const e = Gt(!1);
+  return vt(() => (e.current = !0, () => {
+    e.current = !1;
+  }), []), Xt(() => e.current, []);
+}
+function kr(e) {
+  var r = e, {
+    children: n = (b) => b,
+    className: a,
+    getCount: s,
+    url: l
+  } = r, d = fe(r, [
+    "children",
+    "className",
+    "getCount",
+    "url"
+  ]);
+  const p = yr(), [f, o] = Ge(void 0), [c, h] = Ge(!1);
+  return vt(() => {
+    h(!0), s(l, (b) => {
+      p() && (o(b), h(!1));
+    });
+  }, [l]), /* @__PURE__ */ m.jsx("span", le(L({ className: mt("react-share__ShareCount", a) }, d), { children: !c && f !== void 0 && n(f) }));
+}
+function K(e) {
+  const r = (n) => /* @__PURE__ */ m.jsx(kr, L({ getCount: e }, n));
+  return r.displayName = `ShareCount(${e.name})`, r;
+}
+function Cr(e, r) {
+  const n = `https://graph.facebook.com/?id=${e}&fields=og_object{engagement}`;
+  z(n, (a, s) => {
+    r(
+      !a && s && s.og_object && s.og_object.engagement ? s.og_object.engagement.count : void 0
+    );
+  });
+}
+K(Cr);
+function _r(e, { title: r }) {
+  return _(e, "hatena.url"), `http://b.hatena.ne.jp/add?mode=confirm&url=${e}&title=${r}`;
+}
+E(
+  "hatena",
+  _r,
+  (e) => ({
+    title: e.title
+  }),
+  {
+    windowWidth: 660,
+    windowHeight: 460,
+    windowPosition: "windowCenter"
+  }
+);
+function Er(e, r) {
+  z(
+    "https://bookmark.hatenaapis.com/count/entry" + k({
+      url: e
+    }),
+    (a, s) => {
+      r(s ?? void 0);
+    }
+  );
+}
+K(Er);
+function jr(e, { title: r, description: n }) {
+  return _(e, "instapaper.url"), "http://www.instapaper.com/hello2" + k({
+    url: e,
+    title: r,
+    description: n
+  });
+}
+E(
+  "instapaper",
+  jr,
+  (e) => ({
+    title: e.title,
+    description: e.description
+  }),
+  {
+    windowWidth: 500,
+    windowHeight: 500,
+    windowPosition: "windowCenter"
+  }
+);
+function Rr(e, { title: r }) {
+  return _(e, "line.url"), "https://social-plugins.line.me/lineit/share" + k({
+    url: e,
+    text: r
+  });
+}
+E(
+  "line",
+  Rr,
+  (e) => ({
+    title: e.title
+  }),
+  {
+    windowWidth: 500,
+    windowHeight: 500
+  }
+);
+const st = $({
+  color: "#0077B5",
+  path: "M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z"
+});
+function Sr(e, { title: r, summary: n, source: a }) {
+  return _(e, "linkedin.url"), "https://linkedin.com/shareArticle" + k({ url: e, mini: "true", title: r, summary: n, source: a });
+}
+const ct = E(
+  "linkedin",
+  Sr,
+  ({ title: e, summary: r, source: n }) => ({ title: e, summary: r, source: n }),
+  {
+    windowWidth: 750,
+    windowHeight: 600
+  }
+);
+function Or(e, { title: r, description: n }) {
+  return _(e, "livejournal.url"), "https://www.livejournal.com/update.bml" + k({
+    subject: r,
+    event: n
+  });
+}
+E(
+  "livejournal",
+  Or,
+  (e) => ({
+    title: e.title,
+    description: e.description
+  }),
+  {
+    windowWidth: 660,
+    windowHeight: 460
+  }
+);
+function xr(e, { title: r, description: n, imageUrl: a }) {
+  return _(e, "mailru.url"), "https://connect.mail.ru/share" + k({
+    url: e,
+    title: r,
+    description: n,
+    image_url: a
+  });
+}
+E(
+  "mailru",
+  xr,
+  (e) => ({
+    title: e.title,
+    description: e.description,
+    imageUrl: e.imageUrl
+  }),
+  {
+    windowWidth: 660,
+    windowHeight: 460
+  }
+);
+function Pr(e, { title: r, description: n, image: a }) {
+  return _(e, "ok.url"), "https://connect.ok.ru/offer" + k({
+    url: e,
+    title: r,
+    description: n,
+    imageUrl: a
+  });
+}
+E(
+  "ok",
+  Pr,
+  (e) => ({
+    title: e.title,
+    description: e.description,
+    image: e.image
+  }),
+  {
+    windowWidth: 588,
+    windowHeight: 480,
+    windowPosition: "screenCenter"
+  }
+);
+function Tr(e, r) {
+  window.OK || (window.OK = {
+    Share: {
+      count: function(l, d) {
+        var p, f;
+        (f = (p = window.OK.callbacks)[l]) == null || f.call(p, d);
+      }
+    },
+    callbacks: []
+  });
+  const n = "https://connect.ok.ru/dk", a = window.OK.callbacks.length;
+  return window.ODKL = {
+    updateCount(s, l) {
+      var d, p;
+      const f = s === "" ? 0 : parseInt(s.replace("react-share-", ""), 10);
+      (p = (d = window.OK.callbacks)[f]) == null || p.call(d, l === "" ? void 0 : parseInt(l, 10));
+    }
+  }, window.OK.callbacks.push(r), z(
+    n + k({
+      "st.cmd": "extLike",
+      uid: `react-share-${a}`,
+      ref: e
+    })
+  );
+}
+K(Tr);
+function Lr(e, { media: r, description: n, pinId: a }) {
+  return a ? `https://pinterest.com/pin/${a}/repin/x/` : (_(e, "pinterest.url"), _(r, "pinterest.media"), "https://pinterest.com/pin/create/button/" + k({
+    url: e,
+    media: r,
+    description: n
+  }));
+}
+E(
+  "pinterest",
+  Lr,
+  (e) => ({
+    media: e.media,
+    description: e.description,
+    pinId: e.pinId
+  }),
+  {
+    windowWidth: 1e3,
+    windowHeight: 730
+  }
+);
+function Ar(e, r) {
+  z(
+    "https://api.pinterest.com/v1/urls/count.json" + k({
+      url: e
+    }),
+    (a, s) => {
+      r(s ? s.count : void 0);
+    }
+  );
+}
+K(Ar);
+function Wr(e, { title: r }) {
+  return _(e, "pocket.url"), "https://getpocket.com/save" + k({
+    url: e,
+    title: r
+  });
+}
+E(
+  "pocket",
+  Wr,
+  (e) => ({
+    title: e.title
+  }),
+  {
+    windowWidth: 500,
+    windowHeight: 500
+  }
+);
+function Dr(e, { title: r }) {
+  return _(e, "reddit.url"), "https://www.reddit.com/web/submit" + k({
+    url: e,
+    title: r
+  });
+}
+E(
+  "reddit",
+  Dr,
+  (e) => ({
+    title: e.title
+  }),
+  {
+    windowWidth: 660,
+    windowHeight: 460,
+    windowPosition: "windowCenter"
+  }
+);
+function Ir(e, { title: r }) {
+  return _(e, "gab.url"), "https://gab.com/compose" + k({
+    url: e,
+    text: r
+  });
+}
+E(
+  "gab",
+  Ir,
+  (e) => ({
+    title: e.title
+  }),
+  {
+    windowWidth: 660,
+    windowHeight: 640,
+    windowPosition: "windowCenter"
+  }
+);
+function Fr(e, r) {
+  const n = `https://www.reddit.com/api/info.json?limit=1&url=${e}`;
+  z(n, { param: "jsonp" }, (a, s) => {
+    r(
+      !a && s && s.data && s.data.children.length > 0 && s.data.children[0].data.score ? s.data.children[0].data.score : void 0
+    );
+  });
+}
+K(Fr);
+function Nr(e, { title: r }) {
+  return _(e, "telegram.url"), "https://telegram.me/share/url" + k({
+    url: e,
+    text: r
+  });
+}
+E(
+  "telegram",
+  Nr,
+  (e) => ({
+    title: e.title
+  }),
+  {
+    windowWidth: 550,
+    windowHeight: 400
+  }
+);
+const ut = $({
+  color: "#000000",
+  path: "M41.4569 31.0027C41.2867 30.9181 41.1138 30.8366 40.9386 30.7586C40.6336 24.9274 37.5624 21.5891 32.4055 21.5549C32.3821 21.5548 32.3589 21.5548 32.3355 21.5548C29.251 21.5548 26.6857 22.9207 25.1067 25.4063L27.9429 27.4247C29.1224 25.5681 30.9736 25.1723 32.3369 25.1723C32.3526 25.1723 32.3684 25.1723 32.384 25.1724C34.082 25.1837 35.3633 25.6958 36.1926 26.6947C36.7961 27.4218 37.1997 28.4267 37.3996 29.6949C35.8941 29.4294 34.266 29.3478 32.5255 29.4513C27.6225 29.7443 24.4705 32.711 24.6822 36.8332C24.7896 38.9242 25.7937 40.7231 27.5094 41.8982C28.96 42.8916 30.8282 43.3774 32.7699 43.2674C35.3341 43.1216 37.3456 42.1066 38.749 40.2507C39.8148 38.8413 40.4889 37.0149 40.7865 34.7136C42.0085 35.4787 42.9142 36.4855 43.4144 37.6959C44.2649 39.7534 44.3145 43.1344 41.6553 45.8908C39.3255 48.3055 36.525 49.3501 32.2926 49.3824C27.5977 49.3463 24.0471 47.7842 21.7385 44.7396C19.5768 41.8886 18.4595 37.7706 18.4179 32.5C18.4595 27.2293 19.5768 23.1113 21.7385 20.2604C24.0471 17.2157 27.5977 15.6537 32.2925 15.6175C37.0215 15.654 40.634 17.2235 43.0309 20.2829C44.2062 21.7831 45.0923 23.6698 45.6764 25.8696L49 24.9496C48.2919 22.2419 47.1778 19.9087 45.6616 17.9736C42.5888 14.0514 38.0947 12.0417 32.3041 12H32.2809C26.5022 12.0415 22.0584 14.0589 19.073 17.9961C16.4165 21.4997 15.0462 26.3747 15.0001 32.4856L15 32.5L15.0001 32.5144C15.0462 38.6252 16.4165 43.5004 19.073 47.004C22.0584 50.941 26.5022 52.9586 32.2809 53H32.3041C37.4418 52.9631 41.0632 51.5676 44.0465 48.4753C47.9496 44.4297 47.8321 39.3587 46.5457 36.2457C45.6227 34.0134 43.8631 32.2002 41.4569 31.0027ZM32.5863 39.6551C30.4374 39.7807 28.205 38.78 28.0949 36.6367C28.0133 35.0476 29.185 33.2743 32.7182 33.0631C33.1228 33.0389 33.5199 33.027 33.9099 33.027C35.1933 33.027 36.3939 33.1564 37.4854 33.4039C37.0783 38.6788 34.6902 39.5353 32.5863 39.6551Z"
+});
+function Hr(e, { title: r }) {
+  return _(e, "threads.url"), "https://threads.net/intent/post" + k({
+    url: e,
+    text: r
+  });
+}
+const lt = E(
+  "threads",
+  Hr,
+  (e) => ({
+    title: e.title
+  }),
+  {
+    windowWidth: 550,
+    windowHeight: 600
+  }
+);
+function Mr(e, {
+  title: r,
+  caption: n,
+  tags: a,
+  posttype: s
+}) {
+  return _(e, "tumblr.url"), "https://www.tumblr.com/widgets/share/tool" + k({
+    canonicalUrl: e,
+    title: r,
+    caption: n,
+    tags: a,
+    posttype: s
+  });
+}
+E(
+  "tumblr",
+  Mr,
+  (e) => ({
+    title: e.title,
+    tags: (e.tags || []).join(","),
+    caption: e.caption,
+    posttype: e.posttype || "link"
+  }),
+  {
+    windowWidth: 660,
+    windowHeight: 460
+  }
+);
+function Vr(e, r) {
+  return z(
+    "https://api.tumblr.com/v2/share/stats" + k({
+      url: e
+    }),
+    (a, s) => {
+      r(!a && s && s.response ? s.response.note_count : void 0);
+    }
+  );
+}
+K(Vr);
+function Br(e, {
+  title: r,
+  via: n,
+  hashtags: a = [],
+  related: s = []
+}) {
+  return _(e, "twitter.url"), _(Array.isArray(a), "twitter.hashtags is not an array"), _(Array.isArray(s), "twitter.related is not an array"), "https://twitter.com/intent/tweet" + k({
+    url: e,
+    text: r,
+    via: n,
+    hashtags: a.length > 0 ? a.join(",") : void 0,
+    related: s.length > 0 ? s.join(",") : void 0
+  });
+}
+const ft = E(
+  "twitter",
+  Br,
+  (e) => ({
+    hashtags: e.hashtags,
+    title: e.title,
+    via: e.via,
+    related: e.related
+  }),
+  {
+    windowWidth: 550,
+    windowHeight: 400
+  }
+);
+function zr(e, { title: r, separator: n }) {
+  return _(e, "viber.url"), "viber://forward" + k({
+    text: r ? r + n + e : e
+  });
+}
+E(
+  "viber",
+  zr,
+  (e) => ({
+    title: e.title,
+    separator: e.separator || " "
+  }),
+  {
+    windowWidth: 660,
+    windowHeight: 460
+  }
+);
+function Kr(e, { title: r, image: n, noParse: a, noVkLinks: s }) {
+  return _(e, "vk.url"), "https://vk.com/share.php" + k({
+    url: e,
+    title: r,
+    image: n,
+    noparse: a ? 1 : 0,
+    no_vk_links: s ? 1 : 0
+  });
+}
+E(
+  "vk",
+  Kr,
+  (e) => ({
+    title: e.title,
+    image: e.image,
+    noParse: e.noParse,
+    noVkLinks: e.noVkLinks
+  }),
+  {
+    windowWidth: 660,
+    windowHeight: 460
+  }
+);
+function Yr(e, r) {
+  window.VK || (window.VK = {}), window.VK.Share = {
+    count: (s, l) => {
+      var d, p;
+      return (p = (d = window.VK.callbacks) == null ? void 0 : d[s]) == null ? void 0 : p.call(d, l);
+    }
+  }, window.VK.callbacks = [];
+  const n = "https://vk.com/share.php", a = window.VK.callbacks.length;
+  return window.VK.callbacks.push(r), z(
+    n + k({
+      act: "count",
+      index: a,
+      url: e
+    })
+  );
+}
+K(Yr);
+function qr(e, { title: r, image: n }) {
+  return _(e, "weibo.url"), "http://service.weibo.com/share/share.php" + k({
+    url: e,
+    title: r,
+    pic: n
+  });
+}
+E(
+  "weibo",
+  qr,
+  (e) => ({
+    title: e.title,
+    image: e.image
+  }),
+  {
+    windowWidth: 660,
+    windowHeight: 550,
+    windowPosition: "screenCenter"
+  }
+);
+const dt = $({
+  color: "#25D366",
+  path: "m42.32286,33.93287c-0.5178,-0.2589 -3.04726,-1.49644 -3.52105,-1.66732c-0.4712,-0.17346 -0.81554,-0.2589 -1.15987,0.2589c-0.34175,0.51004 -1.33075,1.66474 -1.63108,2.00648c-0.30032,0.33658 -0.60064,0.36247 -1.11327,0.12945c-0.5178,-0.2589 -2.17994,-0.80259 -4.14759,-2.56312c-1.53269,-1.37217 -2.56312,-3.05503 -2.86603,-3.57283c-0.30033,-0.5178 -0.03366,-0.80259 0.22524,-1.06149c0.23301,-0.23301 0.5178,-0.59547 0.7767,-0.90616c0.25372,-0.31068 0.33657,-0.5178 0.51262,-0.85437c0.17088,-0.36246 0.08544,-0.64725 -0.04402,-0.90615c-0.12945,-0.2589 -1.15987,-2.79613 -1.58964,-3.80584c-0.41424,-1.00971 -0.84142,-0.88027 -1.15987,-0.88027c-0.29773,-0.02588 -0.64208,-0.02588 -0.98382,-0.02588c-0.34693,0 -0.90616,0.12945 -1.37736,0.62136c-0.4712,0.5178 -1.80194,1.76053 -1.80194,4.27186c0,2.51134 1.84596,4.945 2.10227,5.30747c0.2589,0.33657 3.63497,5.51458 8.80262,7.74113c1.23237,0.5178 2.1903,0.82848 2.94111,1.08738c1.23237,0.38836 2.35599,0.33657 3.24402,0.20712c0.99159,-0.15534 3.04985,-1.24272 3.47963,-2.45956c0.44013,-1.21683 0.44013,-2.22654 0.31068,-2.45955c-0.12945,-0.23301 -0.46601,-0.36247 -0.98382,-0.59548m-9.40068,12.84407l-0.02589,0c-3.05503,0 -6.08417,-0.82849 -8.72495,-2.38189l-0.62136,-0.37023l-6.47252,1.68286l1.73463,-6.29129l-0.41424,-0.64725c-1.70875,-2.71846 -2.6149,-5.85116 -2.6149,-9.07706c0,-9.39809 7.68934,-17.06155 17.15993,-17.06155c4.58253,0 8.88029,1.78642 12.11655,5.02268c3.23625,3.21036 5.02267,7.50812 5.02267,12.06476c-0.0078,9.3981 -7.69712,17.06155 -17.14699,17.06155m14.58906,-31.58846c-3.93529,-3.80584 -9.1133,-5.95471 -14.62789,-5.95471c-11.36055,0 -20.60848,9.2065 -20.61625,20.52564c0,3.61684 0.94757,7.14565 2.75211,10.26282l-2.92557,10.63564l10.93337,-2.85309c3.0136,1.63108 6.4052,2.4958 9.85634,2.49839l0.01037,0c11.36574,0 20.61884,-9.2091 20.62403,-20.53082c0,-5.48093 -2.14111,-10.64081 -6.03239,-14.51915"
+});
+function Ur() {
+  return /(android|iphone|ipad|mobile)/i.test(navigator.userAgent);
+}
+function Jr(e, { title: r, separator: n }) {
+  return _(e, "whatsapp.url"), "https://" + (Ur() ? "api" : "web") + ".whatsapp.com/send" + k({
+    text: r ? r + n + e : e
+  });
+}
+const ht = E(
+  "whatsapp",
+  Jr,
+  (e) => ({
+    title: e.title,
+    separator: e.separator || " "
+  }),
+  {
+    windowWidth: 550,
+    windowHeight: 400
+  }
+);
+function Gr(e, { quote: r, hashtag: n }) {
+  return _(e, "workplace.url"), "https://work.facebook.com/sharer.php" + k({
+    u: e,
+    quote: r,
+    hashtag: n
+  });
+}
+E(
+  "workplace",
+  Gr,
+  (e) => ({
+    quote: e.quote,
+    hashtag: e.hashtag
+  }),
+  {
+    windowWidth: 550,
+    windowHeight: 400
+  }
+);
+const wt = $({
+  color: "#000000",
+  path: "M 41.116 18.375 h 4.962 l -10.8405 12.39 l 12.753 16.86 H 38.005 l -7.821 -10.2255 L 21.235 47.625 H 16.27 l 11.595 -13.2525 L 15.631 18.375 H 25.87 l 7.0695 9.3465 z m -1.7415 26.28 h 2.7495 L 24.376 21.189 H 21.4255 z"
+});
+function Zr({ currentUrl: e }) {
+  return /* @__PURE__ */ m.jsxs("div", { className: "flex justify-end", children: [
+    /* @__PURE__ */ m.jsx("section", { className: "block md:hidden", children: /* @__PURE__ */ m.jsxs("div", { className: "flex w-full justify-end gap-2", children: [
+      /* @__PURE__ */ m.jsx(at, { url: e, children: /* @__PURE__ */ m.jsx(ot, { size: 24, round: !0 }) }),
+      /* @__PURE__ */ m.jsx(ft, { url: e, children: /* @__PURE__ */ m.jsx(wt, { size: 24, round: !0 }) }),
+      /* @__PURE__ */ m.jsx(ct, { url: e, children: /* @__PURE__ */ m.jsx(st, { size: 24, round: !0 }) }),
+      /* @__PURE__ */ m.jsx(lt, { url: e, children: /* @__PURE__ */ m.jsx(ut, { size: 24, round: !0 }) }),
+      /* @__PURE__ */ m.jsx(ht, { url: e, children: /* @__PURE__ */ m.jsx(dt, { size: 24, round: !0 }) })
+    ] }) }),
+    /* @__PURE__ */ m.jsx("section", { className: "hidden md:block", children: /* @__PURE__ */ m.jsxs("div", { className: "flex w-full justify-end gap-2", children: [
+      /* @__PURE__ */ m.jsx(at, { url: e, children: /* @__PURE__ */ m.jsx(ot, { size: 32, round: !0 }) }),
+      /* @__PURE__ */ m.jsx(ft, { url: e, children: /* @__PURE__ */ m.jsx(wt, { size: 32, round: !0 }) }),
+      /* @__PURE__ */ m.jsx(ct, { url: e, children: /* @__PURE__ */ m.jsx(st, { size: 32, round: !0 }) }),
+      /* @__PURE__ */ m.jsx(lt, { url: e, children: /* @__PURE__ */ m.jsx(ut, { size: 32, round: !0 }) }),
+      /* @__PURE__ */ m.jsx(ht, { url: e, children: /* @__PURE__ */ m.jsx(dt, { size: 32, round: !0 }) })
+    ] }) })
+  ] });
+}
+export {
+  Zr as SocialButtons
+};
