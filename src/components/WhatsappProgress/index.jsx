@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
-export default function WhatsappProgress({ goTo, index, pagesHtml }) {
+export function WhatsappProgress({ goTo, index, pagesHtml }) {
   return (
     <div className="mt-4 flex w-full items-center gap-1 mb-3">
       {pagesHtml.map((_, i) => {

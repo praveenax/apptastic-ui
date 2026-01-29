@@ -1,12 +1,12 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import * as htmlToImage from "html-to-image";
-import WhatsappProgress from "./WhatsappProgress";
+import { WhatsappProgress } from "../WhatsappProgress";
 
 function clamp(n, min, max) {
   return Math.max(min, Math.min(max, n));
 }
 
-export default function ArticleCarousel({
+export function ArticleCarousel({
   pagesHtml,
   title,
   initialIndex = 0,
@@ -15,7 +15,7 @@ export default function ArticleCarousel({
   const slideRefs = useRef([]); // store refs for each slide
   const [isSharing, setIsSharing] = useState(false);
   const [index, setIndex] = useState(() =>
-    clamp(initialIndex, 0, Math.max(0, pagesHtml.length - 1))
+    clamp(initialIndex, 0, Math.max(0, pagesHtml.length - 1)),
   );
 
   const containerRef = useRef(null);

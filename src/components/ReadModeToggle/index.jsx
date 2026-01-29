@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ReadModeToggle({ mode, setMode }) {
+export function ReadModeToggle({ mode, setMode }) {
   const isQuick = mode === "quick";
 
   return (
