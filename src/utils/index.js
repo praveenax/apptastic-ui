@@ -1,0 +1,1 @@
+export { splitAndNormalizeSections } from "./splitAndNormalizeSections";

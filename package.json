@@ -1,13 +1,21 @@
 {
   "name": "apptastic-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "type": "module",
-  "keywords": [],
+  "keywords": [
+    "gatsby",
+    "react",
+    "ui",
+    "components",
+    "seo",
+    "library",
+    "tailwindcss"
+  ],
   "author": "praveenax",
   "license": "ISC",
   "repository": "praveenax/apptastic-ui",
-  "description": "",
+  "description": "UI Library for Gatsby based Web projects, containing commonly used components for SEO rich sites.",
   "files": [
     "dist"
   ],
