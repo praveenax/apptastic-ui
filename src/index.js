@@ -1,1 +1,1 @@
-export { FadeInCard } from "./components/FadeInCard/FadeInCard";
+export { SocialButtons } from "./components/SocialButtons";
