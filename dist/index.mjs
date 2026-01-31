@@ -1,6 +1,6 @@
-import Wt, { forwardRef as Sr, useState as ve, useEffect as be, useRef as pe, useCallback as Er, useMemo as Rr } from "react";
+import zt, { forwardRef as Sr, useState as ve, useEffect as be, useRef as pe, useCallback as Er, useMemo as Rr } from "react";
 import "gatsby";
-function zt(e) {
+function Wt(e) {
   return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e;
 }
 var ge = { exports: {} }, ae = {};
@@ -8,7 +8,7 @@ var ut;
 function _r() {
   if (ut) return ae;
   ut = 1;
-  var e = Wt, t = /* @__PURE__ */ Symbol.for("react.element"), r = /* @__PURE__ */ Symbol.for("react.fragment"), i = Object.prototype.hasOwnProperty, o = e.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, a = { key: !0, ref: !0, __self: !0, __source: !0 };
+  var e = zt, t = /* @__PURE__ */ Symbol.for("react.element"), r = /* @__PURE__ */ Symbol.for("react.fragment"), i = Object.prototype.hasOwnProperty, o = e.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, a = { key: !0, ref: !0, __self: !0, __source: !0 };
   function s(c, l, u) {
     var d, g = {}, p = null, _ = null;
     u !== void 0 && (p = "" + u), l.key !== void 0 && (p = "" + l.key), l.ref !== void 0 && (_ = l.ref);
@@ -22,7 +22,7 @@ var se = {};
 var ft;
 function jr() {
   return ft || (ft = 1, process.env.NODE_ENV !== "production" && (function() {
-    var e = Wt, t = /* @__PURE__ */ Symbol.for("react.element"), r = /* @__PURE__ */ Symbol.for("react.portal"), i = /* @__PURE__ */ Symbol.for("react.fragment"), o = /* @__PURE__ */ Symbol.for("react.strict_mode"), a = /* @__PURE__ */ Symbol.for("react.profiler"), s = /* @__PURE__ */ Symbol.for("react.provider"), c = /* @__PURE__ */ Symbol.for("react.context"), l = /* @__PURE__ */ Symbol.for("react.forward_ref"), u = /* @__PURE__ */ Symbol.for("react.suspense"), d = /* @__PURE__ */ Symbol.for("react.suspense_list"), g = /* @__PURE__ */ Symbol.for("react.memo"), p = /* @__PURE__ */ Symbol.for("react.lazy"), _ = /* @__PURE__ */ Symbol.for("react.offscreen"), j = Symbol.iterator, L = "@@iterator";
+    var e = zt, t = /* @__PURE__ */ Symbol.for("react.element"), r = /* @__PURE__ */ Symbol.for("react.portal"), i = /* @__PURE__ */ Symbol.for("react.fragment"), o = /* @__PURE__ */ Symbol.for("react.strict_mode"), a = /* @__PURE__ */ Symbol.for("react.profiler"), s = /* @__PURE__ */ Symbol.for("react.provider"), c = /* @__PURE__ */ Symbol.for("react.context"), l = /* @__PURE__ */ Symbol.for("react.forward_ref"), u = /* @__PURE__ */ Symbol.for("react.suspense"), d = /* @__PURE__ */ Symbol.for("react.suspense_list"), g = /* @__PURE__ */ Symbol.for("react.memo"), p = /* @__PURE__ */ Symbol.for("react.lazy"), _ = /* @__PURE__ */ Symbol.for("react.offscreen"), j = Symbol.iterator, L = "@@iterator";
     function A(n) {
       if (n === null || typeof n != "object")
         return null;
@@ -34,10 +34,10 @@ function jr() {
       {
         for (var f = arguments.length, h = new Array(f > 1 ? f - 1 : 0), w = 1; w < f; w++)
           h[w - 1] = arguments[w];
-        B("error", n, h);
+        U("error", n, h);
       }
     }
-    function B(n, f, h) {
+    function U(n, f, h) {
       {
         var w = F.ReactDebugCurrentFrame, x = w.getStackAddendum();
         x !== "" && (f += "%s", h = h.concat([x]));
@@ -47,10 +47,10 @@ function jr() {
         k.unshift("Warning: " + f), Function.prototype.apply.call(console[n], console, k);
       }
     }
-    var b = !1, T = !1, U = !1, H = !1, z = !1, ne;
+    var b = !1, T = !1, B = !1, H = !1, W = !1, ne;
     ne = /* @__PURE__ */ Symbol.for("react.module.reference");
     function K(n) {
-      return !!(typeof n == "string" || typeof n == "function" || n === i || n === a || z || n === o || n === u || n === d || H || n === _ || b || T || U || typeof n == "object" && n !== null && (n.$$typeof === p || n.$$typeof === g || n.$$typeof === s || n.$$typeof === c || n.$$typeof === l || // This needs to include all possible module reference object
+      return !!(typeof n == "string" || typeof n == "function" || n === i || n === a || W || n === o || n === u || n === d || H || n === _ || b || T || B || typeof n == "object" && n !== null && (n.$$typeof === p || n.$$typeof === g || n.$$typeof === s || n.$$typeof === c || n.$$typeof === l || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
@@ -111,14 +111,14 @@ function jr() {
         }
       return null;
     }
-    var X = Object.assign, ie = 0, He, $e, Ue, Be, Ne, qe, Ke;
+    var X = Object.assign, ie = 0, He, $e, Be, Ue, Ne, qe, Ke;
     function Ye() {
     }
     Ye.__reactDisabledLog = !0;
     function Jt() {
       {
         if (ie === 0) {
-          He = console.log, $e = console.info, Ue = console.warn, Be = console.error, Ne = console.group, qe = console.groupCollapsed, Ke = console.groupEnd;
+          He = console.log, $e = console.info, Be = console.warn, Ue = console.error, Ne = console.group, qe = console.groupCollapsed, Ke = console.groupEnd;
           var n = {
             configurable: !0,
             enumerable: !0,
@@ -154,10 +154,10 @@ function jr() {
               value: $e
             }),
             warn: X({}, n, {
-              value: Ue
+              value: Be
             }),
             error: X({}, n, {
-              value: Be
+              value: Ue
             }),
             group: X({}, n, {
               value: Ne
@@ -648,7 +648,7 @@ function Tr() {
   })(Ie)), Ie.exports;
 }
 var Or = Tr();
-const Mt = /* @__PURE__ */ zt(Or);
+const Mt = /* @__PURE__ */ Wt(Or);
 var me = { exports: {} }, we = { exports: {} }, Fe, gt;
 function Lr() {
   if (gt) return Fe;
@@ -745,10 +745,10 @@ function Ar() {
             j[L] = arguments[L];
           j[0] = t.coerce(j[0]), typeof j[0] != "string" && j.unshift("%O");
           var A = 0;
-          j[0] = j[0].replace(/%([a-zA-Z%])/g, function(E, B) {
+          j[0] = j[0].replace(/%([a-zA-Z%])/g, function(E, U) {
             if (E === "%%") return E;
             A++;
-            var b = t.formatters[B];
+            var b = t.formatters[U];
             if (typeof b == "function") {
               var T = j[A];
               E = b.call(g, T), j.splice(A, 1), A--;
@@ -874,15 +874,15 @@ function Fr() {
   return De;
 }
 var Dr = Fr();
-const J = /* @__PURE__ */ zt(Dr);
-var Wr = Object.defineProperty, zr = Object.defineProperties, Mr = Object.getOwnPropertyDescriptors, ye = Object.getOwnPropertySymbols, Vt = Object.prototype.hasOwnProperty, Ht = Object.prototype.propertyIsEnumerable, vt = (e, t, r) => t in e ? Wr(e, t, { enumerable: !0, configurable: !0, writable: !0, value: r }) : e[t] = r, V = (e, t) => {
+const J = /* @__PURE__ */ Wt(Dr);
+var zr = Object.defineProperty, Wr = Object.defineProperties, Mr = Object.getOwnPropertyDescriptors, ye = Object.getOwnPropertySymbols, Vt = Object.prototype.hasOwnProperty, Ht = Object.prototype.propertyIsEnumerable, vt = (e, t, r) => t in e ? zr(e, t, { enumerable: !0, configurable: !0, writable: !0, value: r }) : e[t] = r, V = (e, t) => {
   for (var r in t || (t = {}))
     Vt.call(t, r) && vt(e, r, t[r]);
   if (ye)
     for (var r of ye(t))
       Ht.call(t, r) && vt(e, r, t[r]);
   return e;
-}, ke = (e, t) => zr(e, Mr(t)), Se = (e, t) => {
+}, ke = (e, t) => Wr(e, Mr(t)), Se = (e, t) => {
   var r = {};
   for (var i in e)
     Vt.call(e, i) && t.indexOf(i) < 0 && (r[i] = e[i]);
@@ -938,11 +938,11 @@ function C(e) {
 const Hr = (e) => !!e && (typeof e == "object" || typeof e == "function") && "then" in e && typeof e.then == "function", $r = (e, t) => ({
   left: window.outerWidth / 2 + (window.screenX || window.screenLeft || 0) - e / 2,
   top: window.outerHeight / 2 + (window.screenY || window.screenTop || 0) - t / 2
-}), Ur = (e, t) => ({
+}), Br = (e, t) => ({
   top: (window.screen.height - t) / 2,
   left: (window.screen.width - e) / 2
 });
-function Br(e, t, r) {
+function Ur(e, t, r) {
   var i = t, { height: o, width: a } = i, s = Se(i, ["height", "width"]);
   const c = V({
     height: o,
@@ -991,10 +991,10 @@ function Nr(e) {
     style: A,
     title: F,
     url: E,
-    windowHeight: B = 400,
+    windowHeight: U = 400,
     windowPosition: b = "windowCenter",
     windowWidth: T = 550
-  } = t, U = Se(t, [
+  } = t, B = Se(t, [
     "beforeOnClick",
     "children",
     "className",
@@ -1029,14 +1029,14 @@ function Nr(e) {
       }
       if (_) {
         const Y = V({
-          height: B,
+          height: U,
           width: T
-        }, b === "windowCenter" ? $r(T, B) : Ur(T, B));
-        Br(le, Y, p);
+        }, b === "windowCenter" ? $r(T, U) : Br(T, U));
+        Ur(le, Y, p);
       }
       g && g(K, le);
     }
-  }, z = Mt(
+  }, W = Mt(
     "react-share__ShareButton",
     {
       "react-share__ShareButton--disabled": !!a,
@@ -1053,8 +1053,8 @@ function Nr(e) {
   } : {}, A), a && s);
   return /* @__PURE__ */ m.jsx(
     "button",
-    ke(V({}, U), {
-      className: z,
+    ke(V({}, B), {
+      className: W,
       onClick: H,
       ref: c,
       style: ne,
@@ -1806,7 +1806,7 @@ function On(e) {
   const t = xe(e, "border-top-width"), r = xe(e, "border-bottom-width");
   return e.clientHeight + t + r;
 }
-function Ut(e, t = {}) {
+function Bt(e, t = {}) {
   const r = t.width || Tn(e), i = t.height || On(e);
   return { width: r, height: i };
 }
@@ -1840,24 +1840,24 @@ async function Fn(e, t, r) {
   const i = "http://www.w3.org/2000/svg", o = document.createElementNS(i, "svg"), a = document.createElementNS(i, "foreignObject");
   return o.setAttribute("width", `${t}`), o.setAttribute("height", `${r}`), o.setAttribute("viewBox", `0 0 ${t} ${r}`), a.setAttribute("width", "100%"), a.setAttribute("height", "100%"), a.setAttribute("x", "0"), a.setAttribute("y", "0"), a.setAttribute("externalResourcesRequired", "true"), o.appendChild(a), a.appendChild(e), In(o);
 }
-const W = (e, t) => {
+const z = (e, t) => {
   if (e instanceof t)
     return !0;
   const r = Object.getPrototypeOf(e);
-  return r === null ? !1 : r.constructor.name === t.name || W(r, t);
+  return r === null ? !1 : r.constructor.name === t.name || z(r, t);
 };
 function Dn(e) {
   const t = e.getPropertyValue("content");
   return `${e.cssText} content: '${t.replace(/'|"/g, "")}';`;
 }
-function Wn(e, t) {
+function zn(e, t) {
   return $t(t).map((r) => {
     const i = e.getPropertyValue(r), o = e.getPropertyPriority(r);
     return `${r}: ${i}${o ? " !important" : ""};`;
   }).join(" ");
 }
-function zn(e, t, r, i) {
-  const o = `.${e}:${t}`, a = r.cssText ? Dn(r) : Wn(r, i);
+function Wn(e, t, r, i) {
+  const o = `.${e}:${t}`, a = r.cssText ? Dn(r) : zn(r, i);
   return document.createTextNode(`${o}{${a}}`);
 }
 function Pt(e, t, r, i) {
@@ -1871,7 +1871,7 @@ function Pt(e, t, r, i) {
     return;
   }
   const c = document.createElement("style");
-  c.appendChild(zn(s, r, o, i)), t.appendChild(c);
+  c.appendChild(Wn(s, r, o, i)), t.appendChild(c);
 }
 function Mn(e, t, r) {
   Pt(e, t, ":before", r), Pt(e, t, ":after", r);
@@ -1900,13 +1900,13 @@ function Me(e) {
 function $n(e) {
   return e.split(/,/)[1];
 }
-function ze(e) {
+function We(e) {
   return e.search(/^(data:)/) !== -1;
 }
-function Un(e, t) {
+function Bn(e, t) {
   return `data:${t};base64,${e}`;
 }
-async function Bt(e, t, r) {
+async function Ut(e, t, r) {
   const i = await fetch(e, t);
   if (i.status === 404)
     throw new Error(`Resource "${i.url}" not found`);
@@ -1922,26 +1922,26 @@ async function Bt(e, t, r) {
     }, c.readAsDataURL(o);
   });
 }
-const We = {};
-function Bn(e, t, r) {
+const ze = {};
+function Un(e, t, r) {
   let i = e.replace(/\?.*/, "");
   return r && (i = e), /ttf|otf|eot|woff2?/i.test(i) && (i = i.replace(/.*\//, "")), t ? `[${t}]${i}` : i;
 }
 async function Ve(e, t, r) {
-  const i = Bn(e, t, r.includeQueryParams);
-  if (We[i] != null)
-    return We[i];
+  const i = Un(e, t, r.includeQueryParams);
+  if (ze[i] != null)
+    return ze[i];
   r.cacheBust && (e += (/\?/.test(e) ? "&" : "?") + (/* @__PURE__ */ new Date()).getTime());
   let o;
   try {
-    const a = await Bt(e, r.fetchRequestInit, ({ res: s, result: c }) => (t || (t = s.headers.get("Content-Type") || ""), $n(c)));
-    o = Un(a, t);
+    const a = await Ut(e, r.fetchRequestInit, ({ res: s, result: c }) => (t || (t = s.headers.get("Content-Type") || ""), $n(c)));
+    o = Bn(a, t);
   } catch (a) {
     o = r.imagePlaceholder || "";
     let s = `Failed to fetch resource: ${e}`;
     a && (s = typeof a == "string" ? a : a.message), s && console.warn(s);
   }
-  return We[i] = o, o;
+  return ze[i] = o, o;
 }
 async function Nn(e) {
   const t = e.toDataURL();
@@ -1967,7 +1967,7 @@ async function Kn(e, t) {
   return e.cloneNode(!1);
 }
 async function Yn(e, t) {
-  return W(e, HTMLCanvasElement) ? Nn(e) : W(e, HTMLVideoElement) ? qn(e, t) : W(e, HTMLIFrameElement) ? Kn(e, t) : e.cloneNode(Nt(e));
+  return z(e, HTMLCanvasElement) ? Nn(e) : z(e, HTMLVideoElement) ? qn(e, t) : z(e, HTMLIFrameElement) ? Kn(e, t) : e.cloneNode(Nt(e));
 }
 const Xn = (e) => e.tagName != null && e.tagName.toUpperCase() === "SLOT", Nt = (e) => e.tagName != null && e.tagName.toUpperCase() === "SVG";
 async function Gn(e, t, r) {
@@ -1975,7 +1975,7 @@ async function Gn(e, t, r) {
   if (Nt(t))
     return t;
   let a = [];
-  return Xn(e) && e.assignedNodes ? a = q(e.assignedNodes()) : W(e, HTMLIFrameElement) && (!((i = e.contentDocument) === null || i === void 0) && i.body) ? a = q(e.contentDocument.body.childNodes) : a = q(((o = e.shadowRoot) !== null && o !== void 0 ? o : e).childNodes), a.length === 0 || W(e, HTMLVideoElement) || await a.reduce((s, c) => s.then(() => Ee(c, r)).then((l) => {
+  return Xn(e) && e.assignedNodes ? a = q(e.assignedNodes()) : z(e, HTMLIFrameElement) && (!((i = e.contentDocument) === null || i === void 0) && i.body) ? a = q(e.contentDocument.body.childNodes) : a = q(((o = e.shadowRoot) !== null && o !== void 0 ? o : e).childNodes), a.length === 0 || z(e, HTMLVideoElement) || await a.reduce((s, c) => s.then(() => Ee(c, r)).then((l) => {
     l && t.appendChild(l);
   }), Promise.resolve()), t;
 }
@@ -1986,20 +1986,20 @@ function Jn(e, t, r) {
   const o = window.getComputedStyle(e);
   o.cssText ? (i.cssText = o.cssText, i.transformOrigin = o.transformOrigin) : $t(r).forEach((a) => {
     let s = o.getPropertyValue(a);
-    a === "font-size" && s.endsWith("px") && (s = `${Math.floor(parseFloat(s.substring(0, s.length - 2))) - 0.1}px`), W(e, HTMLIFrameElement) && a === "display" && s === "inline" && (s = "block"), a === "d" && t.getAttribute("d") && (s = `path(${t.getAttribute("d")})`), i.setProperty(a, s, o.getPropertyPriority(a));
+    a === "font-size" && s.endsWith("px") && (s = `${Math.floor(parseFloat(s.substring(0, s.length - 2))) - 0.1}px`), z(e, HTMLIFrameElement) && a === "display" && s === "inline" && (s = "block"), a === "d" && t.getAttribute("d") && (s = `path(${t.getAttribute("d")})`), i.setProperty(a, s, o.getPropertyPriority(a));
   });
 }
 function Zn(e, t) {
-  W(e, HTMLTextAreaElement) && (t.innerHTML = e.value), W(e, HTMLInputElement) && t.setAttribute("value", e.value);
+  z(e, HTMLTextAreaElement) && (t.innerHTML = e.value), z(e, HTMLInputElement) && t.setAttribute("value", e.value);
 }
 function Qn(e, t) {
-  if (W(e, HTMLSelectElement)) {
+  if (z(e, HTMLSelectElement)) {
     const i = Array.from(t.children).find((o) => e.value === o.getAttribute("value"));
     i && i.setAttribute("selected", "");
   }
 }
 function ei(e, t, r) {
-  return W(t, Element) && (Jn(e, t, r), Mn(e, t, r), Zn(e, t), Qn(e, t)), t;
+  return z(t, Element) && (Jn(e, t, r), Mn(e, t, r), Zn(e, t), Qn(e, t)), t;
 }
 async function ti(e, t) {
   const r = e.querySelectorAll ? e.querySelectorAll("use") : [];
@@ -2035,7 +2035,7 @@ function ii(e) {
 }
 function oi(e) {
   const t = [];
-  return e.replace(qt, (r, i, o) => (t.push(o), r)), t.filter((r) => !ze(r));
+  return e.replace(qt, (r, i, o) => (t.push(o), r)), t.filter((r) => !We(r));
 }
 async function ai(e, t, r, i, o) {
   try {
@@ -2079,8 +2079,8 @@ async function ci(e, t) {
   await re("background", e, t) || await re("background-image", e, t), await re("mask", e, t) || await re("-webkit-mask", e, t) || await re("mask-image", e, t) || await re("-webkit-mask-image", e, t);
 }
 async function li(e, t) {
-  const r = W(e, HTMLImageElement);
-  if (!(r && !ze(e.src)) && !(W(e, SVGImageElement) && !ze(e.href.baseVal)))
+  const r = z(e, HTMLImageElement);
+  if (!(r && !We(e.src)) && !(z(e, SVGImageElement) && !We(e.href.baseVal)))
     return;
   const i = r ? e.src : e.href.baseVal, o = await Ve(i, Me(i), t);
   await new Promise((a, s) => {
@@ -2100,7 +2100,7 @@ async function ui(e, t) {
   await Promise.all(i).then(() => e);
 }
 async function Xt(e, t) {
-  W(e, Element) && (await ci(e, t), await li(e, t), await ui(e, t));
+  z(e, Element) && (await ci(e, t), await li(e, t), await ui(e, t));
 }
 function fi(e, t) {
   const { style: r } = e;
@@ -2122,7 +2122,7 @@ async function It(e, t) {
   let r = e.cssText;
   const i = /url\(["']?([^"')]+)["']?\)/g, a = (r.match(/url\([^)]+\)/g) || []).map(async (s) => {
     let c = s.replace(i, "$1");
-    return c.startsWith("https://") || (c = new URL(c, e.url).href), Bt(c, t.fetchRequestInit, ({ result: l }) => (r = r.replace(s, `url(${l})`), [s, l]));
+    return c.startsWith("https://") || (c = new URL(c, e.url).href), Ut(c, t.fetchRequestInit, ({ result: l }) => (r = r.replace(s, `url(${l})`), [s, l]));
   });
   return Promise.all(a).then(() => r);
 }
@@ -2233,11 +2233,11 @@ async function pi(e, t) {
   }
 }
 async function vi(e, t = {}) {
-  const { width: r, height: i } = Ut(e, t), o = await Ee(e, t, !0);
+  const { width: r, height: i } = Bt(e, t), o = await Ee(e, t, !0);
   return await pi(o, t), await Xt(o, t), fi(o, t), await Fn(o, r, i);
 }
 async function bi(e, t = {}) {
-  const { width: r, height: i } = Ut(e, t), o = await vi(e, t), a = await Ce(o), s = document.createElement("canvas"), c = s.getContext("2d"), l = t.pixelRatio || Ln(), u = t.canvasWidth || r, d = t.canvasHeight || i;
+  const { width: r, height: i } = Bt(e, t), o = await vi(e, t), a = await Ce(o), s = document.createElement("canvas"), c = s.getContext("2d"), l = t.pixelRatio || Ln(), u = t.canvasWidth || r, d = t.canvasHeight || i;
   return s.width = u * l, s.height = d * l, t.skipAutoScale || An(s), s.style.width = `${u}`, s.style.height = `${d}`, t.backgroundColor && (c.fillStyle = t.backgroundColor, c.fillRect(0, 0, s.width, s.height)), c.drawImage(a, 0, 0, s.width, s.height), s;
 }
 async function yi(e, t = {}) {
@@ -2265,14 +2265,14 @@ function Ei({
     if (!b) return;
     const T = (H) => {
       d.current = (H.touches[0] && H.touches[0].clientX) ?? null;
-    }, U = (H) => {
-      const z = d.current;
-      if (d.current = null, z == null) return;
-      const K = ((H.changedTouches[0] && H.changedTouches[0].clientX) ?? z) - z;
+    }, B = (H) => {
+      const W = d.current;
+      if (d.current = null, W == null) return;
+      const K = ((H.changedTouches[0] && H.changedTouches[0].clientX) ?? W) - W;
       Math.abs(K) < 40 || (K > 0 ? L() : A());
     };
-    return b.addEventListener("touchstart", T, { passive: !0 }), b.addEventListener("touchend", U, { passive: !0 }), () => {
-      b.removeEventListener("touchstart", T), b.removeEventListener("touchend", U);
+    return b.addEventListener("touchstart", T, { passive: !0 }), b.addEventListener("touchend", B, { passive: !0 }), () => {
+      b.removeEventListener("touchstart", T), b.removeEventListener("touchend", B);
     };
   }, [p, _]);
   const F = Rr(() => `${c + 1} / ${g}`, [c, g]);
@@ -2292,10 +2292,10 @@ function Ei({
       b.style.backgroundColor = T;
     }
   }
-  async function B() {
+  async function U() {
     try {
       s(!0);
-      const b = await E(), U = await (await fetch(b)).blob(), H = new File([U], `slide-${c + 1}.png`, {
+      const b = await E(), B = await (await fetch(b)).blob(), H = new File([B], `slide-${c + 1}.png`, {
         type: "image/png"
       });
       if (navigator.share && navigator.canShare && navigator.canShare({ files: [H] })) {
@@ -2306,8 +2306,8 @@ function Ei({
         });
         return;
       }
-      const z = document.createElement("a");
-      z.href = b, z.download = `slide-${c + 1}.png`, document.body.appendChild(z), z.click(), z.remove();
+      const W = document.createElement("a");
+      W.href = b, W.download = `slide-${c + 1}.png`, document.body.appendChild(W), W.click(), W.remove();
     } catch (b) {
       console.error(b), alert("Could not create image. Try again.");
     } finally {
@@ -2330,7 +2330,7 @@ function Ei({
               children: e.map((b, T) => /* @__PURE__ */ m.jsxs(
                 "article",
                 {
-                  ref: (U) => o.current[T] = U,
+                  ref: (B) => o.current[T] = B,
                   className: "w-full shrink-0 p-2 px-4  prose prose-zinc max-w-none flex items-center relative  pt-[36px] pb-[30px] md:p-[26px] ",
                   children: [
                     /* @__PURE__ */ m.jsx(
@@ -2386,7 +2386,7 @@ function Ei({
                 "button",
                 {
                   type: "button",
-                  onClick: B,
+                  onClick: U,
                   disabled: a,
                   className: "rounded-lg border border-zinc-200 px-3 py-1.5 text-sm disabled:opacity-50",
                   children: a ? "Preparing…" : "Export"
@@ -2399,9 +2399,18 @@ function Ei({
     )
   ] });
 }
+function Ri(e, t = 20) {
+  const r = /<hr\s*\/?>|<!--pagebreak-->|<!--\s*page\s*break\s*-->/i;
+  let i = e.split(r).map((a) => a.trim()).filter(Boolean);
+  const o = [];
+  return i.forEach((a) => {
+    a.replace(/<[^>]+>/g, "").split(/\s+/).length < t && o.length > 0 || o.push(a);
+  }), o;
+}
 export {
   Ei as ArticleCarousel,
   Si as ReadModeToggle,
   ki as SocialButtons,
-  _n as WhatsappProgress
+  _n as WhatsappProgress,
+  Ri as splitAndNormalizeSections
 };
