@@ -1,3 +1,4 @@
+import "./index.css";
 // Components
 export { SocialButtons } from "./components/SocialButtons";
 export { ReadModeToggle } from "./components/ReadModeToggle";

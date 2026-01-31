@@ -2,7 +2,6 @@
   "name": "apptastic-ui",
   "version": "1.0.3",
   "private": false,
-  "type": "module",
   "keywords": [
     "gatsby",
     "react",
@@ -44,13 +43,14 @@
     "react-share": "^5.2.2"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
     "@tailwindcss/typography": "^0.5.19",
     "@vitejs/plugin-react": "^5.1.2",
-    "autoprefixer": "^10.4.21",
+    "autoprefixer": "^10.4.23",
     "gatsby-plugin-postcss": "^6.15.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.32",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.16",
+    "tailwindcss": "^4.1.18",
     "vite": "^7.3.1"
   }
 }
