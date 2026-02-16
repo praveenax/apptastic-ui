@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export default function FAQ({ faqs = [] }) {
+export function FAQ({ faqs = [] }) {
   const [openIndex, setOpenIndex] = React.useState(0);
 
   if (!faqs.length) return null;
