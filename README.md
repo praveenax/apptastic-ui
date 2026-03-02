@@ -44,3 +44,65 @@ npm run build
 ```
 
 ---
+
+## Common Sections Extracted
+
+The following reusable sections are now available for cross-site integration:
+
+- `SiteHeader`
+- `HeroSection`
+- `SiteFooter`
+
+They are exported from the package root:
+
+```jsx
+import { SiteHeader, HeroSection, SiteFooter } from "apptastic-ui";
+```
+
+### Link Component Compatibility
+
+Each section supports a `LinkComponent` prop so it can run in Gatsby, React Router, or plain React:
+
+```jsx
+<SiteHeader LinkComponent={Link} />
+<HeroSection LinkComponent={Link} />
+<SiteFooter LinkComponent={Link} />
+```
+
+If omitted, components default to native anchor tags (`<a href="..." />`).
+
+### Minimal Example
+
+```jsx
+<SiteHeader
+	brand={{ name: "Apptastic", logoSrc: "/logo.png", homeHref: "/" }}
+	currentPath={location.pathname}
+	LinkComponent={Link}
+	links={[
+		{ to: "/", label: "Home" },
+		{ to: "/news/", label: "News" },
+		{ label: "Learn", items: [{ to: "/tutorials/", label: "Tutorials" }] },
+	]}
+/>
+
+<HeroSection
+	badgeText="Fresh Daily Coverage"
+	titlePrefix="Read"
+	titleHighlight="AI"
+	titleSuffix="updates"
+	description="Portable hero section for new content sites."
+	primaryCta={{ to: "/news/", label: "Browse Stories" }}
+	secondaryCta={{ to: "/about/", label: "About" }}
+	quickLinks={[{ to: "/tools/", label: "Tools" }]}
+	LinkComponent={Link}
+/>
+
+<SiteFooter
+	brand={{ name: "Apptastic", logoSrc: "/logo.png" }}
+	tagline="Building practical AI products"
+	socialLinks={[{ label: "LinkedIn", href: "https://linkedin.com" }]}
+	companyLinks={[{ to: "/about/", label: "About" }]}
+	onNewsletterSubmit={(email) => console.log(email)}
+	LinkComponent={Link}
+/>
+```

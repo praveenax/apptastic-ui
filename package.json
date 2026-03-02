@@ -1,6 +1,6 @@
 {
   "name": "apptastic-ui",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "private": false,
   "keywords": [
     "gatsby",
@@ -13,7 +13,10 @@
   ],
   "author": "praveenax",
   "license": "ISC",
-  "repository": "praveenax/apptastic-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/praveenax/apptastic-ui.git"
+  },
   "description": "UI Library for Gatsby based Web projects, containing commonly used components for SEO rich sites.",
   "files": [
     "dist"

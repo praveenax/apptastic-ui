@@ -1,81 +1,80 @@
-import * as Sr from "react";
-import zt, { forwardRef as Er, useState as ve, useEffect as be, useRef as pe, useCallback as Rr, useMemo as jr } from "react";
-import "gatsby";
-function Wt(e) {
+import * as Rr from "react";
+import ve, { forwardRef as _r, useState as ne, useEffect as ye, useRef as xe, useCallback as Pr, useMemo as Mt } from "react";
+function $t(e) {
   return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e;
 }
-var me = { exports: {} }, ae = {};
-var ut;
-function _r() {
-  if (ut) return ae;
-  ut = 1;
-  var e = zt, t = /* @__PURE__ */ Symbol.for("react.element"), r = /* @__PURE__ */ Symbol.for("react.fragment"), i = Object.prototype.hasOwnProperty, o = e.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, a = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function s(c, l, u) {
-    var d, g = {}, p = null, j = null;
-    u !== void 0 && (p = "" + u), l.key !== void 0 && (p = "" + l.key), l.ref !== void 0 && (j = l.ref);
-    for (d in l) i.call(l, d) && !a.hasOwnProperty(d) && (g[d] = l[d]);
-    if (c && c.defaultProps) for (d in l = c.defaultProps, l) g[d] === void 0 && (g[d] = l[d]);
-    return { $$typeof: t, type: c, key: p, ref: j, props: g, _owner: o.current };
+var ge = { exports: {} }, se = {};
+var ht;
+function Tr() {
+  if (ht) return se;
+  ht = 1;
+  var e = ve, t = /* @__PURE__ */ Symbol.for("react.element"), r = /* @__PURE__ */ Symbol.for("react.fragment"), n = Object.prototype.hasOwnProperty, o = e.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, a = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function c(l, u, d) {
+    var h, p = {}, m = null, y = null;
+    d !== void 0 && (m = "" + d), u.key !== void 0 && (m = "" + u.key), u.ref !== void 0 && (y = u.ref);
+    for (h in u) n.call(u, h) && !a.hasOwnProperty(h) && (p[h] = u[h]);
+    if (l && l.defaultProps) for (h in u = l.defaultProps, u) p[h] === void 0 && (p[h] = u[h]);
+    return { $$typeof: t, type: l, key: m, ref: y, props: p, _owner: o.current };
   }
-  return ae.Fragment = r, ae.jsx = s, ae.jsxs = s, ae;
+  return se.Fragment = r, se.jsx = c, se.jsxs = c, se;
 }
-var se = {};
-var ft;
-function Pr() {
-  return ft || (ft = 1, process.env.NODE_ENV !== "production" && (function() {
-    var e = zt, t = /* @__PURE__ */ Symbol.for("react.element"), r = /* @__PURE__ */ Symbol.for("react.portal"), i = /* @__PURE__ */ Symbol.for("react.fragment"), o = /* @__PURE__ */ Symbol.for("react.strict_mode"), a = /* @__PURE__ */ Symbol.for("react.profiler"), s = /* @__PURE__ */ Symbol.for("react.provider"), c = /* @__PURE__ */ Symbol.for("react.context"), l = /* @__PURE__ */ Symbol.for("react.forward_ref"), u = /* @__PURE__ */ Symbol.for("react.suspense"), d = /* @__PURE__ */ Symbol.for("react.suspense_list"), g = /* @__PURE__ */ Symbol.for("react.memo"), p = /* @__PURE__ */ Symbol.for("react.lazy"), j = /* @__PURE__ */ Symbol.for("react.offscreen"), _ = Symbol.iterator, L = "@@iterator";
-    function A(n) {
-      if (n === null || typeof n != "object")
+var ce = {};
+var mt;
+function Or() {
+  return mt || (mt = 1, process.env.NODE_ENV !== "production" && (function() {
+    var e = ve, t = /* @__PURE__ */ Symbol.for("react.element"), r = /* @__PURE__ */ Symbol.for("react.portal"), n = /* @__PURE__ */ Symbol.for("react.fragment"), o = /* @__PURE__ */ Symbol.for("react.strict_mode"), a = /* @__PURE__ */ Symbol.for("react.profiler"), c = /* @__PURE__ */ Symbol.for("react.provider"), l = /* @__PURE__ */ Symbol.for("react.context"), u = /* @__PURE__ */ Symbol.for("react.forward_ref"), d = /* @__PURE__ */ Symbol.for("react.suspense"), h = /* @__PURE__ */ Symbol.for("react.suspense_list"), p = /* @__PURE__ */ Symbol.for("react.memo"), m = /* @__PURE__ */ Symbol.for("react.lazy"), y = /* @__PURE__ */ Symbol.for("react.offscreen"), k = Symbol.iterator, C = "@@iterator";
+    function L(i) {
+      if (i === null || typeof i != "object")
         return null;
-      var f = _ && n[_] || n[L];
+      var f = k && i[k] || i[C];
       return typeof f == "function" ? f : null;
     }
-    var F = e.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-    function E(n) {
+    var z = e.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    function R(i) {
       {
-        for (var f = arguments.length, m = new Array(f > 1 ? f - 1 : 0), w = 1; w < f; w++)
-          m[w - 1] = arguments[w];
-        B("error", n, m);
+        for (var f = arguments.length, g = new Array(f > 1 ? f - 1 : 0), w = 1; w < f; w++)
+          g[w - 1] = arguments[w];
+        _("error", i, g);
       }
     }
-    function B(n, f, m) {
+    function _(i, f, g) {
       {
-        var w = F.ReactDebugCurrentFrame, x = w.getStackAddendum();
-        x !== "" && (f += "%s", m = m.concat([x]));
-        var C = m.map(function(y) {
-          return String(y);
+        var w = z.ReactDebugCurrentFrame, j = w.getStackAddendum();
+        j !== "" && (f += "%s", g = g.concat([j]));
+        var E = g.map(function(v) {
+          return String(v);
         });
-        C.unshift("Warning: " + f), Function.prototype.apply.call(console[n], console, C);
+        E.unshift("Warning: " + f), Function.prototype.apply.call(console[i], console, E);
       }
     }
-    var b = !1, T = !1, N = !1, V = !1, W = !1, ne;
-    ne = /* @__PURE__ */ Symbol.for("react.module.reference");
-    function K(n) {
-      return !!(typeof n == "string" || typeof n == "function" || n === i || n === a || W || n === o || n === u || n === d || V || n === j || b || T || N || typeof n == "object" && n !== null && (n.$$typeof === p || n.$$typeof === g || n.$$typeof === s || n.$$typeof === c || n.$$typeof === l || // This needs to include all possible module reference object
+    var x = !1, A = !1, B = !1, H = !1, W = !1, ie;
+    ie = /* @__PURE__ */ Symbol.for("react.module.reference");
+    function K(i) {
+      return !!(typeof i == "string" || typeof i == "function" || i === n || i === a || W || i === o || i === d || i === h || H || i === y || x || A || B || typeof i == "object" && i !== null && (i.$$typeof === m || i.$$typeof === p || i.$$typeof === c || i.$$typeof === l || i.$$typeof === u || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
-      n.$$typeof === ne || n.getModuleId !== void 0));
+      i.$$typeof === ie || i.getModuleId !== void 0));
     }
-    function le(n, f, m) {
-      var w = n.displayName;
+    function ue(i, f, g) {
+      var w = i.displayName;
       if (w)
         return w;
-      var x = f.displayName || f.name || "";
-      return x !== "" ? m + "(" + x + ")" : m;
+      var j = f.displayName || f.name || "";
+      return j !== "" ? g + "(" + j + ")" : g;
     }
-    function Y(n) {
-      return n.displayName || "Context";
+    function Y(i) {
+      return i.displayName || "Context";
     }
-    function U(n) {
-      if (n == null)
+    function U(i) {
+      if (i == null)
         return null;
-      if (typeof n.tag == "number" && E("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof n == "function")
-        return n.displayName || n.name || null;
-      if (typeof n == "string")
-        return n;
-      switch (n) {
-        case i:
+      if (typeof i.tag == "number" && R("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof i == "function")
+        return i.displayName || i.name || null;
+      if (typeof i == "string")
+        return i;
+      switch (i) {
+        case n:
           return "Fragment";
         case r:
           return "Portal";
@@ -83,28 +82,28 @@ function Pr() {
           return "Profiler";
         case o:
           return "StrictMode";
-        case u:
-          return "Suspense";
         case d:
+          return "Suspense";
+        case h:
           return "SuspenseList";
       }
-      if (typeof n == "object")
-        switch (n.$$typeof) {
-          case c:
-            var f = n;
-            return Y(f) + ".Consumer";
-          case s:
-            var m = n;
-            return Y(m._context) + ".Provider";
+      if (typeof i == "object")
+        switch (i.$$typeof) {
           case l:
-            return le(n, n.render, "ForwardRef");
-          case g:
-            var w = n.displayName || null;
-            return w !== null ? w : U(n.type) || "Memo";
-          case p: {
-            var x = n, C = x._payload, y = x._init;
+            var f = i;
+            return Y(f) + ".Consumer";
+          case c:
+            var g = i;
+            return Y(g._context) + ".Provider";
+          case u:
+            return ue(i, i.render, "ForwardRef");
+          case p:
+            var w = i.displayName || null;
+            return w !== null ? w : U(i.type) || "Memo";
+          case m: {
+            var j = i, E = j._payload, v = j._init;
             try {
-              return U(y(C));
+              return U(v(E));
             } catch {
               return null;
             }
@@ -112,522 +111,522 @@ function Pr() {
         }
       return null;
     }
-    var X = Object.assign, ie = 0, Ve, He, Ne, Be, Ue, qe, Ke;
-    function Ye() {
+    var X = Object.assign, ae = 0, Be, Ue, qe, Ke, Ye, Xe, Ge;
+    function Je() {
     }
-    Ye.__reactDisabledLog = !0;
-    function Jt() {
+    Je.__reactDisabledLog = !0;
+    function er() {
       {
-        if (ie === 0) {
-          Ve = console.log, He = console.info, Ne = console.warn, Be = console.error, Ue = console.group, qe = console.groupCollapsed, Ke = console.groupEnd;
-          var n = {
+        if (ae === 0) {
+          Be = console.log, Ue = console.info, qe = console.warn, Ke = console.error, Ye = console.group, Xe = console.groupCollapsed, Ge = console.groupEnd;
+          var i = {
             configurable: !0,
             enumerable: !0,
-            value: Ye,
+            value: Je,
             writable: !0
           };
           Object.defineProperties(console, {
-            info: n,
-            log: n,
-            warn: n,
-            error: n,
-            group: n,
-            groupCollapsed: n,
-            groupEnd: n
+            info: i,
+            log: i,
+            warn: i,
+            error: i,
+            group: i,
+            groupCollapsed: i,
+            groupEnd: i
           });
         }
-        ie++;
+        ae++;
       }
     }
-    function Qt() {
+    function tr() {
       {
-        if (ie--, ie === 0) {
-          var n = {
+        if (ae--, ae === 0) {
+          var i = {
             configurable: !0,
             enumerable: !0,
             writable: !0
           };
           Object.defineProperties(console, {
-            log: X({}, n, {
-              value: Ve
-            }),
-            info: X({}, n, {
-              value: He
-            }),
-            warn: X({}, n, {
-              value: Ne
-            }),
-            error: X({}, n, {
+            log: X({}, i, {
               value: Be
             }),
-            group: X({}, n, {
+            info: X({}, i, {
               value: Ue
             }),
-            groupCollapsed: X({}, n, {
+            warn: X({}, i, {
               value: qe
             }),
-            groupEnd: X({}, n, {
+            error: X({}, i, {
               value: Ke
+            }),
+            group: X({}, i, {
+              value: Ye
+            }),
+            groupCollapsed: X({}, i, {
+              value: Xe
+            }),
+            groupEnd: X({}, i, {
+              value: Ge
             })
           });
         }
-        ie < 0 && E("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+        ae < 0 && R("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
       }
     }
-    var Re = F.ReactCurrentDispatcher, je;
-    function ue(n, f, m) {
+    var _e = z.ReactCurrentDispatcher, Pe;
+    function de(i, f, g) {
       {
-        if (je === void 0)
+        if (Pe === void 0)
           try {
             throw Error();
-          } catch (x) {
-            var w = x.stack.trim().match(/\n( *(at )?)/);
-            je = w && w[1] || "";
+          } catch (j) {
+            var w = j.stack.trim().match(/\n( *(at )?)/);
+            Pe = w && w[1] || "";
           }
         return `
-` + je + n;
+` + Pe + i;
       }
     }
-    var _e = !1, fe;
+    var Te = !1, fe;
     {
-      var Zt = typeof WeakMap == "function" ? WeakMap : Map;
-      fe = new Zt();
+      var rr = typeof WeakMap == "function" ? WeakMap : Map;
+      fe = new rr();
     }
-    function Xe(n, f) {
-      if (!n || _e)
+    function Qe(i, f) {
+      if (!i || Te)
         return "";
       {
-        var m = fe.get(n);
-        if (m !== void 0)
-          return m;
+        var g = fe.get(i);
+        if (g !== void 0)
+          return g;
       }
       var w;
-      _e = !0;
-      var x = Error.prepareStackTrace;
+      Te = !0;
+      var j = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
-      var C;
-      C = Re.current, Re.current = null, Jt();
+      var E;
+      E = _e.current, _e.current = null, er();
       try {
         if (f) {
-          var y = function() {
+          var v = function() {
             throw Error();
           };
-          if (Object.defineProperty(y.prototype, "props", {
+          if (Object.defineProperty(v.prototype, "props", {
             set: function() {
               throw Error();
             }
           }), typeof Reflect == "object" && Reflect.construct) {
             try {
-              Reflect.construct(y, []);
-            } catch (D) {
-              w = D;
+              Reflect.construct(v, []);
+            } catch (F) {
+              w = F;
             }
-            Reflect.construct(n, [], y);
+            Reflect.construct(i, [], v);
           } else {
             try {
-              y.call();
-            } catch (D) {
-              w = D;
+              v.call();
+            } catch (F) {
+              w = F;
             }
-            n.call(y.prototype);
+            i.call(v.prototype);
           }
         } else {
           try {
             throw Error();
-          } catch (D) {
-            w = D;
+          } catch (F) {
+            w = F;
           }
-          n();
+          i();
         }
-      } catch (D) {
-        if (D && w && typeof D.stack == "string") {
-          for (var v = D.stack.split(`
+      } catch (F) {
+        if (F && w && typeof F.stack == "string") {
+          for (var b = F.stack.split(`
 `), I = w.stack.split(`
-`), P = v.length - 1, O = I.length - 1; P >= 1 && O >= 0 && v[P] !== I[O]; )
-            O--;
-          for (; P >= 1 && O >= 0; P--, O--)
-            if (v[P] !== I[O]) {
-              if (P !== 1 || O !== 1)
+`), O = b.length - 1, N = I.length - 1; O >= 1 && N >= 0 && b[O] !== I[N]; )
+            N--;
+          for (; O >= 1 && N >= 0; O--, N--)
+            if (b[O] !== I[N]) {
+              if (O !== 1 || N !== 1)
                 do
-                  if (P--, O--, O < 0 || v[P] !== I[O]) {
-                    var H = `
-` + v[P].replace(" at new ", " at ");
-                    return n.displayName && H.includes("<anonymous>") && (H = H.replace("<anonymous>", n.displayName)), typeof n == "function" && fe.set(n, H), H;
+                  if (O--, N--, N < 0 || b[O] !== I[N]) {
+                    var V = `
+` + b[O].replace(" at new ", " at ");
+                    return i.displayName && V.includes("<anonymous>") && (V = V.replace("<anonymous>", i.displayName)), typeof i == "function" && fe.set(i, V), V;
                   }
-                while (P >= 1 && O >= 0);
+                while (O >= 1 && N >= 0);
               break;
             }
         }
       } finally {
-        _e = !1, Re.current = C, Qt(), Error.prepareStackTrace = x;
+        Te = !1, _e.current = E, tr(), Error.prepareStackTrace = j;
       }
-      var ee = n ? n.displayName || n.name : "", G = ee ? ue(ee) : "";
-      return typeof n == "function" && fe.set(n, G), G;
+      var ee = i ? i.displayName || i.name : "", G = ee ? de(ee) : "";
+      return typeof i == "function" && fe.set(i, G), G;
     }
-    function er(n, f, m) {
-      return Xe(n, !1);
+    function nr(i, f, g) {
+      return Qe(i, !1);
     }
-    function tr(n) {
-      var f = n.prototype;
+    function ir(i) {
+      var f = i.prototype;
       return !!(f && f.isReactComponent);
     }
-    function de(n, f, m) {
-      if (n == null)
+    function he(i, f, g) {
+      if (i == null)
         return "";
-      if (typeof n == "function")
-        return Xe(n, tr(n));
-      if (typeof n == "string")
-        return ue(n);
-      switch (n) {
-        case u:
-          return ue("Suspense");
+      if (typeof i == "function")
+        return Qe(i, ir(i));
+      if (typeof i == "string")
+        return de(i);
+      switch (i) {
         case d:
-          return ue("SuspenseList");
+          return de("Suspense");
+        case h:
+          return de("SuspenseList");
       }
-      if (typeof n == "object")
-        switch (n.$$typeof) {
-          case l:
-            return er(n.render);
-          case g:
-            return de(n.type, f, m);
-          case p: {
-            var w = n, x = w._payload, C = w._init;
+      if (typeof i == "object")
+        switch (i.$$typeof) {
+          case u:
+            return nr(i.render);
+          case p:
+            return he(i.type, f, g);
+          case m: {
+            var w = i, j = w._payload, E = w._init;
             try {
-              return de(C(x), f, m);
+              return he(E(j), f, g);
             } catch {
             }
           }
         }
       return "";
     }
-    var oe = Object.prototype.hasOwnProperty, Ge = {}, Je = F.ReactDebugCurrentFrame;
-    function he(n) {
-      if (n) {
-        var f = n._owner, m = de(n.type, n._source, f ? f.type : null);
-        Je.setExtraStackFrame(m);
+    var oe = Object.prototype.hasOwnProperty, Ze = {}, et = z.ReactDebugCurrentFrame;
+    function me(i) {
+      if (i) {
+        var f = i._owner, g = he(i.type, i._source, f ? f.type : null);
+        et.setExtraStackFrame(g);
       } else
-        Je.setExtraStackFrame(null);
+        et.setExtraStackFrame(null);
     }
-    function rr(n, f, m, w, x) {
+    function ar(i, f, g, w, j) {
       {
-        var C = Function.call.bind(oe);
-        for (var y in n)
-          if (C(n, y)) {
-            var v = void 0;
+        var E = Function.call.bind(oe);
+        for (var v in i)
+          if (E(i, v)) {
+            var b = void 0;
             try {
-              if (typeof n[y] != "function") {
-                var I = Error((w || "React class") + ": " + m + " type `" + y + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof n[y] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+              if (typeof i[v] != "function") {
+                var I = Error((w || "React class") + ": " + g + " type `" + v + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof i[v] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
                 throw I.name = "Invariant Violation", I;
               }
-              v = n[y](f, y, w, m, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
-            } catch (P) {
-              v = P;
+              b = i[v](f, v, w, g, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+            } catch (O) {
+              b = O;
             }
-            v && !(v instanceof Error) && (he(x), E("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", w || "React class", m, y, typeof v), he(null)), v instanceof Error && !(v.message in Ge) && (Ge[v.message] = !0, he(x), E("Failed %s type: %s", m, v.message), he(null));
+            b && !(b instanceof Error) && (me(j), R("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", w || "React class", g, v, typeof b), me(null)), b instanceof Error && !(b.message in Ze) && (Ze[b.message] = !0, me(j), R("Failed %s type: %s", g, b.message), me(null));
           }
       }
     }
-    var nr = Array.isArray;
-    function Pe(n) {
-      return nr(n);
+    var or = Array.isArray;
+    function Oe(i) {
+      return or(i);
     }
-    function ir(n) {
+    function sr(i) {
       {
-        var f = typeof Symbol == "function" && Symbol.toStringTag, m = f && n[Symbol.toStringTag] || n.constructor.name || "Object";
-        return m;
+        var f = typeof Symbol == "function" && Symbol.toStringTag, g = f && i[Symbol.toStringTag] || i.constructor.name || "Object";
+        return g;
       }
     }
-    function or(n) {
+    function cr(i) {
       try {
-        return Qe(n), !1;
+        return tt(i), !1;
       } catch {
         return !0;
       }
     }
-    function Qe(n) {
-      return "" + n;
+    function tt(i) {
+      return "" + i;
     }
-    function Ze(n) {
-      if (or(n))
-        return E("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", ir(n)), Qe(n);
+    function rt(i) {
+      if (cr(i))
+        return R("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", sr(i)), tt(i);
     }
-    var et = F.ReactCurrentOwner, ar = {
+    var nt = z.ReactCurrentOwner, lr = {
       key: !0,
       ref: !0,
       __self: !0,
       __source: !0
-    }, tt, rt;
-    function sr(n) {
-      if (oe.call(n, "ref")) {
-        var f = Object.getOwnPropertyDescriptor(n, "ref").get;
+    }, it, at;
+    function ur(i) {
+      if (oe.call(i, "ref")) {
+        var f = Object.getOwnPropertyDescriptor(i, "ref").get;
         if (f && f.isReactWarning)
           return !1;
       }
-      return n.ref !== void 0;
+      return i.ref !== void 0;
     }
-    function cr(n) {
-      if (oe.call(n, "key")) {
-        var f = Object.getOwnPropertyDescriptor(n, "key").get;
+    function dr(i) {
+      if (oe.call(i, "key")) {
+        var f = Object.getOwnPropertyDescriptor(i, "key").get;
         if (f && f.isReactWarning)
           return !1;
       }
-      return n.key !== void 0;
+      return i.key !== void 0;
     }
-    function lr(n, f) {
-      typeof n.ref == "string" && et.current;
+    function fr(i, f) {
+      typeof i.ref == "string" && nt.current;
     }
-    function ur(n, f) {
+    function hr(i, f) {
       {
-        var m = function() {
-          tt || (tt = !0, E("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", f));
+        var g = function() {
+          it || (it = !0, R("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", f));
         };
-        m.isReactWarning = !0, Object.defineProperty(n, "key", {
-          get: m,
+        g.isReactWarning = !0, Object.defineProperty(i, "key", {
+          get: g,
           configurable: !0
         });
       }
     }
-    function fr(n, f) {
+    function mr(i, f) {
       {
-        var m = function() {
-          rt || (rt = !0, E("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", f));
+        var g = function() {
+          at || (at = !0, R("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", f));
         };
-        m.isReactWarning = !0, Object.defineProperty(n, "ref", {
-          get: m,
+        g.isReactWarning = !0, Object.defineProperty(i, "ref", {
+          get: g,
           configurable: !0
         });
       }
     }
-    var dr = function(n, f, m, w, x, C, y) {
-      var v = {
+    var gr = function(i, f, g, w, j, E, v) {
+      var b = {
         // This tag allows us to uniquely identify this as a React Element
         $$typeof: t,
         // Built-in properties that belong on the element
-        type: n,
+        type: i,
         key: f,
-        ref: m,
-        props: y,
+        ref: g,
+        props: v,
         // Record the component responsible for creating this element.
-        _owner: C
+        _owner: E
       };
-      return v._store = {}, Object.defineProperty(v._store, "validated", {
+      return b._store = {}, Object.defineProperty(b._store, "validated", {
         configurable: !1,
         enumerable: !1,
         writable: !0,
         value: !1
-      }), Object.defineProperty(v, "_self", {
+      }), Object.defineProperty(b, "_self", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
         value: w
-      }), Object.defineProperty(v, "_source", {
+      }), Object.defineProperty(b, "_source", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: x
-      }), Object.freeze && (Object.freeze(v.props), Object.freeze(v)), v;
+        value: j
+      }), Object.freeze && (Object.freeze(b.props), Object.freeze(b)), b;
     };
-    function hr(n, f, m, w, x) {
+    function pr(i, f, g, w, j) {
       {
-        var C, y = {}, v = null, I = null;
-        m !== void 0 && (Ze(m), v = "" + m), cr(f) && (Ze(f.key), v = "" + f.key), sr(f) && (I = f.ref, lr(f, x));
-        for (C in f)
-          oe.call(f, C) && !ar.hasOwnProperty(C) && (y[C] = f[C]);
-        if (n && n.defaultProps) {
-          var P = n.defaultProps;
-          for (C in P)
-            y[C] === void 0 && (y[C] = P[C]);
+        var E, v = {}, b = null, I = null;
+        g !== void 0 && (rt(g), b = "" + g), dr(f) && (rt(f.key), b = "" + f.key), ur(f) && (I = f.ref, fr(f, j));
+        for (E in f)
+          oe.call(f, E) && !lr.hasOwnProperty(E) && (v[E] = f[E]);
+        if (i && i.defaultProps) {
+          var O = i.defaultProps;
+          for (E in O)
+            v[E] === void 0 && (v[E] = O[E]);
         }
-        if (v || I) {
-          var O = typeof n == "function" ? n.displayName || n.name || "Unknown" : n;
-          v && ur(y, O), I && fr(y, O);
+        if (b || I) {
+          var N = typeof i == "function" ? i.displayName || i.name || "Unknown" : i;
+          b && hr(v, N), I && mr(v, N);
         }
-        return dr(n, v, I, x, w, et.current, y);
+        return gr(i, b, I, j, w, nt.current, v);
       }
     }
-    var Te = F.ReactCurrentOwner, nt = F.ReactDebugCurrentFrame;
-    function Z(n) {
-      if (n) {
-        var f = n._owner, m = de(n.type, n._source, f ? f.type : null);
-        nt.setExtraStackFrame(m);
+    var ze = z.ReactCurrentOwner, ot = z.ReactDebugCurrentFrame;
+    function Z(i) {
+      if (i) {
+        var f = i._owner, g = he(i.type, i._source, f ? f.type : null);
+        ot.setExtraStackFrame(g);
       } else
-        nt.setExtraStackFrame(null);
+        ot.setExtraStackFrame(null);
     }
-    var Oe;
-    Oe = !1;
-    function Le(n) {
-      return typeof n == "object" && n !== null && n.$$typeof === t;
+    var Ae;
+    Ae = !1;
+    function Ne(i) {
+      return typeof i == "object" && i !== null && i.$$typeof === t;
     }
-    function it() {
+    function st() {
       {
-        if (Te.current) {
-          var n = U(Te.current.type);
-          if (n)
+        if (ze.current) {
+          var i = U(ze.current.type);
+          if (i)
             return `
 
-Check the render method of \`` + n + "`.";
+Check the render method of \`` + i + "`.";
         }
         return "";
       }
     }
-    function mr(n) {
+    function wr(i) {
       return "";
     }
-    var ot = {};
-    function gr(n) {
+    var ct = {};
+    function br(i) {
       {
-        var f = it();
+        var f = st();
         if (!f) {
-          var m = typeof n == "string" ? n : n.displayName || n.name;
-          m && (f = `
+          var g = typeof i == "string" ? i : i.displayName || i.name;
+          g && (f = `
 
-Check the top-level render call using <` + m + ">.");
+Check the top-level render call using <` + g + ">.");
         }
         return f;
       }
     }
-    function at(n, f) {
+    function lt(i, f) {
       {
-        if (!n._store || n._store.validated || n.key != null)
+        if (!i._store || i._store.validated || i.key != null)
           return;
-        n._store.validated = !0;
-        var m = gr(f);
-        if (ot[m])
+        i._store.validated = !0;
+        var g = br(f);
+        if (ct[g])
           return;
-        ot[m] = !0;
+        ct[g] = !0;
         var w = "";
-        n && n._owner && n._owner !== Te.current && (w = " It was passed a child from " + U(n._owner.type) + "."), Z(n), E('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', m, w), Z(null);
+        i && i._owner && i._owner !== ze.current && (w = " It was passed a child from " + U(i._owner.type) + "."), Z(i), R('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', g, w), Z(null);
       }
     }
-    function st(n, f) {
+    function ut(i, f) {
       {
-        if (typeof n != "object")
+        if (typeof i != "object")
           return;
-        if (Pe(n))
-          for (var m = 0; m < n.length; m++) {
-            var w = n[m];
-            Le(w) && at(w, f);
+        if (Oe(i))
+          for (var g = 0; g < i.length; g++) {
+            var w = i[g];
+            Ne(w) && lt(w, f);
           }
-        else if (Le(n))
-          n._store && (n._store.validated = !0);
-        else if (n) {
-          var x = A(n);
-          if (typeof x == "function" && x !== n.entries)
-            for (var C = x.call(n), y; !(y = C.next()).done; )
-              Le(y.value) && at(y.value, f);
+        else if (Ne(i))
+          i._store && (i._store.validated = !0);
+        else if (i) {
+          var j = L(i);
+          if (typeof j == "function" && j !== i.entries)
+            for (var E = j.call(i), v; !(v = E.next()).done; )
+              Ne(v.value) && lt(v.value, f);
         }
       }
     }
-    function wr(n) {
+    function xr(i) {
       {
-        var f = n.type;
+        var f = i.type;
         if (f == null || typeof f == "string")
           return;
-        var m;
+        var g;
         if (typeof f == "function")
-          m = f.propTypes;
-        else if (typeof f == "object" && (f.$$typeof === l || // Note: Memo only checks outer props here.
+          g = f.propTypes;
+        else if (typeof f == "object" && (f.$$typeof === u || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
-        f.$$typeof === g))
-          m = f.propTypes;
+        f.$$typeof === p))
+          g = f.propTypes;
         else
           return;
-        if (m) {
+        if (g) {
           var w = U(f);
-          rr(m, n.props, "prop", w, n);
-        } else if (f.PropTypes !== void 0 && !Oe) {
-          Oe = !0;
-          var x = U(f);
-          E("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", x || "Unknown");
+          ar(g, i.props, "prop", w, i);
+        } else if (f.PropTypes !== void 0 && !Ae) {
+          Ae = !0;
+          var j = U(f);
+          R("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", j || "Unknown");
         }
-        typeof f.getDefaultProps == "function" && !f.getDefaultProps.isReactClassApproved && E("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+        typeof f.getDefaultProps == "function" && !f.getDefaultProps.isReactClassApproved && R("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
       }
     }
-    function pr(n) {
+    function vr(i) {
       {
-        for (var f = Object.keys(n.props), m = 0; m < f.length; m++) {
-          var w = f[m];
+        for (var f = Object.keys(i.props), g = 0; g < f.length; g++) {
+          var w = f[g];
           if (w !== "children" && w !== "key") {
-            Z(n), E("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", w), Z(null);
+            Z(i), R("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", w), Z(null);
             break;
           }
         }
-        n.ref !== null && (Z(n), E("Invalid attribute `ref` supplied to `React.Fragment`."), Z(null));
+        i.ref !== null && (Z(i), R("Invalid attribute `ref` supplied to `React.Fragment`."), Z(null));
       }
     }
-    var ct = {};
-    function lt(n, f, m, w, x, C) {
+    var dt = {};
+    function ft(i, f, g, w, j, E) {
       {
-        var y = K(n);
-        if (!y) {
-          var v = "";
-          (n === void 0 || typeof n == "object" && n !== null && Object.keys(n).length === 0) && (v += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
-          var I = mr();
-          I ? v += I : v += it();
-          var P;
-          n === null ? P = "null" : Pe(n) ? P = "array" : n !== void 0 && n.$$typeof === t ? (P = "<" + (U(n.type) || "Unknown") + " />", v = " Did you accidentally export a JSX literal instead of a component?") : P = typeof n, E("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", P, v);
+        var v = K(i);
+        if (!v) {
+          var b = "";
+          (i === void 0 || typeof i == "object" && i !== null && Object.keys(i).length === 0) && (b += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
+          var I = wr();
+          I ? b += I : b += st();
+          var O;
+          i === null ? O = "null" : Oe(i) ? O = "array" : i !== void 0 && i.$$typeof === t ? (O = "<" + (U(i.type) || "Unknown") + " />", b = " Did you accidentally export a JSX literal instead of a component?") : O = typeof i, R("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", O, b);
         }
-        var O = hr(n, f, m, x, C);
-        if (O == null)
-          return O;
-        if (y) {
-          var H = f.children;
-          if (H !== void 0)
+        var N = pr(i, f, g, j, E);
+        if (N == null)
+          return N;
+        if (v) {
+          var V = f.children;
+          if (V !== void 0)
             if (w)
-              if (Pe(H)) {
-                for (var ee = 0; ee < H.length; ee++)
-                  st(H[ee], n);
-                Object.freeze && Object.freeze(H);
+              if (Oe(V)) {
+                for (var ee = 0; ee < V.length; ee++)
+                  ut(V[ee], i);
+                Object.freeze && Object.freeze(V);
               } else
-                E("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+                R("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              st(H, n);
+              ut(V, i);
         }
         if (oe.call(f, "key")) {
-          var G = U(n), D = Object.keys(f).filter(function(Cr) {
-            return Cr !== "key";
-          }), Ae = D.length > 0 ? "{key: someKey, " + D.join(": ..., ") + ": ...}" : "{key: someKey}";
-          if (!ct[G + Ae]) {
-            var kr = D.length > 0 ? "{" + D.join(": ..., ") + ": ...}" : "{}";
-            E(`A props object containing a "key" prop is being spread into JSX:
+          var G = U(i), F = Object.keys(f).filter(function(Er) {
+            return Er !== "key";
+          }), Le = F.length > 0 ? "{key: someKey, " + F.join(": ..., ") + ": ...}" : "{key: someKey}";
+          if (!dt[G + Le]) {
+            var Cr = F.length > 0 ? "{" + F.join(": ..., ") + ": ...}" : "{}";
+            R(`A props object containing a "key" prop is being spread into JSX:
   let props = %s;
   <%s {...props} />
 React keys must be passed directly to JSX without using spread:
   let props = %s;
-  <%s key={someKey} {...props} />`, Ae, G, kr, G), ct[G + Ae] = !0;
+  <%s key={someKey} {...props} />`, Le, G, Cr, G), dt[G + Le] = !0;
           }
         }
-        return n === i ? pr(O) : wr(O), O;
+        return i === n ? vr(N) : xr(N), N;
       }
     }
-    function vr(n, f, m) {
-      return lt(n, f, m, !0);
+    function yr(i, f, g) {
+      return ft(i, f, g, !0);
     }
-    function br(n, f, m) {
-      return lt(n, f, m, !1);
+    function kr(i, f, g) {
+      return ft(i, f, g, !1);
     }
-    var yr = br, xr = vr;
-    se.Fragment = i, se.jsx = yr, se.jsxs = xr;
-  })()), se;
+    var jr = kr, Sr = yr;
+    ce.Fragment = n, ce.jsx = jr, ce.jsxs = Sr;
+  })()), ce;
 }
-var dt;
-function Tr() {
-  return dt || (dt = 1, process.env.NODE_ENV === "production" ? me.exports = _r() : me.exports = Pr()), me.exports;
+var gt;
+function zr() {
+  return gt || (gt = 1, process.env.NODE_ENV === "production" ? ge.exports = Tr() : ge.exports = Or()), ge.exports;
 }
-var h = Tr(), Ie = { exports: {} };
-var ht;
-function Or() {
-  return ht || (ht = 1, (function(e) {
+var s = zr(), Ie = { exports: {} };
+var pt;
+function Ar() {
+  return pt || (pt = 1, (function(e) {
     (function() {
       var t = {}.hasOwnProperty;
       function r() {
-        for (var a = "", s = 0; s < arguments.length; s++) {
-          var c = arguments[s];
-          c && (a = o(a, i(c)));
+        for (var a = "", c = 0; c < arguments.length; c++) {
+          var l = arguments[c];
+          l && (a = o(a, n(l)));
         }
         return a;
       }
-      function i(a) {
+      function n(a) {
         if (typeof a == "string" || typeof a == "number")
           return a;
         if (typeof a != "object")
@@ -636,159 +635,159 @@ function Or() {
           return r.apply(null, a);
         if (a.toString !== Object.prototype.toString && !a.toString.toString().includes("[native code]"))
           return a.toString();
-        var s = "";
-        for (var c in a)
-          t.call(a, c) && a[c] && (s = o(s, c));
-        return s;
+        var c = "";
+        for (var l in a)
+          t.call(a, l) && a[l] && (c = o(c, l));
+        return c;
       }
-      function o(a, s) {
-        return s ? a ? a + " " + s : a + s : a;
+      function o(a, c) {
+        return c ? a ? a + " " + c : a + c : a;
       }
       e.exports ? (r.default = r, e.exports = r) : window.classNames = r;
     })();
   })(Ie)), Ie.exports;
 }
-var Lr = Or();
-const Mt = /* @__PURE__ */ Wt(Lr);
-var ge = { exports: {} }, we = { exports: {} }, Fe, mt;
-function Ar() {
-  if (mt) return Fe;
-  mt = 1;
-  var e = 1e3, t = e * 60, r = t * 60, i = r * 24, o = i * 365.25;
-  Fe = function(u, d) {
-    d = d || {};
-    var g = typeof u;
-    if (g === "string" && u.length > 0)
-      return a(u);
-    if (g === "number" && isNaN(u) === !1)
-      return d.long ? c(u) : s(u);
+var Nr = Ar();
+const Ht = /* @__PURE__ */ $t(Nr);
+var pe = { exports: {} }, we = { exports: {} }, Fe, wt;
+function Lr() {
+  if (wt) return Fe;
+  wt = 1;
+  var e = 1e3, t = e * 60, r = t * 60, n = r * 24, o = n * 365.25;
+  Fe = function(d, h) {
+    h = h || {};
+    var p = typeof d;
+    if (p === "string" && d.length > 0)
+      return a(d);
+    if (p === "number" && isNaN(d) === !1)
+      return h.long ? l(d) : c(d);
     throw new Error(
-      "val is not a non-empty string or a valid number. val=" + JSON.stringify(u)
+      "val is not a non-empty string or a valid number. val=" + JSON.stringify(d)
     );
   };
-  function a(u) {
-    if (u = String(u), !(u.length > 100)) {
-      var d = /^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(
-        u
+  function a(d) {
+    if (d = String(d), !(d.length > 100)) {
+      var h = /^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(
+        d
       );
-      if (d) {
-        var g = parseFloat(d[1]), p = (d[2] || "ms").toLowerCase();
-        switch (p) {
+      if (h) {
+        var p = parseFloat(h[1]), m = (h[2] || "ms").toLowerCase();
+        switch (m) {
           case "years":
           case "year":
           case "yrs":
           case "yr":
           case "y":
-            return g * o;
+            return p * o;
           case "days":
           case "day":
           case "d":
-            return g * i;
+            return p * n;
           case "hours":
           case "hour":
           case "hrs":
           case "hr":
           case "h":
-            return g * r;
+            return p * r;
           case "minutes":
           case "minute":
           case "mins":
           case "min":
           case "m":
-            return g * t;
+            return p * t;
           case "seconds":
           case "second":
           case "secs":
           case "sec":
           case "s":
-            return g * e;
+            return p * e;
           case "milliseconds":
           case "millisecond":
           case "msecs":
           case "msec":
           case "ms":
-            return g;
+            return p;
           default:
             return;
         }
       }
     }
   }
-  function s(u) {
-    return u >= i ? Math.round(u / i) + "d" : u >= r ? Math.round(u / r) + "h" : u >= t ? Math.round(u / t) + "m" : u >= e ? Math.round(u / e) + "s" : u + "ms";
+  function c(d) {
+    return d >= n ? Math.round(d / n) + "d" : d >= r ? Math.round(d / r) + "h" : d >= t ? Math.round(d / t) + "m" : d >= e ? Math.round(d / e) + "s" : d + "ms";
   }
-  function c(u) {
-    return l(u, i, "day") || l(u, r, "hour") || l(u, t, "minute") || l(u, e, "second") || u + " ms";
+  function l(d) {
+    return u(d, n, "day") || u(d, r, "hour") || u(d, t, "minute") || u(d, e, "second") || d + " ms";
   }
-  function l(u, d, g) {
-    if (!(u < d))
-      return u < d * 1.5 ? Math.floor(u / d) + " " + g : Math.ceil(u / d) + " " + g + "s";
+  function u(d, h, p) {
+    if (!(d < h))
+      return d < h * 1.5 ? Math.floor(d / h) + " " + p : Math.ceil(d / h) + " " + p + "s";
   }
   return Fe;
 }
-var gt;
+var bt;
 function Ir() {
-  return gt || (gt = 1, (function(e, t) {
-    t = e.exports = o.debug = o.default = o, t.coerce = l, t.disable = s, t.enable = a, t.enabled = c, t.humanize = Ar(), t.names = [], t.skips = [], t.formatters = {};
+  return bt || (bt = 1, (function(e, t) {
+    t = e.exports = o.debug = o.default = o, t.coerce = u, t.disable = c, t.enable = a, t.enabled = l, t.humanize = Lr(), t.names = [], t.skips = [], t.formatters = {};
     var r;
-    function i(u) {
-      var d = 0, g;
-      for (g in u)
-        d = (d << 5) - d + u.charCodeAt(g), d |= 0;
-      return t.colors[Math.abs(d) % t.colors.length];
+    function n(d) {
+      var h = 0, p;
+      for (p in d)
+        h = (h << 5) - h + d.charCodeAt(p), h |= 0;
+      return t.colors[Math.abs(h) % t.colors.length];
     }
-    function o(u) {
-      function d() {
-        if (d.enabled) {
-          var g = d, p = +/* @__PURE__ */ new Date(), j = p - (r || p);
-          g.diff = j, g.prev = r, g.curr = p, r = p;
-          for (var _ = new Array(arguments.length), L = 0; L < _.length; L++)
-            _[L] = arguments[L];
-          _[0] = t.coerce(_[0]), typeof _[0] != "string" && _.unshift("%O");
-          var A = 0;
-          _[0] = _[0].replace(/%([a-zA-Z%])/g, function(E, B) {
-            if (E === "%%") return E;
-            A++;
-            var b = t.formatters[B];
-            if (typeof b == "function") {
-              var T = _[A];
-              E = b.call(g, T), _.splice(A, 1), A--;
+    function o(d) {
+      function h() {
+        if (h.enabled) {
+          var p = h, m = +/* @__PURE__ */ new Date(), y = m - (r || m);
+          p.diff = y, p.prev = r, p.curr = m, r = m;
+          for (var k = new Array(arguments.length), C = 0; C < k.length; C++)
+            k[C] = arguments[C];
+          k[0] = t.coerce(k[0]), typeof k[0] != "string" && k.unshift("%O");
+          var L = 0;
+          k[0] = k[0].replace(/%([a-zA-Z%])/g, function(R, _) {
+            if (R === "%%") return R;
+            L++;
+            var x = t.formatters[_];
+            if (typeof x == "function") {
+              var A = k[L];
+              R = x.call(p, A), k.splice(L, 1), L--;
             }
-            return E;
-          }), t.formatArgs.call(g, _);
-          var F = d.log || t.log || console.log.bind(console);
-          F.apply(g, _);
+            return R;
+          }), t.formatArgs.call(p, k);
+          var z = h.log || t.log || console.log.bind(console);
+          z.apply(p, k);
         }
       }
-      return d.namespace = u, d.enabled = t.enabled(u), d.useColors = t.useColors(), d.color = i(u), typeof t.init == "function" && t.init(d), d;
+      return h.namespace = d, h.enabled = t.enabled(d), h.useColors = t.useColors(), h.color = n(d), typeof t.init == "function" && t.init(h), h;
     }
-    function a(u) {
-      t.save(u), t.names = [], t.skips = [];
-      for (var d = (typeof u == "string" ? u : "").split(/[\s,]+/), g = d.length, p = 0; p < g; p++)
-        d[p] && (u = d[p].replace(/\*/g, ".*?"), u[0] === "-" ? t.skips.push(new RegExp("^" + u.substr(1) + "$")) : t.names.push(new RegExp("^" + u + "$")));
+    function a(d) {
+      t.save(d), t.names = [], t.skips = [];
+      for (var h = (typeof d == "string" ? d : "").split(/[\s,]+/), p = h.length, m = 0; m < p; m++)
+        h[m] && (d = h[m].replace(/\*/g, ".*?"), d[0] === "-" ? t.skips.push(new RegExp("^" + d.substr(1) + "$")) : t.names.push(new RegExp("^" + d + "$")));
     }
-    function s() {
+    function c() {
       t.enable("");
     }
-    function c(u) {
-      var d, g;
-      for (d = 0, g = t.skips.length; d < g; d++)
-        if (t.skips[d].test(u))
+    function l(d) {
+      var h, p;
+      for (h = 0, p = t.skips.length; h < p; h++)
+        if (t.skips[h].test(d))
           return !1;
-      for (d = 0, g = t.names.length; d < g; d++)
-        if (t.names[d].test(u))
+      for (h = 0, p = t.names.length; h < p; h++)
+        if (t.names[h].test(d))
           return !0;
       return !1;
     }
-    function l(u) {
-      return u instanceof Error ? u.stack || u.message : u;
+    function u(d) {
+      return d instanceof Error ? d.stack || d.message : d;
     }
   })(we, we.exports)), we.exports;
 }
-var wt;
+var xt;
 function Fr() {
-  return wt || (wt = 1, (function(e, t) {
-    t = e.exports = Ir(), t.log = o, t.formatArgs = i, t.save = a, t.load = s, t.useColors = r, t.storage = typeof chrome < "u" && typeof chrome.storage < "u" ? chrome.storage.local : c(), t.colors = [
+  return xt || (xt = 1, (function(e, t) {
+    t = e.exports = Ir(), t.log = o, t.formatArgs = n, t.save = a, t.load = c, t.useColors = r, t.storage = typeof chrome < "u" && typeof chrome.storage < "u" ? chrome.storage.local : l(), t.colors = [
       "lightseagreen",
       "forestgreen",
       "goldenrod",
@@ -803,112 +802,112 @@ function Fr() {
       typeof navigator < "u" && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31 || // double check webkit in userAgent just in case we are in a worker
       typeof navigator < "u" && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/);
     }
-    t.formatters.j = function(l) {
+    t.formatters.j = function(u) {
       try {
-        return JSON.stringify(l);
-      } catch (u) {
-        return "[UnexpectedJSONParseError]: " + u.message;
+        return JSON.stringify(u);
+      } catch (d) {
+        return "[UnexpectedJSONParseError]: " + d.message;
       }
     };
-    function i(l) {
-      var u = this.useColors;
-      if (l[0] = (u ? "%c" : "") + this.namespace + (u ? " %c" : " ") + l[0] + (u ? "%c " : " ") + "+" + t.humanize(this.diff), !!u) {
-        var d = "color: " + this.color;
-        l.splice(1, 0, d, "color: inherit");
-        var g = 0, p = 0;
-        l[0].replace(/%[a-zA-Z%]/g, function(j) {
-          j !== "%%" && (g++, j === "%c" && (p = g));
-        }), l.splice(p, 0, d);
+    function n(u) {
+      var d = this.useColors;
+      if (u[0] = (d ? "%c" : "") + this.namespace + (d ? " %c" : " ") + u[0] + (d ? "%c " : " ") + "+" + t.humanize(this.diff), !!d) {
+        var h = "color: " + this.color;
+        u.splice(1, 0, h, "color: inherit");
+        var p = 0, m = 0;
+        u[0].replace(/%[a-zA-Z%]/g, function(y) {
+          y !== "%%" && (p++, y === "%c" && (m = p));
+        }), u.splice(m, 0, h);
       }
     }
     function o() {
       return typeof console == "object" && console.log && Function.prototype.apply.call(console.log, console, arguments);
     }
-    function a(l) {
+    function a(u) {
       try {
-        l == null ? t.storage.removeItem("debug") : t.storage.debug = l;
+        u == null ? t.storage.removeItem("debug") : t.storage.debug = u;
       } catch {
       }
     }
-    function s() {
-      var l;
-      try {
-        l = t.storage.debug;
-      } catch {
-      }
-      return !l && typeof process < "u" && "env" in process && (l = process.env.DEBUG), l;
-    }
-    t.enable(s());
     function c() {
+      var u;
+      try {
+        u = t.storage.debug;
+      } catch {
+      }
+      return !u && typeof process < "u" && "env" in process && (u = process.env.DEBUG), u;
+    }
+    t.enable(c());
+    function l() {
       try {
         return window.localStorage;
       } catch {
       }
     }
-  })(ge, ge.exports)), ge.exports;
+  })(pe, pe.exports)), pe.exports;
 }
-var De, pt;
+var De, vt;
 function Dr() {
-  if (pt) return De;
-  pt = 1;
+  if (vt) return De;
+  vt = 1;
   var e = Fr()("jsonp");
-  De = i;
+  De = n;
   var t = 0;
   function r() {
   }
-  function i(o, a, s) {
-    typeof a == "function" && (s = a, a = {}), a || (a = {});
-    var c = a.prefix || "__jp", l = a.name || c + t++, u = a.param || "callback", d = a.timeout != null ? a.timeout : 6e4, g = encodeURIComponent, p = document.getElementsByTagName("script")[0] || document.head, j, _;
-    d && (_ = setTimeout(function() {
-      L(), s && s(new Error("Timeout"));
-    }, d));
+  function n(o, a, c) {
+    typeof a == "function" && (c = a, a = {}), a || (a = {});
+    var l = a.prefix || "__jp", u = a.name || l + t++, d = a.param || "callback", h = a.timeout != null ? a.timeout : 6e4, p = encodeURIComponent, m = document.getElementsByTagName("script")[0] || document.head, y, k;
+    h && (k = setTimeout(function() {
+      C(), c && c(new Error("Timeout"));
+    }, h));
+    function C() {
+      y.parentNode && y.parentNode.removeChild(y), window[u] = r, k && clearTimeout(k);
+    }
     function L() {
-      j.parentNode && j.parentNode.removeChild(j), window[l] = r, _ && clearTimeout(_);
+      window[u] && C();
     }
-    function A() {
-      window[l] && L();
-    }
-    return window[l] = function(F) {
-      e("jsonp got", F), L(), s && s(null, F);
-    }, o += (~o.indexOf("?") ? "&" : "?") + u + "=" + g(l), o = o.replace("?&", "?"), e('jsonp req "%s"', o), j = document.createElement("script"), j.src = o, p.parentNode.insertBefore(j, p), A;
+    return window[u] = function(z) {
+      e("jsonp got", z), C(), c && c(null, z);
+    }, o += (~o.indexOf("?") ? "&" : "?") + d + "=" + p(u), o = o.replace("?&", "?"), e('jsonp req "%s"', o), y = document.createElement("script"), y.src = o, m.parentNode.insertBefore(y, m), L;
   }
   return De;
 }
-var zr = Dr();
-const J = /* @__PURE__ */ Wt(zr);
-var Wr = Object.defineProperty, Mr = Object.defineProperties, $r = Object.getOwnPropertyDescriptors, ye = Object.getOwnPropertySymbols, $t = Object.prototype.hasOwnProperty, Vt = Object.prototype.propertyIsEnumerable, vt = (e, t, r) => t in e ? Wr(e, t, { enumerable: !0, configurable: !0, writable: !0, value: r }) : e[t] = r, $ = (e, t) => {
+var Wr = Dr();
+const J = /* @__PURE__ */ $t(Wr);
+var Mr = Object.defineProperty, $r = Object.defineProperties, Hr = Object.getOwnPropertyDescriptors, ke = Object.getOwnPropertySymbols, Vt = Object.prototype.hasOwnProperty, Bt = Object.prototype.propertyIsEnumerable, yt = (e, t, r) => t in e ? Mr(e, t, { enumerable: !0, configurable: !0, writable: !0, value: r }) : e[t] = r, $ = (e, t) => {
   for (var r in t || (t = {}))
-    $t.call(t, r) && vt(e, r, t[r]);
-  if (ye)
-    for (var r of ye(t))
-      Vt.call(t, r) && vt(e, r, t[r]);
+    Vt.call(t, r) && yt(e, r, t[r]);
+  if (ke)
+    for (var r of ke(t))
+      Bt.call(t, r) && yt(e, r, t[r]);
   return e;
-}, Ce = (e, t) => Mr(e, $r(t)), Se = (e, t) => {
+}, Ce = (e, t) => $r(e, Hr(t)), Ee = (e, t) => {
   var r = {};
-  for (var i in e)
-    $t.call(e, i) && t.indexOf(i) < 0 && (r[i] = e[i]);
-  if (e != null && ye)
-    for (var i of ye(e))
-      t.indexOf(i) < 0 && Vt.call(e, i) && (r[i] = e[i]);
+  for (var n in e)
+    Vt.call(e, n) && t.indexOf(n) < 0 && (r[n] = e[n]);
+  if (e != null && ke)
+    for (var n of ke(e))
+      t.indexOf(n) < 0 && Bt.call(e, n) && (r[n] = e[n]);
   return r;
 };
-function ce(e) {
+function le(e) {
   return (r) => {
-    var i = r, {
+    var n = r, {
       bgStyle: o = {},
       borderRadius: a = 0,
-      iconFillColor: s = "white",
-      round: c = !1,
-      size: l = 64
-    } = i, u = Se(i, [
+      iconFillColor: c = "white",
+      round: l = !1,
+      size: u = 64
+    } = n, d = Ee(n, [
       "bgStyle",
       "borderRadius",
       "iconFillColor",
       "round",
       "size"
     ]);
-    return /* @__PURE__ */ h.jsxs("svg", Ce($({ viewBox: "0 0 64 64", width: l, height: l }, u), { children: [
-      c ? /* @__PURE__ */ h.jsx("circle", { cx: "32", cy: "32", r: "32", fill: e.color, style: o }) : /* @__PURE__ */ h.jsx(
+    return /* @__PURE__ */ s.jsxs("svg", Ce($({ viewBox: "0 0 64 64", width: u, height: u }, d), { children: [
+      l ? /* @__PURE__ */ s.jsx("circle", { cx: "32", cy: "32", r: "32", fill: e.color, style: o }) : /* @__PURE__ */ s.jsx(
         "rect",
         {
           width: "64",
@@ -919,7 +918,7 @@ function ce(e) {
           style: o
         }
       ),
-      /* @__PURE__ */ h.jsx("path", { d: e.path, fill: s })
+      /* @__PURE__ */ s.jsx("path", { d: e.path, fill: c })
     ] }));
   };
 }
@@ -928,24 +927,24 @@ class Vr extends Error {
     super(t), this.name = "AssertionError";
   }
 }
-function S(e, t) {
+function P(e, t) {
   if (!e)
     throw new Vr(t);
 }
-function k(e) {
-  const t = Object.entries(e).filter(([, r]) => r != null).map(([r, i]) => `${encodeURIComponent(r)}=${encodeURIComponent(String(i))}`);
+function S(e) {
+  const t = Object.entries(e).filter(([, r]) => r != null).map(([r, n]) => `${encodeURIComponent(r)}=${encodeURIComponent(String(n))}`);
   return t.length > 0 ? `?${t.join("&")}` : "";
 }
-const Hr = (e) => !!e && (typeof e == "object" || typeof e == "function") && "then" in e && typeof e.then == "function", Nr = (e, t) => ({
+const Br = (e) => !!e && (typeof e == "object" || typeof e == "function") && "then" in e && typeof e.then == "function", Ur = (e, t) => ({
   left: window.outerWidth / 2 + (window.screenX || window.screenLeft || 0) - e / 2,
   top: window.outerHeight / 2 + (window.screenY || window.screenTop || 0) - t / 2
-}), Br = (e, t) => ({
+}), qr = (e, t) => ({
   top: (window.screen.height - t) / 2,
   left: (window.screen.width - e) / 2
 });
-function Ur(e, t, r) {
-  var i = t, { height: o, width: a } = i, s = Se(i, ["height", "width"]);
-  const c = $({
+function Kr(e, t, r) {
+  var n = t, { height: o, width: a } = n, c = Ee(n, ["height", "width"]);
+  const l = $({
     height: o,
     width: a,
     location: "no",
@@ -957,45 +956,45 @@ function Ur(e, t, r) {
     resizable: "no",
     centerscreen: "yes",
     chrome: "yes"
-  }, s), l = window.open(
+  }, c), u = window.open(
     e,
     "",
-    Object.keys(c).map((u) => `${u}=${c[u]}`).join(", ")
+    Object.keys(l).map((d) => `${d}=${l[d]}`).join(", ")
   );
   if (r) {
-    const u = window.setInterval(() => {
+    const d = window.setInterval(() => {
       try {
-        (l === null || l.closed) && (window.clearInterval(u), r(l));
-      } catch (d) {
-        console.error(d);
+        (u === null || u.closed) && (window.clearInterval(d), r(u));
+      } catch (h) {
+        console.error(h);
       }
     }, 1e3);
   }
-  return l;
+  return u;
 }
-function qr(e) {
+function Yr(e) {
   var t = e, {
     beforeOnClick: r,
-    children: i,
+    children: n,
     className: o,
     disabled: a,
-    disabledStyle: s = { opacity: 0.6 },
-    forwardedRef: c,
-    htmlTitle: l,
-    networkLink: u,
-    networkName: d,
-    onClick: g,
-    onShareWindowClose: p,
-    openShareDialogOnClick: j = !0,
-    opts: _,
-    resetButtonStyle: L = !0,
-    style: A,
-    title: F,
-    url: E,
-    windowHeight: B = 400,
-    windowPosition: b = "windowCenter",
-    windowWidth: T = 550
-  } = t, N = Se(t, [
+    disabledStyle: c = { opacity: 0.6 },
+    forwardedRef: l,
+    htmlTitle: u,
+    networkLink: d,
+    networkName: h,
+    onClick: p,
+    onShareWindowClose: m,
+    openShareDialogOnClick: y = !0,
+    opts: k,
+    resetButtonStyle: C = !0,
+    style: L,
+    title: z,
+    url: R,
+    windowHeight: _ = 400,
+    windowPosition: x = "windowCenter",
+    windowWidth: A = 550
+  } = t, B = Ee(t, [
     "beforeOnClick",
     "children",
     "className",
@@ -1021,74 +1020,74 @@ function qr(e) {
     "windowPosition",
     "windowWidth"
   ]);
-  const V = async (K) => {
-    const le = u(E, _);
+  const H = async (K) => {
+    const ue = d(R, k);
     if (!a) {
       if (K.preventDefault(), r) {
         const Y = r();
-        Hr(Y) && await Y;
+        Br(Y) && await Y;
       }
-      if (j) {
+      if (y) {
         const Y = $({
-          height: B,
-          width: T
-        }, b === "windowCenter" ? Nr(T, B) : Br(T, B));
-        Ur(le, Y, p);
+          height: _,
+          width: A
+        }, x === "windowCenter" ? Ur(A, _) : qr(A, _));
+        Kr(ue, Y, m);
       }
-      g && g(K, le);
+      p && p(K, ue);
     }
-  }, W = Mt(
+  }, W = Ht(
     "react-share__ShareButton",
     {
       "react-share__ShareButton--disabled": !!a,
       disabled: !!a
     },
     o
-  ), ne = $($(L ? {
+  ), ie = $($(C ? {
     backgroundColor: "transparent",
     border: "none",
     padding: 0,
     font: "inherit",
     color: "inherit",
     cursor: "pointer"
-  } : {}, A), a && s);
-  return /* @__PURE__ */ h.jsx(
+  } : {}, L), a && c);
+  return /* @__PURE__ */ s.jsx(
     "button",
-    Ce($({}, N), {
+    Ce($({}, B), {
       className: W,
-      onClick: V,
-      ref: c,
-      style: ne,
-      title: l,
-      children: i
+      onClick: H,
+      ref: l,
+      style: ie,
+      title: u,
+      children: n
     })
   );
 }
-function R(e, t, r, i) {
-  const o = (a, s) => {
-    const c = r(a), l = $({}, a);
-    return Object.keys(c).forEach((d) => {
-      delete l[d];
-    }), /* @__PURE__ */ h.jsx(
-      qr,
-      Ce($($({}, i), l), {
-        forwardedRef: s,
+function T(e, t, r, n) {
+  const o = (a, c) => {
+    const l = r(a), u = $({}, a);
+    return Object.keys(l).forEach((h) => {
+      delete u[h];
+    }), /* @__PURE__ */ s.jsx(
+      Yr,
+      Ce($($({}, n), u), {
+        forwardedRef: c,
         networkName: e,
         networkLink: t,
-        opts: c
+        opts: l
       })
     );
   };
-  return o.displayName = `ShareButton-${e}`, Er(o);
+  return o.displayName = `ShareButton-${e}`, _r(o);
 }
-function Kr(e, { title: t, separator: r }) {
-  return S(e, "bluesky.url"), "https://bsky.app/intent/compose" + k({
+function Xr(e, { title: t, separator: r }) {
+  return P(e, "bluesky.url"), "https://bsky.app/intent/compose" + S({
     text: t ? t + r + e : e
   });
 }
-R(
+T(
   "bluesky",
-  Kr,
+  Xr,
   (e) => ({
     title: e.title,
     separator: e.separator || " "
@@ -1099,12 +1098,12 @@ R(
     windowPosition: "windowCenter"
   }
 );
-function Yr(e, { subject: t, body: r, separator: i }) {
-  return "mailto:" + k({ subject: t, body: r ? r + i + e : e });
+function Gr(e, { subject: t, body: r, separator: n }) {
+  return "mailto:" + S({ subject: t, body: r ? r + n + e : e });
 }
-R(
+T(
   "email",
-  Yr,
+  Gr,
   (e) => ({
     subject: e.subject,
     body: e.body,
@@ -1117,21 +1116,21 @@ R(
     }
   }
 );
-const bt = ce({
+const kt = le({
   color: "#0965FE",
   path: "M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z"
 });
-function Xr(e, { appId: t, redirectUri: r, to: i }) {
-  return "https://www.facebook.com/dialog/send" + k({
+function Jr(e, { appId: t, redirectUri: r, to: n }) {
+  return "https://www.facebook.com/dialog/send" + S({
     link: e,
     redirect_uri: r || e,
     app_id: t,
-    to: i
+    to: n
   });
 }
-R(
+T(
   "facebookmessenger",
-  Xr,
+  Jr,
   (e) => ({
     appId: e.appId,
     redirectUri: e.redirectUri,
@@ -1142,62 +1141,62 @@ R(
     windowHeight: 820
   }
 );
-function Gr(e, { hashtag: t }) {
-  return S(e, "facebook.url"), "https://www.facebook.com/sharer/sharer.php" + k({ u: e, hashtag: t });
+function Qr(e, { hashtag: t }) {
+  return P(e, "facebook.url"), "https://www.facebook.com/sharer/sharer.php" + S({ u: e, hashtag: t });
 }
-const yt = R(
+const jt = T(
   "facebook",
-  Gr,
+  Qr,
   (e) => ({ hashtag: e.hashtag }),
   {
     windowWidth: 550,
     windowHeight: 400
   }
 );
-function Jr() {
-  const e = pe(!1);
-  return be(() => (e.current = !0, () => {
+function Zr() {
+  const e = xe(!1);
+  return ye(() => (e.current = !0, () => {
     e.current = !1;
-  }), []), Rr(() => e.current, []);
+  }), []), Pr(() => e.current, []);
 }
-function Qr(e) {
+function en(e) {
   var t = e, {
-    children: r = (p) => p,
-    className: i,
+    children: r = (m) => m,
+    className: n,
     getCount: o,
     url: a
-  } = t, s = Se(t, [
+  } = t, c = Ee(t, [
     "children",
     "className",
     "getCount",
     "url"
   ]);
-  const c = Jr(), [l, u] = ve(void 0), [d, g] = ve(!1);
-  return be(() => {
-    g(!0), o(a, (p) => {
-      c() && (u(p), g(!1));
+  const l = Zr(), [u, d] = ne(void 0), [h, p] = ne(!1);
+  return ye(() => {
+    p(!0), o(a, (m) => {
+      l() && (d(m), p(!1));
     });
-  }, [a]), /* @__PURE__ */ h.jsx("span", Ce($({ className: Mt("react-share__ShareCount", i) }, s), { children: !d && l !== void 0 && r(l) }));
+  }, [a]), /* @__PURE__ */ s.jsx("span", Ce($({ className: Ht("react-share__ShareCount", n) }, c), { children: !h && u !== void 0 && r(u) }));
 }
 function Q(e) {
-  const t = (r) => /* @__PURE__ */ h.jsx(Qr, $({ getCount: e }, r));
+  const t = (r) => /* @__PURE__ */ s.jsx(en, $({ getCount: e }, r));
   return t.displayName = `ShareCount(${e.name})`, t;
 }
-function Zr(e, t) {
+function tn(e, t) {
   const r = `https://graph.facebook.com/?id=${e}&fields=og_object{engagement}`;
-  J(r, (i, o) => {
+  J(r, (n, o) => {
     t(
-      !i && o && o.og_object && o.og_object.engagement ? o.og_object.engagement.count : void 0
+      !n && o && o.og_object && o.og_object.engagement ? o.og_object.engagement.count : void 0
     );
   });
 }
-Q(Zr);
-function en(e, { title: t }) {
-  return S(e, "hatena.url"), `http://b.hatena.ne.jp/add?mode=confirm&url=${e}&title=${t}`;
+Q(tn);
+function rn(e, { title: t }) {
+  return P(e, "hatena.url"), `http://b.hatena.ne.jp/add?mode=confirm&url=${e}&title=${t}`;
 }
-R(
+T(
   "hatena",
-  en,
+  rn,
   (e) => ({
     title: e.title
   }),
@@ -1207,27 +1206,27 @@ R(
     windowPosition: "windowCenter"
   }
 );
-function tn(e, t) {
+function nn(e, t) {
   J(
-    "https://bookmark.hatenaapis.com/count/entry" + k({
+    "https://bookmark.hatenaapis.com/count/entry" + S({
       url: e
     }),
-    (i, o) => {
+    (n, o) => {
       t(o ?? void 0);
     }
   );
 }
-Q(tn);
-function rn(e, { title: t, description: r }) {
-  return S(e, "instapaper.url"), "http://www.instapaper.com/hello2" + k({
+Q(nn);
+function an(e, { title: t, description: r }) {
+  return P(e, "instapaper.url"), "http://www.instapaper.com/hello2" + S({
     url: e,
     title: t,
     description: r
   });
 }
-R(
+T(
   "instapaper",
-  rn,
+  an,
   (e) => ({
     title: e.title,
     description: e.description
@@ -1238,15 +1237,15 @@ R(
     windowPosition: "windowCenter"
   }
 );
-function nn(e, { title: t }) {
-  return S(e, "line.url"), "https://social-plugins.line.me/lineit/share" + k({
+function on(e, { title: t }) {
+  return P(e, "line.url"), "https://social-plugins.line.me/lineit/share" + S({
     url: e,
     text: t
   });
 }
-R(
+T(
   "line",
-  nn,
+  on,
   (e) => ({
     title: e.title
   }),
@@ -1255,31 +1254,31 @@ R(
     windowHeight: 500
   }
 );
-const xt = ce({
+const St = le({
   color: "#0077B5",
   path: "M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z"
 });
-function on(e, { title: t, summary: r, source: i }) {
-  return S(e, "linkedin.url"), "https://linkedin.com/shareArticle" + k({ url: e, mini: "true", title: t, summary: r, source: i });
+function sn(e, { title: t, summary: r, source: n }) {
+  return P(e, "linkedin.url"), "https://linkedin.com/shareArticle" + S({ url: e, mini: "true", title: t, summary: r, source: n });
 }
-const kt = R(
+const Ct = T(
   "linkedin",
-  on,
+  sn,
   ({ title: e, summary: t, source: r }) => ({ title: e, summary: t, source: r }),
   {
     windowWidth: 750,
     windowHeight: 600
   }
 );
-function an(e, { title: t, description: r }) {
-  return S(e, "livejournal.url"), "https://www.livejournal.com/update.bml" + k({
+function cn(e, { title: t, description: r }) {
+  return P(e, "livejournal.url"), "https://www.livejournal.com/update.bml" + S({
     subject: t,
     event: r
   });
 }
-R(
+T(
   "livejournal",
-  an,
+  cn,
   (e) => ({
     title: e.title,
     description: e.description
@@ -1289,17 +1288,17 @@ R(
     windowHeight: 460
   }
 );
-function sn(e, { title: t, description: r, imageUrl: i }) {
-  return S(e, "mailru.url"), "https://connect.mail.ru/share" + k({
+function ln(e, { title: t, description: r, imageUrl: n }) {
+  return P(e, "mailru.url"), "https://connect.mail.ru/share" + S({
     url: e,
     title: t,
     description: r,
-    image_url: i
+    image_url: n
   });
 }
-R(
+T(
   "mailru",
-  sn,
+  ln,
   (e) => ({
     title: e.title,
     description: e.description,
@@ -1310,17 +1309,17 @@ R(
     windowHeight: 460
   }
 );
-function cn(e, { title: t, description: r, image: i }) {
-  return S(e, "ok.url"), "https://connect.ok.ru/offer" + k({
+function un(e, { title: t, description: r, image: n }) {
+  return P(e, "ok.url"), "https://connect.ok.ru/offer" + S({
     url: e,
     title: t,
     description: r,
-    imageUrl: i
+    imageUrl: n
   });
 }
-R(
+T(
   "ok",
-  cn,
+  un,
   (e) => ({
     title: e.title,
     description: e.description,
@@ -1332,42 +1331,42 @@ R(
     windowPosition: "screenCenter"
   }
 );
-function ln(e, t) {
+function dn(e, t) {
   window.OK || (window.OK = {
     Share: {
-      count: function(a, s) {
-        var c, l;
-        (l = (c = window.OK.callbacks)[a]) == null || l.call(c, s);
+      count: function(a, c) {
+        var l, u;
+        (u = (l = window.OK.callbacks)[a]) == null || u.call(l, c);
       }
     },
     callbacks: []
   });
-  const r = "https://connect.ok.ru/dk", i = window.OK.callbacks.length;
+  const r = "https://connect.ok.ru/dk", n = window.OK.callbacks.length;
   return window.ODKL = {
     updateCount(o, a) {
-      var s, c;
-      const l = o === "" ? 0 : parseInt(o.replace("react-share-", ""), 10);
-      (c = (s = window.OK.callbacks)[l]) == null || c.call(s, a === "" ? void 0 : parseInt(a, 10));
+      var c, l;
+      const u = o === "" ? 0 : parseInt(o.replace("react-share-", ""), 10);
+      (l = (c = window.OK.callbacks)[u]) == null || l.call(c, a === "" ? void 0 : parseInt(a, 10));
     }
   }, window.OK.callbacks.push(t), J(
-    r + k({
+    r + S({
       "st.cmd": "extLike",
-      uid: `react-share-${i}`,
+      uid: `react-share-${n}`,
       ref: e
     })
   );
 }
-Q(ln);
-function un(e, { media: t, description: r, pinId: i }) {
-  return i ? `https://pinterest.com/pin/${i}/repin/x/` : (S(e, "pinterest.url"), S(t, "pinterest.media"), "https://pinterest.com/pin/create/button/" + k({
+Q(dn);
+function fn(e, { media: t, description: r, pinId: n }) {
+  return n ? `https://pinterest.com/pin/${n}/repin/x/` : (P(e, "pinterest.url"), P(t, "pinterest.media"), "https://pinterest.com/pin/create/button/" + S({
     url: e,
     media: t,
     description: r
   }));
 }
-R(
+T(
   "pinterest",
-  un,
+  fn,
   (e) => ({
     media: e.media,
     description: e.description,
@@ -1378,26 +1377,26 @@ R(
     windowHeight: 730
   }
 );
-function fn(e, t) {
+function hn(e, t) {
   J(
-    "https://api.pinterest.com/v1/urls/count.json" + k({
+    "https://api.pinterest.com/v1/urls/count.json" + S({
       url: e
     }),
-    (i, o) => {
+    (n, o) => {
       t(o ? o.count : void 0);
     }
   );
 }
-Q(fn);
-function dn(e, { title: t }) {
-  return S(e, "pocket.url"), "https://getpocket.com/save" + k({
+Q(hn);
+function mn(e, { title: t }) {
+  return P(e, "pocket.url"), "https://getpocket.com/save" + S({
     url: e,
     title: t
   });
 }
-R(
+T(
   "pocket",
-  dn,
+  mn,
   (e) => ({
     title: e.title
   }),
@@ -1406,15 +1405,15 @@ R(
     windowHeight: 500
   }
 );
-function hn(e, { title: t }) {
-  return S(e, "reddit.url"), "https://www.reddit.com/web/submit" + k({
+function gn(e, { title: t }) {
+  return P(e, "reddit.url"), "https://www.reddit.com/web/submit" + S({
     url: e,
     title: t
   });
 }
-R(
+T(
   "reddit",
-  hn,
+  gn,
   (e) => ({
     title: e.title
   }),
@@ -1424,15 +1423,15 @@ R(
     windowPosition: "windowCenter"
   }
 );
-function mn(e, { title: t }) {
-  return S(e, "gab.url"), "https://gab.com/compose" + k({
+function pn(e, { title: t }) {
+  return P(e, "gab.url"), "https://gab.com/compose" + S({
     url: e,
     text: t
   });
 }
-R(
+T(
   "gab",
-  mn,
+  pn,
   (e) => ({
     title: e.title
   }),
@@ -1442,24 +1441,24 @@ R(
     windowPosition: "windowCenter"
   }
 );
-function gn(e, t) {
+function wn(e, t) {
   const r = `https://www.reddit.com/api/info.json?limit=1&url=${e}`;
-  J(r, { param: "jsonp" }, (i, o) => {
+  J(r, { param: "jsonp" }, (n, o) => {
     t(
-      !i && o && o.data && o.data.children.length > 0 && o.data.children[0].data.score ? o.data.children[0].data.score : void 0
+      !n && o && o.data && o.data.children.length > 0 && o.data.children[0].data.score ? o.data.children[0].data.score : void 0
     );
   });
 }
-Q(gn);
-function wn(e, { title: t }) {
-  return S(e, "telegram.url"), "https://telegram.me/share/url" + k({
+Q(wn);
+function bn(e, { title: t }) {
+  return P(e, "telegram.url"), "https://telegram.me/share/url" + S({
     url: e,
     text: t
   });
 }
-R(
+T(
   "telegram",
-  wn,
+  bn,
   (e) => ({
     title: e.title
   }),
@@ -1468,19 +1467,19 @@ R(
     windowHeight: 400
   }
 );
-const Ct = ce({
+const Et = le({
   color: "#000000",
   path: "M41.4569 31.0027C41.2867 30.9181 41.1138 30.8366 40.9386 30.7586C40.6336 24.9274 37.5624 21.5891 32.4055 21.5549C32.3821 21.5548 32.3589 21.5548 32.3355 21.5548C29.251 21.5548 26.6857 22.9207 25.1067 25.4063L27.9429 27.4247C29.1224 25.5681 30.9736 25.1723 32.3369 25.1723C32.3526 25.1723 32.3684 25.1723 32.384 25.1724C34.082 25.1837 35.3633 25.6958 36.1926 26.6947C36.7961 27.4218 37.1997 28.4267 37.3996 29.6949C35.8941 29.4294 34.266 29.3478 32.5255 29.4513C27.6225 29.7443 24.4705 32.711 24.6822 36.8332C24.7896 38.9242 25.7937 40.7231 27.5094 41.8982C28.96 42.8916 30.8282 43.3774 32.7699 43.2674C35.3341 43.1216 37.3456 42.1066 38.749 40.2507C39.8148 38.8413 40.4889 37.0149 40.7865 34.7136C42.0085 35.4787 42.9142 36.4855 43.4144 37.6959C44.2649 39.7534 44.3145 43.1344 41.6553 45.8908C39.3255 48.3055 36.525 49.3501 32.2926 49.3824C27.5977 49.3463 24.0471 47.7842 21.7385 44.7396C19.5768 41.8886 18.4595 37.7706 18.4179 32.5C18.4595 27.2293 19.5768 23.1113 21.7385 20.2604C24.0471 17.2157 27.5977 15.6537 32.2925 15.6175C37.0215 15.654 40.634 17.2235 43.0309 20.2829C44.2062 21.7831 45.0923 23.6698 45.6764 25.8696L49 24.9496C48.2919 22.2419 47.1778 19.9087 45.6616 17.9736C42.5888 14.0514 38.0947 12.0417 32.3041 12H32.2809C26.5022 12.0415 22.0584 14.0589 19.073 17.9961C16.4165 21.4997 15.0462 26.3747 15.0001 32.4856L15 32.5L15.0001 32.5144C15.0462 38.6252 16.4165 43.5004 19.073 47.004C22.0584 50.941 26.5022 52.9586 32.2809 53H32.3041C37.4418 52.9631 41.0632 51.5676 44.0465 48.4753C47.9496 44.4297 47.8321 39.3587 46.5457 36.2457C45.6227 34.0134 43.8631 32.2002 41.4569 31.0027ZM32.5863 39.6551C30.4374 39.7807 28.205 38.78 28.0949 36.6367C28.0133 35.0476 29.185 33.2743 32.7182 33.0631C33.1228 33.0389 33.5199 33.027 33.9099 33.027C35.1933 33.027 36.3939 33.1564 37.4854 33.4039C37.0783 38.6788 34.6902 39.5353 32.5863 39.6551Z"
 });
-function pn(e, { title: t }) {
-  return S(e, "threads.url"), "https://threads.net/intent/post" + k({
+function xn(e, { title: t }) {
+  return P(e, "threads.url"), "https://threads.net/intent/post" + S({
     url: e,
     text: t
   });
 }
-const St = R(
+const Rt = T(
   "threads",
-  pn,
+  xn,
   (e) => ({
     title: e.title
   }),
@@ -1492,18 +1491,18 @@ const St = R(
 function vn(e, {
   title: t,
   caption: r,
-  tags: i,
+  tags: n,
   posttype: o
 }) {
-  return S(e, "tumblr.url"), "https://www.tumblr.com/widgets/share/tool" + k({
+  return P(e, "tumblr.url"), "https://www.tumblr.com/widgets/share/tool" + S({
     canonicalUrl: e,
     title: t,
     caption: r,
-    tags: i,
+    tags: n,
     posttype: o
   });
 }
-R(
+T(
   "tumblr",
   vn,
   (e) => ({
@@ -1517,34 +1516,34 @@ R(
     windowHeight: 460
   }
 );
-function bn(e, t) {
+function yn(e, t) {
   return J(
-    "https://api.tumblr.com/v2/share/stats" + k({
+    "https://api.tumblr.com/v2/share/stats" + S({
       url: e
     }),
-    (i, o) => {
-      t(!i && o && o.response ? o.response.note_count : void 0);
+    (n, o) => {
+      t(!n && o && o.response ? o.response.note_count : void 0);
     }
   );
 }
-Q(bn);
-function yn(e, {
+Q(yn);
+function kn(e, {
   title: t,
   via: r,
-  hashtags: i = [],
+  hashtags: n = [],
   related: o = []
 }) {
-  return S(e, "twitter.url"), S(Array.isArray(i), "twitter.hashtags is not an array"), S(Array.isArray(o), "twitter.related is not an array"), "https://twitter.com/intent/tweet" + k({
+  return P(e, "twitter.url"), P(Array.isArray(n), "twitter.hashtags is not an array"), P(Array.isArray(o), "twitter.related is not an array"), "https://twitter.com/intent/tweet" + S({
     url: e,
     text: t,
     via: r,
-    hashtags: i.length > 0 ? i.join(",") : void 0,
+    hashtags: n.length > 0 ? n.join(",") : void 0,
     related: o.length > 0 ? o.join(",") : void 0
   });
 }
-const Et = R(
+const _t = T(
   "twitter",
-  yn,
+  kn,
   (e) => ({
     hashtags: e.hashtags,
     title: e.title,
@@ -1556,14 +1555,14 @@ const Et = R(
     windowHeight: 400
   }
 );
-function xn(e, { title: t, separator: r }) {
-  return S(e, "viber.url"), "viber://forward" + k({
+function jn(e, { title: t, separator: r }) {
+  return P(e, "viber.url"), "viber://forward" + S({
     text: t ? t + r + e : e
   });
 }
-R(
+T(
   "viber",
-  xn,
+  jn,
   (e) => ({
     title: e.title,
     separator: e.separator || " "
@@ -1573,18 +1572,18 @@ R(
     windowHeight: 460
   }
 );
-function kn(e, { title: t, image: r, noParse: i, noVkLinks: o }) {
-  return S(e, "vk.url"), "https://vk.com/share.php" + k({
+function Sn(e, { title: t, image: r, noParse: n, noVkLinks: o }) {
+  return P(e, "vk.url"), "https://vk.com/share.php" + S({
     url: e,
     title: t,
     image: r,
-    noparse: i ? 1 : 0,
+    noparse: n ? 1 : 0,
     no_vk_links: o ? 1 : 0
   });
 }
-R(
+T(
   "vk",
-  kn,
+  Sn,
   (e) => ({
     title: e.title,
     image: e.image,
@@ -1599,30 +1598,30 @@ R(
 function Cn(e, t) {
   window.VK || (window.VK = {}), window.VK.Share = {
     count: (o, a) => {
-      var s, c;
-      return (c = (s = window.VK.callbacks) == null ? void 0 : s[o]) == null ? void 0 : c.call(s, a);
+      var c, l;
+      return (l = (c = window.VK.callbacks) == null ? void 0 : c[o]) == null ? void 0 : l.call(c, a);
     }
   }, window.VK.callbacks = [];
-  const r = "https://vk.com/share.php", i = window.VK.callbacks.length;
+  const r = "https://vk.com/share.php", n = window.VK.callbacks.length;
   return window.VK.callbacks.push(t), J(
-    r + k({
+    r + S({
       act: "count",
-      index: i,
+      index: n,
       url: e
     })
   );
 }
 Q(Cn);
-function Sn(e, { title: t, image: r }) {
-  return S(e, "weibo.url"), "http://service.weibo.com/share/share.php" + k({
+function En(e, { title: t, image: r }) {
+  return P(e, "weibo.url"), "http://service.weibo.com/share/share.php" + S({
     url: e,
     title: t,
     pic: r
   });
 }
-R(
+T(
   "weibo",
-  Sn,
+  En,
   (e) => ({
     title: e.title,
     image: e.image
@@ -1633,21 +1632,21 @@ R(
     windowPosition: "screenCenter"
   }
 );
-const Rt = ce({
+const Pt = le({
   color: "#25D366",
   path: "m42.32286,33.93287c-0.5178,-0.2589 -3.04726,-1.49644 -3.52105,-1.66732c-0.4712,-0.17346 -0.81554,-0.2589 -1.15987,0.2589c-0.34175,0.51004 -1.33075,1.66474 -1.63108,2.00648c-0.30032,0.33658 -0.60064,0.36247 -1.11327,0.12945c-0.5178,-0.2589 -2.17994,-0.80259 -4.14759,-2.56312c-1.53269,-1.37217 -2.56312,-3.05503 -2.86603,-3.57283c-0.30033,-0.5178 -0.03366,-0.80259 0.22524,-1.06149c0.23301,-0.23301 0.5178,-0.59547 0.7767,-0.90616c0.25372,-0.31068 0.33657,-0.5178 0.51262,-0.85437c0.17088,-0.36246 0.08544,-0.64725 -0.04402,-0.90615c-0.12945,-0.2589 -1.15987,-2.79613 -1.58964,-3.80584c-0.41424,-1.00971 -0.84142,-0.88027 -1.15987,-0.88027c-0.29773,-0.02588 -0.64208,-0.02588 -0.98382,-0.02588c-0.34693,0 -0.90616,0.12945 -1.37736,0.62136c-0.4712,0.5178 -1.80194,1.76053 -1.80194,4.27186c0,2.51134 1.84596,4.945 2.10227,5.30747c0.2589,0.33657 3.63497,5.51458 8.80262,7.74113c1.23237,0.5178 2.1903,0.82848 2.94111,1.08738c1.23237,0.38836 2.35599,0.33657 3.24402,0.20712c0.99159,-0.15534 3.04985,-1.24272 3.47963,-2.45956c0.44013,-1.21683 0.44013,-2.22654 0.31068,-2.45955c-0.12945,-0.23301 -0.46601,-0.36247 -0.98382,-0.59548m-9.40068,12.84407l-0.02589,0c-3.05503,0 -6.08417,-0.82849 -8.72495,-2.38189l-0.62136,-0.37023l-6.47252,1.68286l1.73463,-6.29129l-0.41424,-0.64725c-1.70875,-2.71846 -2.6149,-5.85116 -2.6149,-9.07706c0,-9.39809 7.68934,-17.06155 17.15993,-17.06155c4.58253,0 8.88029,1.78642 12.11655,5.02268c3.23625,3.21036 5.02267,7.50812 5.02267,12.06476c-0.0078,9.3981 -7.69712,17.06155 -17.14699,17.06155m14.58906,-31.58846c-3.93529,-3.80584 -9.1133,-5.95471 -14.62789,-5.95471c-11.36055,0 -20.60848,9.2065 -20.61625,20.52564c0,3.61684 0.94757,7.14565 2.75211,10.26282l-2.92557,10.63564l10.93337,-2.85309c3.0136,1.63108 6.4052,2.4958 9.85634,2.49839l0.01037,0c11.36574,0 20.61884,-9.2091 20.62403,-20.53082c0,-5.48093 -2.14111,-10.64081 -6.03239,-14.51915"
 });
-function En() {
+function Rn() {
   return /(android|iphone|ipad|mobile)/i.test(navigator.userAgent);
 }
-function Rn(e, { title: t, separator: r }) {
-  return S(e, "whatsapp.url"), "https://" + (En() ? "api" : "web") + ".whatsapp.com/send" + k({
+function _n(e, { title: t, separator: r }) {
+  return P(e, "whatsapp.url"), "https://" + (Rn() ? "api" : "web") + ".whatsapp.com/send" + S({
     text: t ? t + r + e : e
   });
 }
-const jt = R(
+const Tt = T(
   "whatsapp",
-  Rn,
+  _n,
   (e) => ({
     title: e.title,
     separator: e.separator || " "
@@ -1657,16 +1656,16 @@ const jt = R(
     windowHeight: 400
   }
 );
-function jn(e, { quote: t, hashtag: r }) {
-  return S(e, "workplace.url"), "https://work.facebook.com/sharer.php" + k({
+function Pn(e, { quote: t, hashtag: r }) {
+  return P(e, "workplace.url"), "https://work.facebook.com/sharer.php" + S({
     u: e,
     quote: t,
     hashtag: r
   });
 }
-R(
+T(
   "workplace",
-  jn,
+  Pn,
   (e) => ({
     quote: e.quote,
     hashtag: e.hashtag
@@ -1676,31 +1675,31 @@ R(
     windowHeight: 400
   }
 );
-const _t = ce({
+const Ot = le({
   color: "#000000",
   path: "M 41.116 18.375 h 4.962 l -10.8405 12.39 l 12.753 16.86 H 38.005 l -7.821 -10.2255 L 21.235 47.625 H 16.27 l 11.595 -13.2525 L 15.631 18.375 H 25.87 l 7.0695 9.3465 z m -1.7415 26.28 h 2.7495 L 24.376 21.189 H 21.4255 z"
 });
-function Si({ currentUrl: e }) {
-  return /* @__PURE__ */ h.jsxs("div", { className: "flex justify-end", children: [
-    /* @__PURE__ */ h.jsx("section", { className: "block md:hidden", children: /* @__PURE__ */ h.jsxs("div", { className: "flex w-full justify-end gap-2", children: [
-      /* @__PURE__ */ h.jsx(yt, { url: e, children: /* @__PURE__ */ h.jsx(bt, { size: 24, round: !0 }) }),
-      /* @__PURE__ */ h.jsx(Et, { url: e, children: /* @__PURE__ */ h.jsx(_t, { size: 24, round: !0 }) }),
-      /* @__PURE__ */ h.jsx(kt, { url: e, children: /* @__PURE__ */ h.jsx(xt, { size: 24, round: !0 }) }),
-      /* @__PURE__ */ h.jsx(St, { url: e, children: /* @__PURE__ */ h.jsx(Ct, { size: 24, round: !0 }) }),
-      /* @__PURE__ */ h.jsx(jt, { url: e, children: /* @__PURE__ */ h.jsx(Rt, { size: 24, round: !0 }) })
+function _i({ currentUrl: e }) {
+  return /* @__PURE__ */ s.jsxs("div", { className: "flex justify-end", children: [
+    /* @__PURE__ */ s.jsx("section", { className: "block md:hidden", children: /* @__PURE__ */ s.jsxs("div", { className: "flex w-full justify-end gap-2", children: [
+      /* @__PURE__ */ s.jsx(jt, { url: e, children: /* @__PURE__ */ s.jsx(kt, { size: 24, round: !0 }) }),
+      /* @__PURE__ */ s.jsx(_t, { url: e, children: /* @__PURE__ */ s.jsx(Ot, { size: 24, round: !0 }) }),
+      /* @__PURE__ */ s.jsx(Ct, { url: e, children: /* @__PURE__ */ s.jsx(St, { size: 24, round: !0 }) }),
+      /* @__PURE__ */ s.jsx(Rt, { url: e, children: /* @__PURE__ */ s.jsx(Et, { size: 24, round: !0 }) }),
+      /* @__PURE__ */ s.jsx(Tt, { url: e, children: /* @__PURE__ */ s.jsx(Pt, { size: 24, round: !0 }) })
     ] }) }),
-    /* @__PURE__ */ h.jsx("section", { className: "hidden md:block", children: /* @__PURE__ */ h.jsxs("div", { className: "flex w-full justify-end gap-2", children: [
-      /* @__PURE__ */ h.jsx(yt, { url: e, children: /* @__PURE__ */ h.jsx(bt, { size: 32, round: !0 }) }),
-      /* @__PURE__ */ h.jsx(Et, { url: e, children: /* @__PURE__ */ h.jsx(_t, { size: 32, round: !0 }) }),
-      /* @__PURE__ */ h.jsx(kt, { url: e, children: /* @__PURE__ */ h.jsx(xt, { size: 32, round: !0 }) }),
-      /* @__PURE__ */ h.jsx(St, { url: e, children: /* @__PURE__ */ h.jsx(Ct, { size: 32, round: !0 }) }),
-      /* @__PURE__ */ h.jsx(jt, { url: e, children: /* @__PURE__ */ h.jsx(Rt, { size: 32, round: !0 }) })
+    /* @__PURE__ */ s.jsx("section", { className: "hidden md:block", children: /* @__PURE__ */ s.jsxs("div", { className: "flex w-full justify-end gap-2", children: [
+      /* @__PURE__ */ s.jsx(jt, { url: e, children: /* @__PURE__ */ s.jsx(kt, { size: 32, round: !0 }) }),
+      /* @__PURE__ */ s.jsx(_t, { url: e, children: /* @__PURE__ */ s.jsx(Ot, { size: 32, round: !0 }) }),
+      /* @__PURE__ */ s.jsx(Ct, { url: e, children: /* @__PURE__ */ s.jsx(St, { size: 32, round: !0 }) }),
+      /* @__PURE__ */ s.jsx(Rt, { url: e, children: /* @__PURE__ */ s.jsx(Et, { size: 32, round: !0 }) }),
+      /* @__PURE__ */ s.jsx(Tt, { url: e, children: /* @__PURE__ */ s.jsx(Pt, { size: 32, round: !0 }) })
     ] }) })
   ] });
 }
-function Ei({ mode: e, setMode: t }) {
+function Pi({ mode: e, setMode: t }) {
   const r = e === "quick";
-  return /* @__PURE__ */ h.jsxs(
+  return /* @__PURE__ */ s.jsxs(
     "div",
     {
       className: `\r
@@ -1710,11 +1709,11 @@ function Ei({ mode: e, setMode: t }) {
         backdrop-blur mt-3\r
       `,
       children: [
-        /* @__PURE__ */ h.jsxs("div", { children: [
-          /* @__PURE__ */ h.jsx("div", { className: "text-sm font-semibold text-zinc-900 dark:text-zinc-100", children: "Quick mode" }),
-          /* @__PURE__ */ h.jsx("div", { className: "text-xs text-zinc-500 dark:text-zinc-400", children: "Switch between full article and quick carousel" })
+        /* @__PURE__ */ s.jsxs("div", { children: [
+          /* @__PURE__ */ s.jsx("div", { className: "text-sm font-semibold text-zinc-900 dark:text-zinc-100", children: "Quick mode" }),
+          /* @__PURE__ */ s.jsx("div", { className: "text-xs text-zinc-500 dark:text-zinc-400", children: "Switch between full article and quick carousel" })
         ] }),
-        /* @__PURE__ */ h.jsx(
+        /* @__PURE__ */ s.jsx(
           "button",
           {
             type: "button",
@@ -1728,7 +1727,7 @@ function Ei({ mode: e, setMode: t }) {
         `,
             "aria-pressed": r,
             "aria-label": "Toggle quick read",
-            children: /* @__PURE__ */ h.jsx(
+            children: /* @__PURE__ */ s.jsx(
               "span",
               {
                 className: `
@@ -1743,22 +1742,22 @@ function Ei({ mode: e, setMode: t }) {
     }
   );
 }
-function _n({ goTo: e, index: t, pagesHtml: r }) {
-  return /* @__PURE__ */ h.jsx("div", { className: "mt-4 flex w-full items-center gap-1 mb-3", children: r.map((i, o) => {
-    const a = o === t, s = o < t;
-    return /* @__PURE__ */ h.jsx(
+function Tn({ goTo: e, index: t, pagesHtml: r }) {
+  return /* @__PURE__ */ s.jsx("div", { className: "mt-4 flex w-full items-center gap-1 mb-3", children: r.map((n, o) => {
+    const a = o === t, c = o < t;
+    return /* @__PURE__ */ s.jsx(
       "button",
       {
         type: "button",
         onClick: () => e(o),
         "aria-label": `Go to page ${o + 1}`,
         className: "flex-1",
-        children: /* @__PURE__ */ h.jsx(
+        children: /* @__PURE__ */ s.jsx(
           "div",
           {
             className: `
             h-1.5 w-full rounded-full transition-all duration-300
-            ${a ? "bg-zinc-900" : s ? "bg-zinc-700" : "bg-zinc-300"}
+            ${a ? "bg-zinc-900" : c ? "bg-zinc-700" : "bg-zinc-300"}
           `
           }
         )
@@ -1767,17 +1766,17 @@ function _n({ goTo: e, index: t, pagesHtml: r }) {
     );
   }) });
 }
-function Pn(e, t) {
+function On(e, t) {
   if (e.match(/^[a-z]+:\/\//i))
     return e;
   if (e.match(/^\/\//))
     return window.location.protocol + e;
   if (e.match(/^[a-z]+:/i))
     return e;
-  const r = document.implementation.createHTMLDocument(), i = r.createElement("base"), o = r.createElement("a");
-  return r.head.appendChild(i), r.body.appendChild(o), t && (i.href = t), o.href = e, o.href;
+  const r = document.implementation.createHTMLDocument(), n = r.createElement("base"), o = r.createElement("a");
+  return r.head.appendChild(n), r.body.appendChild(o), t && (n.href = t), o.href = e, o.href;
 }
-const Tn = /* @__PURE__ */ (() => {
+const zn = /* @__PURE__ */ (() => {
   let e = 0;
   const t = () => (
     // eslint-disable-next-line no-bitwise
@@ -1787,31 +1786,31 @@ const Tn = /* @__PURE__ */ (() => {
 })();
 function q(e) {
   const t = [];
-  for (let r = 0, i = e.length; r < i; r++)
+  for (let r = 0, n = e.length; r < n; r++)
     t.push(e[r]);
   return t;
 }
 let te = null;
-function Ht(e = {}) {
+function Ut(e = {}) {
   return te || (e.includeStyleProperties ? (te = e.includeStyleProperties, te) : (te = q(window.getComputedStyle(document.documentElement)), te));
 }
-function xe(e, t) {
-  const i = (e.ownerDocument.defaultView || window).getComputedStyle(e).getPropertyValue(t);
-  return i ? parseFloat(i.replace("px", "")) : 0;
+function je(e, t) {
+  const n = (e.ownerDocument.defaultView || window).getComputedStyle(e).getPropertyValue(t);
+  return n ? parseFloat(n.replace("px", "")) : 0;
 }
-function On(e) {
-  const t = xe(e, "border-left-width"), r = xe(e, "border-right-width");
+function An(e) {
+  const t = je(e, "border-left-width"), r = je(e, "border-right-width");
   return e.clientWidth + t + r;
 }
-function Ln(e) {
-  const t = xe(e, "border-top-width"), r = xe(e, "border-bottom-width");
+function Nn(e) {
+  const t = je(e, "border-top-width"), r = je(e, "border-bottom-width");
   return e.clientHeight + t + r;
 }
-function Nt(e, t = {}) {
-  const r = t.width || On(e), i = t.height || Ln(e);
-  return { width: r, height: i };
+function qt(e, t = {}) {
+  const r = t.width || An(e), n = t.height || Nn(e);
+  return { width: r, height: n };
 }
-function An() {
+function Ln() {
   let e, t;
   try {
     t = process;
@@ -1824,367 +1823,367 @@ const M = 16384;
 function In(e) {
   (e.width > M || e.height > M) && (e.width > M && e.height > M ? e.width > e.height ? (e.height *= M / e.width, e.width = M) : (e.width *= M / e.height, e.height = M) : e.width > M ? (e.height *= M / e.width, e.width = M) : (e.width *= M / e.height, e.height = M));
 }
-function ke(e) {
+function Se(e) {
   return new Promise((t, r) => {
-    const i = new Image();
-    i.onload = () => {
-      i.decode().then(() => {
-        requestAnimationFrame(() => t(i));
+    const n = new Image();
+    n.onload = () => {
+      n.decode().then(() => {
+        requestAnimationFrame(() => t(n));
       });
-    }, i.onerror = r, i.crossOrigin = "anonymous", i.decoding = "async", i.src = e;
+    }, n.onerror = r, n.crossOrigin = "anonymous", n.decoding = "async", n.src = e;
   });
 }
 async function Fn(e) {
   return Promise.resolve().then(() => new XMLSerializer().serializeToString(e)).then(encodeURIComponent).then((t) => `data:image/svg+xml;charset=utf-8,${t}`);
 }
 async function Dn(e, t, r) {
-  const i = "http://www.w3.org/2000/svg", o = document.createElementNS(i, "svg"), a = document.createElementNS(i, "foreignObject");
+  const n = "http://www.w3.org/2000/svg", o = document.createElementNS(n, "svg"), a = document.createElementNS(n, "foreignObject");
   return o.setAttribute("width", `${t}`), o.setAttribute("height", `${r}`), o.setAttribute("viewBox", `0 0 ${t} ${r}`), a.setAttribute("width", "100%"), a.setAttribute("height", "100%"), a.setAttribute("x", "0"), a.setAttribute("y", "0"), a.setAttribute("externalResourcesRequired", "true"), o.appendChild(a), a.appendChild(e), Fn(o);
 }
-const z = (e, t) => {
+const D = (e, t) => {
   if (e instanceof t)
     return !0;
   const r = Object.getPrototypeOf(e);
-  return r === null ? !1 : r.constructor.name === t.name || z(r, t);
+  return r === null ? !1 : r.constructor.name === t.name || D(r, t);
 };
-function zn(e) {
+function Wn(e) {
   const t = e.getPropertyValue("content");
   return `${e.cssText} content: '${t.replace(/'|"/g, "")}';`;
 }
-function Wn(e, t) {
-  return Ht(t).map((r) => {
-    const i = e.getPropertyValue(r), o = e.getPropertyPriority(r);
-    return `${r}: ${i}${o ? " !important" : ""};`;
+function Mn(e, t) {
+  return Ut(t).map((r) => {
+    const n = e.getPropertyValue(r), o = e.getPropertyPriority(r);
+    return `${r}: ${n}${o ? " !important" : ""};`;
   }).join(" ");
 }
-function Mn(e, t, r, i) {
-  const o = `.${e}:${t}`, a = r.cssText ? zn(r) : Wn(r, i);
+function $n(e, t, r, n) {
+  const o = `.${e}:${t}`, a = r.cssText ? Wn(r) : Mn(r, n);
   return document.createTextNode(`${o}{${a}}`);
 }
-function Pt(e, t, r, i) {
+function zt(e, t, r, n) {
   const o = window.getComputedStyle(e, r), a = o.getPropertyValue("content");
   if (a === "" || a === "none")
     return;
-  const s = Tn();
+  const c = zn();
   try {
-    t.className = `${t.className} ${s}`;
+    t.className = `${t.className} ${c}`;
   } catch {
     return;
   }
-  const c = document.createElement("style");
-  c.appendChild(Mn(s, r, o, i)), t.appendChild(c);
+  const l = document.createElement("style");
+  l.appendChild($n(c, r, o, n)), t.appendChild(l);
 }
-function $n(e, t, r) {
-  Pt(e, t, ":before", r), Pt(e, t, ":after", r);
+function Hn(e, t, r) {
+  zt(e, t, ":before", r), zt(e, t, ":after", r);
 }
-const Tt = "application/font-woff", Ot = "image/jpeg", Vn = {
-  woff: Tt,
-  woff2: Tt,
+const At = "application/font-woff", Nt = "image/jpeg", Vn = {
+  woff: At,
+  woff2: At,
   ttf: "application/font-truetype",
   eot: "application/vnd.ms-fontobject",
   png: "image/png",
-  jpg: Ot,
-  jpeg: Ot,
+  jpg: Nt,
+  jpeg: Nt,
   gif: "image/gif",
   tiff: "image/tiff",
   svg: "image/svg+xml",
   webp: "image/webp"
 };
-function Hn(e) {
+function Bn(e) {
   const t = /\.([^./]*?)$/g.exec(e);
   return t ? t[1] : "";
 }
-function Me(e) {
-  const t = Hn(e).toLowerCase();
+function He(e) {
+  const t = Bn(e).toLowerCase();
   return Vn[t] || "";
 }
-function Nn(e) {
+function Un(e) {
   return e.split(/,/)[1];
 }
-function We(e) {
+function $e(e) {
   return e.search(/^(data:)/) !== -1;
 }
-function Bn(e, t) {
+function qn(e, t) {
   return `data:${t};base64,${e}`;
 }
-async function Bt(e, t, r) {
-  const i = await fetch(e, t);
-  if (i.status === 404)
-    throw new Error(`Resource "${i.url}" not found`);
-  const o = await i.blob();
-  return new Promise((a, s) => {
-    const c = new FileReader();
-    c.onerror = s, c.onloadend = () => {
+async function Kt(e, t, r) {
+  const n = await fetch(e, t);
+  if (n.status === 404)
+    throw new Error(`Resource "${n.url}" not found`);
+  const o = await n.blob();
+  return new Promise((a, c) => {
+    const l = new FileReader();
+    l.onerror = c, l.onloadend = () => {
       try {
-        a(r({ res: i, result: c.result }));
-      } catch (l) {
-        s(l);
+        a(r({ res: n, result: l.result }));
+      } catch (u) {
+        c(u);
       }
-    }, c.readAsDataURL(o);
+    }, l.readAsDataURL(o);
   });
 }
-const ze = {};
-function Un(e, t, r) {
-  let i = e.replace(/\?.*/, "");
-  return r && (i = e), /ttf|otf|eot|woff2?/i.test(i) && (i = i.replace(/.*\//, "")), t ? `[${t}]${i}` : i;
+const We = {};
+function Kn(e, t, r) {
+  let n = e.replace(/\?.*/, "");
+  return r && (n = e), /ttf|otf|eot|woff2?/i.test(n) && (n = n.replace(/.*\//, "")), t ? `[${t}]${n}` : n;
 }
-async function $e(e, t, r) {
-  const i = Un(e, t, r.includeQueryParams);
-  if (ze[i] != null)
-    return ze[i];
+async function Ve(e, t, r) {
+  const n = Kn(e, t, r.includeQueryParams);
+  if (We[n] != null)
+    return We[n];
   r.cacheBust && (e += (/\?/.test(e) ? "&" : "?") + (/* @__PURE__ */ new Date()).getTime());
   let o;
   try {
-    const a = await Bt(e, r.fetchRequestInit, ({ res: s, result: c }) => (t || (t = s.headers.get("Content-Type") || ""), Nn(c)));
-    o = Bn(a, t);
+    const a = await Kt(e, r.fetchRequestInit, ({ res: c, result: l }) => (t || (t = c.headers.get("Content-Type") || ""), Un(l)));
+    o = qn(a, t);
   } catch (a) {
     o = r.imagePlaceholder || "";
-    let s = `Failed to fetch resource: ${e}`;
-    a && (s = typeof a == "string" ? a : a.message), s && console.warn(s);
+    let c = `Failed to fetch resource: ${e}`;
+    a && (c = typeof a == "string" ? a : a.message), c && console.warn(c);
   }
-  return ze[i] = o, o;
+  return We[n] = o, o;
 }
-async function qn(e) {
+async function Yn(e) {
   const t = e.toDataURL();
-  return t === "data:," ? e.cloneNode(!1) : ke(t);
+  return t === "data:," ? e.cloneNode(!1) : Se(t);
 }
-async function Kn(e, t) {
+async function Xn(e, t) {
   if (e.currentSrc) {
-    const a = document.createElement("canvas"), s = a.getContext("2d");
-    a.width = e.clientWidth, a.height = e.clientHeight, s?.drawImage(e, 0, 0, a.width, a.height);
-    const c = a.toDataURL();
-    return ke(c);
+    const a = document.createElement("canvas"), c = a.getContext("2d");
+    a.width = e.clientWidth, a.height = e.clientHeight, c?.drawImage(e, 0, 0, a.width, a.height);
+    const l = a.toDataURL();
+    return Se(l);
   }
-  const r = e.poster, i = Me(r), o = await $e(r, i, t);
-  return ke(o);
+  const r = e.poster, n = He(r), o = await Ve(r, n, t);
+  return Se(o);
 }
-async function Yn(e, t) {
+async function Gn(e, t) {
   var r;
   try {
     if (!((r = e?.contentDocument) === null || r === void 0) && r.body)
-      return await Ee(e.contentDocument.body, t, !0);
+      return await Re(e.contentDocument.body, t, !0);
   } catch {
   }
   return e.cloneNode(!1);
 }
-async function Xn(e, t) {
-  return z(e, HTMLCanvasElement) ? qn(e) : z(e, HTMLVideoElement) ? Kn(e, t) : z(e, HTMLIFrameElement) ? Yn(e, t) : e.cloneNode(Ut(e));
+async function Jn(e, t) {
+  return D(e, HTMLCanvasElement) ? Yn(e) : D(e, HTMLVideoElement) ? Xn(e, t) : D(e, HTMLIFrameElement) ? Gn(e, t) : e.cloneNode(Yt(e));
 }
-const Gn = (e) => e.tagName != null && e.tagName.toUpperCase() === "SLOT", Ut = (e) => e.tagName != null && e.tagName.toUpperCase() === "SVG";
-async function Jn(e, t, r) {
-  var i, o;
-  if (Ut(t))
+const Qn = (e) => e.tagName != null && e.tagName.toUpperCase() === "SLOT", Yt = (e) => e.tagName != null && e.tagName.toUpperCase() === "SVG";
+async function Zn(e, t, r) {
+  var n, o;
+  if (Yt(t))
     return t;
   let a = [];
-  return Gn(e) && e.assignedNodes ? a = q(e.assignedNodes()) : z(e, HTMLIFrameElement) && (!((i = e.contentDocument) === null || i === void 0) && i.body) ? a = q(e.contentDocument.body.childNodes) : a = q(((o = e.shadowRoot) !== null && o !== void 0 ? o : e).childNodes), a.length === 0 || z(e, HTMLVideoElement) || await a.reduce((s, c) => s.then(() => Ee(c, r)).then((l) => {
-    l && t.appendChild(l);
+  return Qn(e) && e.assignedNodes ? a = q(e.assignedNodes()) : D(e, HTMLIFrameElement) && (!((n = e.contentDocument) === null || n === void 0) && n.body) ? a = q(e.contentDocument.body.childNodes) : a = q(((o = e.shadowRoot) !== null && o !== void 0 ? o : e).childNodes), a.length === 0 || D(e, HTMLVideoElement) || await a.reduce((c, l) => c.then(() => Re(l, r)).then((u) => {
+    u && t.appendChild(u);
   }), Promise.resolve()), t;
 }
-function Qn(e, t, r) {
-  const i = t.style;
-  if (!i)
+function ei(e, t, r) {
+  const n = t.style;
+  if (!n)
     return;
   const o = window.getComputedStyle(e);
-  o.cssText ? (i.cssText = o.cssText, i.transformOrigin = o.transformOrigin) : Ht(r).forEach((a) => {
-    let s = o.getPropertyValue(a);
-    a === "font-size" && s.endsWith("px") && (s = `${Math.floor(parseFloat(s.substring(0, s.length - 2))) - 0.1}px`), z(e, HTMLIFrameElement) && a === "display" && s === "inline" && (s = "block"), a === "d" && t.getAttribute("d") && (s = `path(${t.getAttribute("d")})`), i.setProperty(a, s, o.getPropertyPriority(a));
+  o.cssText ? (n.cssText = o.cssText, n.transformOrigin = o.transformOrigin) : Ut(r).forEach((a) => {
+    let c = o.getPropertyValue(a);
+    a === "font-size" && c.endsWith("px") && (c = `${Math.floor(parseFloat(c.substring(0, c.length - 2))) - 0.1}px`), D(e, HTMLIFrameElement) && a === "display" && c === "inline" && (c = "block"), a === "d" && t.getAttribute("d") && (c = `path(${t.getAttribute("d")})`), n.setProperty(a, c, o.getPropertyPriority(a));
   });
 }
-function Zn(e, t) {
-  z(e, HTMLTextAreaElement) && (t.innerHTML = e.value), z(e, HTMLInputElement) && t.setAttribute("value", e.value);
+function ti(e, t) {
+  D(e, HTMLTextAreaElement) && (t.innerHTML = e.value), D(e, HTMLInputElement) && t.setAttribute("value", e.value);
 }
-function ei(e, t) {
-  if (z(e, HTMLSelectElement)) {
-    const i = Array.from(t.children).find((o) => e.value === o.getAttribute("value"));
-    i && i.setAttribute("selected", "");
+function ri(e, t) {
+  if (D(e, HTMLSelectElement)) {
+    const n = Array.from(t.children).find((o) => e.value === o.getAttribute("value"));
+    n && n.setAttribute("selected", "");
   }
 }
-function ti(e, t, r) {
-  return z(t, Element) && (Qn(e, t, r), $n(e, t, r), Zn(e, t), ei(e, t)), t;
+function ni(e, t, r) {
+  return D(t, Element) && (ei(e, t, r), Hn(e, t, r), ti(e, t), ri(e, t)), t;
 }
-async function ri(e, t) {
+async function ii(e, t) {
   const r = e.querySelectorAll ? e.querySelectorAll("use") : [];
   if (r.length === 0)
     return e;
-  const i = {};
+  const n = {};
   for (let a = 0; a < r.length; a++) {
-    const c = r[a].getAttribute("xlink:href");
-    if (c) {
-      const l = e.querySelector(c), u = document.querySelector(c);
-      !l && u && !i[c] && (i[c] = await Ee(u, t, !0));
+    const l = r[a].getAttribute("xlink:href");
+    if (l) {
+      const u = e.querySelector(l), d = document.querySelector(l);
+      !u && d && !n[l] && (n[l] = await Re(d, t, !0));
     }
   }
-  const o = Object.values(i);
+  const o = Object.values(n);
   if (o.length) {
-    const a = "http://www.w3.org/1999/xhtml", s = document.createElementNS(a, "svg");
-    s.setAttribute("xmlns", a), s.style.position = "absolute", s.style.width = "0", s.style.height = "0", s.style.overflow = "hidden", s.style.display = "none";
-    const c = document.createElementNS(a, "defs");
-    s.appendChild(c);
-    for (let l = 0; l < o.length; l++)
-      c.appendChild(o[l]);
-    e.appendChild(s);
+    const a = "http://www.w3.org/1999/xhtml", c = document.createElementNS(a, "svg");
+    c.setAttribute("xmlns", a), c.style.position = "absolute", c.style.width = "0", c.style.height = "0", c.style.overflow = "hidden", c.style.display = "none";
+    const l = document.createElementNS(a, "defs");
+    c.appendChild(l);
+    for (let u = 0; u < o.length; u++)
+      l.appendChild(o[u]);
+    e.appendChild(c);
   }
   return e;
 }
-async function Ee(e, t, r) {
-  return !r && t.filter && !t.filter(e) ? null : Promise.resolve(e).then((i) => Xn(i, t)).then((i) => Jn(e, i, t)).then((i) => ti(e, i, t)).then((i) => ri(i, t));
+async function Re(e, t, r) {
+  return !r && t.filter && !t.filter(e) ? null : Promise.resolve(e).then((n) => Jn(n, t)).then((n) => Zn(e, n, t)).then((n) => ni(e, n, t)).then((n) => ii(n, t));
 }
-const qt = /url\((['"]?)([^'"]+?)\1\)/g, ni = /url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g, ii = /src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;
-function oi(e) {
+const Xt = /url\((['"]?)([^'"]+?)\1\)/g, ai = /url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g, oi = /src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;
+function si(e) {
   const t = e.replace(/([.*+?^${}()|\[\]\/\\])/g, "\\$1");
   return new RegExp(`(url\\(['"]?)(${t})(['"]?\\))`, "g");
 }
-function ai(e) {
+function ci(e) {
   const t = [];
-  return e.replace(qt, (r, i, o) => (t.push(o), r)), t.filter((r) => !We(r));
+  return e.replace(Xt, (r, n, o) => (t.push(o), r)), t.filter((r) => !$e(r));
 }
-async function si(e, t, r, i, o) {
+async function li(e, t, r, n, o) {
   try {
-    const a = r ? Pn(t, r) : t, s = Me(t);
-    let c;
-    return o || (c = await $e(a, s, i)), e.replace(oi(t), `$1${c}$3`);
+    const a = r ? On(t, r) : t, c = He(t);
+    let l;
+    return o || (l = await Ve(a, c, n)), e.replace(si(t), `$1${l}$3`);
   } catch {
   }
   return e;
 }
-function ci(e, { preferredFontFormat: t }) {
-  return t ? e.replace(ii, (r) => {
+function ui(e, { preferredFontFormat: t }) {
+  return t ? e.replace(oi, (r) => {
     for (; ; ) {
-      const [i, , o] = ni.exec(r) || [];
+      const [n, , o] = ai.exec(r) || [];
       if (!o)
         return "";
       if (o === t)
-        return `src: ${i};`;
+        return `src: ${n};`;
     }
   }) : e;
 }
-function Kt(e) {
-  return e.search(qt) !== -1;
+function Gt(e) {
+  return e.search(Xt) !== -1;
 }
-async function Yt(e, t, r) {
-  if (!Kt(e))
+async function Jt(e, t, r) {
+  if (!Gt(e))
     return e;
-  const i = ci(e, r);
-  return ai(i).reduce((a, s) => a.then((c) => si(c, s, t, r)), Promise.resolve(i));
+  const n = ui(e, r);
+  return ci(n).reduce((a, c) => a.then((l) => li(l, c, t, r)), Promise.resolve(n));
 }
 async function re(e, t, r) {
-  var i;
-  const o = (i = t.style) === null || i === void 0 ? void 0 : i.getPropertyValue(e);
+  var n;
+  const o = (n = t.style) === null || n === void 0 ? void 0 : n.getPropertyValue(e);
   if (o) {
-    const a = await Yt(o, null, r);
+    const a = await Jt(o, null, r);
     return t.style.setProperty(e, a, t.style.getPropertyPriority(e)), !0;
   }
   return !1;
 }
-async function li(e, t) {
+async function di(e, t) {
   await re("background", e, t) || await re("background-image", e, t), await re("mask", e, t) || await re("-webkit-mask", e, t) || await re("mask-image", e, t) || await re("-webkit-mask-image", e, t);
 }
-async function ui(e, t) {
-  const r = z(e, HTMLImageElement);
-  if (!(r && !We(e.src)) && !(z(e, SVGImageElement) && !We(e.href.baseVal)))
+async function fi(e, t) {
+  const r = D(e, HTMLImageElement);
+  if (!(r && !$e(e.src)) && !(D(e, SVGImageElement) && !$e(e.href.baseVal)))
     return;
-  const i = r ? e.src : e.href.baseVal, o = await $e(i, Me(i), t);
-  await new Promise((a, s) => {
-    e.onload = a, e.onerror = t.onImageErrorHandler ? (...l) => {
+  const n = r ? e.src : e.href.baseVal, o = await Ve(n, He(n), t);
+  await new Promise((a, c) => {
+    e.onload = a, e.onerror = t.onImageErrorHandler ? (...u) => {
       try {
-        a(t.onImageErrorHandler(...l));
-      } catch (u) {
-        s(u);
+        a(t.onImageErrorHandler(...u));
+      } catch (d) {
+        c(d);
       }
-    } : s;
-    const c = e;
-    c.decode && (c.decode = a), c.loading === "lazy" && (c.loading = "eager"), r ? (e.srcset = "", e.src = o) : e.href.baseVal = o;
+    } : c;
+    const l = e;
+    l.decode && (l.decode = a), l.loading === "lazy" && (l.loading = "eager"), r ? (e.srcset = "", e.src = o) : e.href.baseVal = o;
   });
 }
-async function fi(e, t) {
-  const i = q(e.childNodes).map((o) => Xt(o, t));
-  await Promise.all(i).then(() => e);
+async function hi(e, t) {
+  const n = q(e.childNodes).map((o) => Qt(o, t));
+  await Promise.all(n).then(() => e);
 }
-async function Xt(e, t) {
-  z(e, Element) && (await li(e, t), await ui(e, t), await fi(e, t));
+async function Qt(e, t) {
+  D(e, Element) && (await di(e, t), await fi(e, t), await hi(e, t));
 }
-function di(e, t) {
+function mi(e, t) {
   const { style: r } = e;
   t.backgroundColor && (r.backgroundColor = t.backgroundColor), t.width && (r.width = `${t.width}px`), t.height && (r.height = `${t.height}px`);
-  const i = t.style;
-  return i != null && Object.keys(i).forEach((o) => {
-    r[o] = i[o];
+  const n = t.style;
+  return n != null && Object.keys(n).forEach((o) => {
+    r[o] = n[o];
   }), e;
 }
 const Lt = {};
-async function At(e) {
+async function It(e) {
   let t = Lt[e];
   if (t != null)
     return t;
-  const i = await (await fetch(e)).text();
-  return t = { url: e, cssText: i }, Lt[e] = t, t;
+  const n = await (await fetch(e)).text();
+  return t = { url: e, cssText: n }, Lt[e] = t, t;
 }
-async function It(e, t) {
+async function Ft(e, t) {
   let r = e.cssText;
-  const i = /url\(["']?([^"')]+)["']?\)/g, a = (r.match(/url\([^)]+\)/g) || []).map(async (s) => {
-    let c = s.replace(i, "$1");
-    return c.startsWith("https://") || (c = new URL(c, e.url).href), Bt(c, t.fetchRequestInit, ({ result: l }) => (r = r.replace(s, `url(${l})`), [s, l]));
+  const n = /url\(["']?([^"')]+)["']?\)/g, a = (r.match(/url\([^)]+\)/g) || []).map(async (c) => {
+    let l = c.replace(n, "$1");
+    return l.startsWith("https://") || (l = new URL(l, e.url).href), Kt(l, t.fetchRequestInit, ({ result: u }) => (r = r.replace(c, `url(${u})`), [c, u]));
   });
   return Promise.all(a).then(() => r);
 }
-function Ft(e) {
+function Dt(e) {
   if (e == null)
     return [];
   const t = [], r = /(\/\*[\s\S]*?\*\/)/gi;
-  let i = e.replace(r, "");
+  let n = e.replace(r, "");
   const o = new RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})", "gi");
   for (; ; ) {
-    const l = o.exec(i);
-    if (l === null)
+    const u = o.exec(n);
+    if (u === null)
       break;
-    t.push(l[0]);
+    t.push(u[0]);
   }
-  i = i.replace(o, "");
-  const a = /@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi, s = "((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})", c = new RegExp(s, "gi");
+  n = n.replace(o, "");
+  const a = /@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi, c = "((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})", l = new RegExp(c, "gi");
   for (; ; ) {
-    let l = a.exec(i);
-    if (l === null) {
-      if (l = c.exec(i), l === null)
+    let u = a.exec(n);
+    if (u === null) {
+      if (u = l.exec(n), u === null)
         break;
-      a.lastIndex = c.lastIndex;
+      a.lastIndex = l.lastIndex;
     } else
-      c.lastIndex = a.lastIndex;
-    t.push(l[0]);
+      l.lastIndex = a.lastIndex;
+    t.push(u[0]);
   }
   return t;
 }
-async function hi(e, t) {
-  const r = [], i = [];
+async function gi(e, t) {
+  const r = [], n = [];
   return e.forEach((o) => {
     if ("cssRules" in o)
       try {
-        q(o.cssRules || []).forEach((a, s) => {
+        q(o.cssRules || []).forEach((a, c) => {
           if (a.type === CSSRule.IMPORT_RULE) {
-            let c = s + 1;
-            const l = a.href, u = At(l).then((d) => It(d, t)).then((d) => Ft(d).forEach((g) => {
+            let l = c + 1;
+            const u = a.href, d = It(u).then((h) => Ft(h, t)).then((h) => Dt(h).forEach((p) => {
               try {
-                o.insertRule(g, g.startsWith("@import") ? c += 1 : o.cssRules.length);
-              } catch (p) {
+                o.insertRule(p, p.startsWith("@import") ? l += 1 : o.cssRules.length);
+              } catch (m) {
                 console.error("Error inserting rule from remote css", {
-                  rule: g,
-                  error: p
+                  rule: p,
+                  error: m
                 });
               }
-            })).catch((d) => {
-              console.error("Error loading remote css", d.toString());
+            })).catch((h) => {
+              console.error("Error loading remote css", h.toString());
             });
-            i.push(u);
+            n.push(d);
           }
         });
       } catch (a) {
-        const s = e.find((c) => c.href == null) || document.styleSheets[0];
-        o.href != null && i.push(At(o.href).then((c) => It(c, t)).then((c) => Ft(c).forEach((l) => {
-          s.insertRule(l, s.cssRules.length);
-        })).catch((c) => {
-          console.error("Error loading remote stylesheet", c);
+        const c = e.find((l) => l.href == null) || document.styleSheets[0];
+        o.href != null && n.push(It(o.href).then((l) => Ft(l, t)).then((l) => Dt(l).forEach((u) => {
+          c.insertRule(u, c.cssRules.length);
+        })).catch((l) => {
+          console.error("Error loading remote stylesheet", l);
         })), console.error("Error inlining remote css file", a);
       }
-  }), Promise.all(i).then(() => (e.forEach((o) => {
+  }), Promise.all(n).then(() => (e.forEach((o) => {
     if ("cssRules" in o)
       try {
         q(o.cssRules || []).forEach((a) => {
@@ -2195,146 +2194,146 @@ async function hi(e, t) {
       }
   }), r));
 }
-function mi(e) {
-  return e.filter((t) => t.type === CSSRule.FONT_FACE_RULE).filter((t) => Kt(t.style.getPropertyValue("src")));
+function pi(e) {
+  return e.filter((t) => t.type === CSSRule.FONT_FACE_RULE).filter((t) => Gt(t.style.getPropertyValue("src")));
 }
-async function gi(e, t) {
+async function wi(e, t) {
   if (e.ownerDocument == null)
     throw new Error("Provided element is not within a Document");
-  const r = q(e.ownerDocument.styleSheets), i = await hi(r, t);
-  return mi(i);
+  const r = q(e.ownerDocument.styleSheets), n = await gi(r, t);
+  return pi(n);
 }
-function Gt(e) {
+function Zt(e) {
   return e.trim().replace(/["']/g, "");
 }
-function wi(e) {
+function bi(e) {
   const t = /* @__PURE__ */ new Set();
-  function r(i) {
-    (i.style.fontFamily || getComputedStyle(i).fontFamily).split(",").forEach((a) => {
-      t.add(Gt(a));
-    }), Array.from(i.children).forEach((a) => {
+  function r(n) {
+    (n.style.fontFamily || getComputedStyle(n).fontFamily).split(",").forEach((a) => {
+      t.add(Zt(a));
+    }), Array.from(n.children).forEach((a) => {
       a instanceof HTMLElement && r(a);
     });
   }
   return r(e), t;
 }
-async function pi(e, t) {
-  const r = await gi(e, t), i = wi(e);
-  return (await Promise.all(r.filter((a) => i.has(Gt(a.style.fontFamily))).map((a) => {
-    const s = a.parentStyleSheet ? a.parentStyleSheet.href : null;
-    return Yt(a.cssText, s, t);
+async function xi(e, t) {
+  const r = await wi(e, t), n = bi(e);
+  return (await Promise.all(r.filter((a) => n.has(Zt(a.style.fontFamily))).map((a) => {
+    const c = a.parentStyleSheet ? a.parentStyleSheet.href : null;
+    return Jt(a.cssText, c, t);
   }))).join(`
 `);
 }
 async function vi(e, t) {
-  const r = t.fontEmbedCSS != null ? t.fontEmbedCSS : t.skipFonts ? null : await pi(e, t);
+  const r = t.fontEmbedCSS != null ? t.fontEmbedCSS : t.skipFonts ? null : await xi(e, t);
   if (r) {
-    const i = document.createElement("style"), o = document.createTextNode(r);
-    i.appendChild(o), e.firstChild ? e.insertBefore(i, e.firstChild) : e.appendChild(i);
+    const n = document.createElement("style"), o = document.createTextNode(r);
+    n.appendChild(o), e.firstChild ? e.insertBefore(n, e.firstChild) : e.appendChild(n);
   }
 }
-async function bi(e, t = {}) {
-  const { width: r, height: i } = Nt(e, t), o = await Ee(e, t, !0);
-  return await vi(o, t), await Xt(o, t), di(o, t), await Dn(o, r, i);
-}
 async function yi(e, t = {}) {
-  const { width: r, height: i } = Nt(e, t), o = await bi(e, t), a = await ke(o), s = document.createElement("canvas"), c = s.getContext("2d"), l = t.pixelRatio || An(), u = t.canvasWidth || r, d = t.canvasHeight || i;
-  return s.width = u * l, s.height = d * l, t.skipAutoScale || In(s), s.style.width = `${u}`, s.style.height = `${d}`, t.backgroundColor && (c.fillStyle = t.backgroundColor, c.fillRect(0, 0, s.width, s.height)), c.drawImage(a, 0, 0, s.width, s.height), s;
+  const { width: r, height: n } = qt(e, t), o = await Re(e, t, !0);
+  return await vi(o, t), await Qt(o, t), mi(o, t), await Dn(o, r, n);
 }
-async function xi(e, t = {}) {
-  return (await yi(e, t)).toDataURL();
+async function ki(e, t = {}) {
+  const { width: r, height: n } = qt(e, t), o = await yi(e, t), a = await Se(o), c = document.createElement("canvas"), l = c.getContext("2d"), u = t.pixelRatio || Ln(), d = t.canvasWidth || r, h = t.canvasHeight || n;
+  return c.width = d * u, c.height = h * u, t.skipAutoScale || In(c), c.style.width = `${d}`, c.style.height = `${h}`, t.backgroundColor && (l.fillStyle = t.backgroundColor, l.fillRect(0, 0, c.width, c.height)), l.drawImage(a, 0, 0, c.width, c.height), c;
 }
-function Dt(e, t, r) {
+async function ji(e, t = {}) {
+  return (await ki(e, t)).toDataURL();
+}
+function Wt(e, t, r) {
   return Math.max(t, Math.min(r, e));
 }
-function Ri({
+function Ti({
   pagesHtml: e,
   title: t,
   initialIndex: r = 0,
-  className: i = ""
+  className: n = ""
 }) {
-  const o = pe([]), [a, s] = ve(!1), [c, l] = ve(
-    () => Dt(r, 0, Math.max(0, e.length - 1))
-  ), u = pe(null), d = pe(null), g = e.length, p = c > 0, j = c < g - 1, _ = (b) => l(Dt(b, 0, g - 1)), L = () => p && l((b) => b - 1), A = () => j && l((b) => b + 1);
-  be(() => {
-    function b(T) {
-      T.key === "ArrowLeft" && L(), T.key === "ArrowRight" && A();
+  const o = xe([]), [a, c] = ne(!1), [l, u] = ne(
+    () => Wt(r, 0, Math.max(0, e.length - 1))
+  ), d = xe(null), h = xe(null), p = e.length, m = l > 0, y = l < p - 1, k = (x) => u(Wt(x, 0, p - 1)), C = () => m && u((x) => x - 1), L = () => y && u((x) => x + 1);
+  ye(() => {
+    function x(A) {
+      A.key === "ArrowLeft" && C(), A.key === "ArrowRight" && L();
     }
-    return window.addEventListener("keydown", b), () => window.removeEventListener("keydown", b);
-  }, [p, j]), be(() => {
-    const b = u.current;
-    if (!b) return;
-    const T = (V) => {
-      d.current = (V.touches[0] && V.touches[0].clientX) ?? null;
-    }, N = (V) => {
-      const W = d.current;
-      if (d.current = null, W == null) return;
-      const K = ((V.changedTouches[0] && V.changedTouches[0].clientX) ?? W) - W;
-      Math.abs(K) < 40 || (K > 0 ? L() : A());
+    return window.addEventListener("keydown", x), () => window.removeEventListener("keydown", x);
+  }, [m, y]), ye(() => {
+    const x = d.current;
+    if (!x) return;
+    const A = (H) => {
+      h.current = (H.touches[0] && H.touches[0].clientX) ?? null;
+    }, B = (H) => {
+      const W = h.current;
+      if (h.current = null, W == null) return;
+      const K = ((H.changedTouches[0] && H.changedTouches[0].clientX) ?? W) - W;
+      Math.abs(K) < 40 || (K > 0 ? C() : L());
     };
-    return b.addEventListener("touchstart", T, { passive: !0 }), b.addEventListener("touchend", N, { passive: !0 }), () => {
-      b.removeEventListener("touchstart", T), b.removeEventListener("touchend", N);
+    return x.addEventListener("touchstart", A, { passive: !0 }), x.addEventListener("touchend", B, { passive: !0 }), () => {
+      x.removeEventListener("touchstart", A), x.removeEventListener("touchend", B);
     };
-  }, [p, j]);
-  const F = jr(() => `${c + 1} / ${g}`, [c, g]);
+  }, [m, y]);
+  const z = Mt(() => `${l + 1} / ${p}`, [l, p]);
   if (!e || e.length === 0) return null;
-  async function E() {
-    const b = o.current[c];
-    if (!b) throw new Error("Slide not found");
-    const T = b.style.backgroundColor;
-    T || (b.style.backgroundColor = "#09090b");
+  async function R() {
+    const x = o.current[l];
+    if (!x) throw new Error("Slide not found");
+    const A = x.style.backgroundColor;
+    A || (x.style.backgroundColor = "#09090b");
     try {
-      return await xi(b, {
+      return await ji(x, {
         pixelRatio: 2,
         // crisper image
         cacheBust: !0
       });
     } finally {
-      b.style.backgroundColor = T;
+      x.style.backgroundColor = A;
     }
   }
-  async function B() {
+  async function _() {
     try {
-      s(!0);
-      const b = await E(), N = await (await fetch(b)).blob(), V = new File([N], `slide-${c + 1}.png`, {
+      c(!0);
+      const x = await R(), B = await (await fetch(x)).blob(), H = new File([B], `slide-${l + 1}.png`, {
         type: "image/png"
       });
-      if (navigator.share && navigator.canShare && navigator.canShare({ files: [V] })) {
+      if (navigator.share && navigator.canShare && navigator.canShare({ files: [H] })) {
         await navigator.share({
           title: "Slide",
-          text: `Slide ${c + 1} / ${e.length}`,
-          files: [V]
+          text: `Slide ${l + 1} / ${e.length}`,
+          files: [H]
         });
         return;
       }
       const W = document.createElement("a");
-      W.href = b, W.download = `slide-${c + 1}.png`, document.body.appendChild(W), W.click(), W.remove();
-    } catch (b) {
-      console.error(b), alert("Could not create image. Try again.");
+      W.href = x, W.download = `slide-${l + 1}.png`, document.body.appendChild(W), W.click(), W.remove();
+    } catch (x) {
+      console.error(x), alert("Could not create image. Try again.");
     } finally {
-      s(!1);
+      c(!1);
     }
   }
-  return /* @__PURE__ */ h.jsxs("section", { className: `w-full ${i}`, children: [
-    /* @__PURE__ */ h.jsx(_n, { goTo: _, index: c, pagesHtml: e }),
-    /* @__PURE__ */ h.jsxs(
+  return /* @__PURE__ */ s.jsxs("section", { className: `w-full ${n}`, children: [
+    /* @__PURE__ */ s.jsx(Tn, { goTo: k, index: l, pagesHtml: e }),
+    /* @__PURE__ */ s.jsxs(
       "div",
       {
-        ref: u,
+        ref: d,
         className: "relative overflow-hidden rounded-xl border border-zinc-600 ",
         children: [
-          /* @__PURE__ */ h.jsx(
+          /* @__PURE__ */ s.jsx(
             "div",
             {
               className: "flex transition-transform duration-300 ease-out",
-              style: { transform: `translateX(-${c * 100}%)` },
-              children: e.map((b, T) => /* @__PURE__ */ h.jsxs(
+              style: { transform: `translateX(-${l * 100}%)` },
+              children: e.map((x, A) => /* @__PURE__ */ s.jsxs(
                 "article",
                 {
-                  ref: (N) => o.current[T] = N,
+                  ref: (B) => o.current[A] = B,
                   className: "w-full shrink-0 p-2 px-4  prose prose-zinc max-w-none flex items-center relative  pt-[36px] pb-[30px] md:p-[26px] ",
                   children: [
-                    /* @__PURE__ */ h.jsx(
+                    /* @__PURE__ */ s.jsx(
                       "div",
                       {
                         className: "pointer-events-none select-none absolute top-3 left-4 text-xs tracking-widest uppercase text-zinc-400",
@@ -2342,52 +2341,52 @@ function Ri({
                         children: t
                       }
                     ),
-                    /* @__PURE__ */ h.jsx("div", { className: "pointer-events-none select-none absolute bottom-3 right-4 text-xs tracking-widest uppercase text-zinc-500/60", children: "Apptastic Coder" }),
-                    /* @__PURE__ */ h.jsx(
+                    /* @__PURE__ */ s.jsx("div", { className: "pointer-events-none select-none absolute bottom-3 right-4 text-xs tracking-widest uppercase text-zinc-500/60", children: "Apptastic Coder" }),
+                    /* @__PURE__ */ s.jsx(
                       "div",
                       {
                         className: "carousel-content md:text-[16px]",
-                        dangerouslySetInnerHTML: { __html: b }
+                        dangerouslySetInnerHTML: { __html: x }
                       }
                     )
                   ]
                 },
-                T
+                A
               ))
             }
           ),
-          /* @__PURE__ */ h.jsxs("div", { className: "mb-3 flex items-center justify-between gap-3 p-2", children: [
-            /* @__PURE__ */ h.jsxs("div", { className: "text-sm text-zinc-500", children: [
+          /* @__PURE__ */ s.jsxs("div", { className: "mb-3 flex items-center justify-between gap-3 p-2", children: [
+            /* @__PURE__ */ s.jsxs("div", { className: "text-sm text-zinc-500", children: [
               "Quick read ",
-              /* @__PURE__ */ h.jsx("span", { className: "mx-2", children: "•" }),
-              /* @__PURE__ */ h.jsx("span", { className: "font-medium text-zinc-700", children: F })
+              /* @__PURE__ */ s.jsx("span", { className: "mx-2", children: "•" }),
+              /* @__PURE__ */ s.jsx("span", { className: "font-medium text-zinc-700", children: z })
             ] }),
-            /* @__PURE__ */ h.jsxs("div", { className: "flex items-center gap-2", children: [
-              /* @__PURE__ */ h.jsx(
+            /* @__PURE__ */ s.jsxs("div", { className: "flex items-center gap-2", children: [
+              /* @__PURE__ */ s.jsx(
                 "button",
                 {
                   type: "button",
-                  onClick: L,
-                  disabled: !p,
+                  onClick: C,
+                  disabled: !m,
                   className: "rounded-lg border border-zinc-200 px-3 py-1.5 text-sm disabled:opacity-50",
                   children: "Prev"
                 }
               ),
-              /* @__PURE__ */ h.jsx(
+              /* @__PURE__ */ s.jsx(
                 "button",
                 {
                   type: "button",
-                  onClick: A,
-                  disabled: !j,
+                  onClick: L,
+                  disabled: !y,
                   className: "rounded-lg border border-zinc-200 px-3 py-1.5 text-sm disabled:opacity-50",
                   children: "Next"
                 }
               ),
-              /* @__PURE__ */ h.jsx(
+              /* @__PURE__ */ s.jsx(
                 "button",
                 {
                   type: "button",
-                  onClick: B,
+                  onClick: _,
                   disabled: a,
                   className: "rounded-lg border border-zinc-200 px-3 py-1.5 text-sm disabled:opacity-50",
                   children: a ? "Preparing…" : "Export"
@@ -2400,43 +2399,43 @@ function Ri({
     )
   ] });
 }
-function ji({ faqs: e = [] }) {
-  const [t, r] = Sr.useState(0);
+function Oi({ faqs: e = [] }) {
+  const [t, r] = Rr.useState(0);
   if (!e.length) return null;
-  const i = (o) => {
+  const n = (o) => {
     r((a) => a === o ? null : o);
   };
-  return /* @__PURE__ */ h.jsx("main", { className: "bg-slate-950 text-slate-50", children: /* @__PURE__ */ h.jsxs("div", { className: "mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8", children: [
-    /* @__PURE__ */ h.jsxs("header", { className: "mb-8 text-center sm:mb-10", children: [
-      /* @__PURE__ */ h.jsx("p", { className: "text-xs font-medium uppercase tracking-wide text-indigo-300", children: "Help & Information" }),
-      /* @__PURE__ */ h.jsx("h2", { className: "mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl", children: "Frequently Asked Questions" }),
-      /* @__PURE__ */ h.jsx("p", { className: "mt-3 text-sm text-slate-300 sm:text-base", children: "A quick overview of what Apptastic Coder is about, how the site works, and how you can get the most value from the content, tools, and job listings shared here." })
+  return /* @__PURE__ */ s.jsx("main", { className: "bg-slate-950 text-slate-50", children: /* @__PURE__ */ s.jsxs("div", { className: "mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8", children: [
+    /* @__PURE__ */ s.jsxs("header", { className: "mb-8 text-center sm:mb-10", children: [
+      /* @__PURE__ */ s.jsx("p", { className: "text-xs font-medium uppercase tracking-wide text-indigo-300", children: "Help & Information" }),
+      /* @__PURE__ */ s.jsx("h2", { className: "mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl", children: "Frequently Asked Questions" }),
+      /* @__PURE__ */ s.jsx("p", { className: "mt-3 text-sm text-slate-300 sm:text-base", children: "A quick overview of what Apptastic Coder is about, how the site works, and how you can get the most value from the content, tools, and job listings shared here." })
     ] }),
-    /* @__PURE__ */ h.jsx("section", { className: "space-y-6", children: e.map((o, a) => {
-      const s = t === a, c = `faq-panel-${a}`;
-      return /* @__PURE__ */ h.jsxs("div", { className: "px-4 py-3 sm:px-5 sm:py-4", children: [
-        /* @__PURE__ */ h.jsxs(
+    /* @__PURE__ */ s.jsx("section", { className: "space-y-6", children: e.map((o, a) => {
+      const c = t === a, l = `faq-panel-${a}`;
+      return /* @__PURE__ */ s.jsxs("div", { className: "px-4 py-3 sm:px-5 sm:py-4", children: [
+        /* @__PURE__ */ s.jsxs(
           "button",
           {
             type: "button",
-            onClick: () => i(a),
+            onClick: () => n(a),
             className: "flex w-full items-center justify-between gap-4 text-left cursor-pointer",
-            "aria-expanded": s,
-            "aria-controls": c,
+            "aria-expanded": c,
+            "aria-controls": l,
             children: [
-              /* @__PURE__ */ h.jsx("span", { className: "text-sm font-semibold text-slate-100 sm:text-base dark:text-sky-400 text-sky-700", children: o.question }),
-              /* @__PURE__ */ h.jsx(
+              /* @__PURE__ */ s.jsx("span", { className: "text-sm font-semibold text-slate-100 sm:text-base dark:text-sky-400 text-sky-700", children: o.question }),
+              /* @__PURE__ */ s.jsx(
                 "span",
                 {
-                  className: `inline-flex h-5 w-5 items-center justify-center rounded-full border border-slate-700 text-slate-300 transition-transform ${s ? "rotate-90" : ""}`,
-                  children: /* @__PURE__ */ h.jsx(
+                  className: `inline-flex h-5 w-5 items-center justify-center rounded-full border border-slate-700 text-slate-300 transition-transform ${c ? "rotate-90" : ""}`,
+                  children: /* @__PURE__ */ s.jsx(
                     "svg",
                     {
                       xmlns: "http://www.w3.org/2000/svg",
                       viewBox: "0 0 20 20",
                       fill: "currentColor",
                       className: "h-3 w-3",
-                      children: /* @__PURE__ */ h.jsx(
+                      children: /* @__PURE__ */ s.jsx(
                         "path",
                         {
                           fillRule: "evenodd",
@@ -2451,10 +2450,10 @@ function ji({ faqs: e = [] }) {
             ]
           }
         ),
-        s && /* @__PURE__ */ h.jsx(
+        c && /* @__PURE__ */ s.jsx(
           "div",
           {
-            id: c,
+            id: l,
             className: "mt-2 text-sm leading-relaxed text-slate-300",
             children: o.answer
           }
@@ -2463,19 +2462,330 @@ function ji({ faqs: e = [] }) {
     }) })
   ] }) });
 }
-function _i(e, t = 20) {
+function Si(e) {
+  return typeof e == "string" && e.toLowerCase() === "a";
+}
+function be(e, t) {
+  return t ? t === "/" ? e === "/" : e === t || e.startsWith(t) : !1;
+}
+function zi({
+  brand: e,
+  links: t = [],
+  currentPath: r = "",
+  LinkComponent: n = "a",
+  sticky: o = !0
+}) {
+  const [a, c] = ne(!1), l = Si(n), u = Mt(
+    () => t.map((m) => Array.isArray(m.items) ? {
+      type: "group",
+      label: m.label,
+      items: m.items
+    } : {
+      type: "item",
+      to: m.to,
+      label: m.label
+    }),
+    [t]
+  ), d = e?.homeHref || "/", h = (m, y) => l ? /* @__PURE__ */ s.jsx("a", { href: m.to, className: y, children: m.label }) : /* @__PURE__ */ s.jsx(n, { to: m.to, className: y, children: m.label }), p = (m) => l ? /* @__PURE__ */ s.jsxs("a", { href: d, className: m, "aria-label": e?.ariaLabel, children: [
+    e?.logoSrc ? /* @__PURE__ */ s.jsx(
+      "img",
+      {
+        src: e.logoSrc,
+        alt: e?.logoAlt || `${e?.name || "Site"} logo`,
+        width: 40,
+        height: 40,
+        className: "rounded-full",
+        loading: "eager"
+      }
+    ) : null,
+    /* @__PURE__ */ s.jsx("span", { className: "text-xl font-bold tracking-tight", children: e?.name })
+  ] }) : /* @__PURE__ */ s.jsxs(
+    n,
+    {
+      to: d,
+      className: m,
+      "aria-label": e?.ariaLabel,
+      children: [
+        e?.logoSrc ? /* @__PURE__ */ s.jsx(
+          "img",
+          {
+            src: e.logoSrc,
+            alt: e?.logoAlt || `${e?.name || "Site"} logo`,
+            width: 40,
+            height: 40,
+            className: "rounded-full",
+            loading: "eager"
+          }
+        ) : null,
+        /* @__PURE__ */ s.jsx("span", { className: "text-xl font-bold tracking-tight", children: e?.name })
+      ]
+    }
+  );
+  return /* @__PURE__ */ s.jsxs(
+    "header",
+    {
+      className: `border-b border-zinc-800 bg-zinc-950/80 backdrop-blur ${o ? "sticky top-0 z-40" : ""}`,
+      children: [
+        /* @__PURE__ */ s.jsxs("div", { className: "mx-auto flex items-center justify-between px-4 py-3", children: [
+          p("inline-flex items-center gap-3 text-white"),
+          /* @__PURE__ */ s.jsx("nav", { className: "hidden items-center gap-3 md:flex", children: u.map((m) => {
+            if (m.type === "group")
+              return /* @__PURE__ */ s.jsxs("div", { className: "flex items-center gap-1", children: [
+                /* @__PURE__ */ s.jsx("span", { className: "px-2 text-xs font-semibold uppercase tracking-wide text-zinc-400", children: m.label }),
+                m.items.map((C) => {
+                  const z = `rounded-lg px-3 py-2 text-sm transition ${be(r, C.to) ? "bg-indigo-600 text-white" : "text-zinc-300 hover:bg-zinc-800 hover:text-white"}`;
+                  return /* @__PURE__ */ s.jsx(ve.Fragment, { children: h(C, z) }, C.to);
+                })
+              ] }, m.label);
+            const k = `rounded-lg px-3 py-2 text-sm transition ${be(r, m.to) ? "bg-indigo-600 text-white" : "text-zinc-300 hover:bg-zinc-800 hover:text-white"}`;
+            return /* @__PURE__ */ s.jsx(ve.Fragment, { children: h(m, k) }, m.to);
+          }) }),
+          /* @__PURE__ */ s.jsx(
+            "button",
+            {
+              type: "button",
+              onClick: () => c((m) => !m),
+              className: "rounded-md border border-zinc-700 px-3 py-2 text-sm text-zinc-200 md:hidden",
+              "aria-label": "Toggle navigation",
+              "aria-expanded": a ? "true" : "false",
+              children: "Menu"
+            }
+          )
+        ] }),
+        a ? /* @__PURE__ */ s.jsx("nav", { className: "border-t border-zinc-800 px-4 py-3 md:hidden", children: /* @__PURE__ */ s.jsx("div", { className: "flex flex-col gap-2", children: u.map((m) => {
+          if (m.type === "group")
+            return /* @__PURE__ */ s.jsxs(
+              "div",
+              {
+                className: "space-y-1 rounded-md border border-zinc-800 p-2",
+                children: [
+                  /* @__PURE__ */ s.jsx("p", { className: "text-xs font-semibold uppercase tracking-wide text-zinc-500", children: m.label }),
+                  m.items.map((C) => {
+                    const z = `block rounded-md px-3 py-2 text-sm transition ${be(r, C.to) ? "bg-indigo-600 text-white" : "text-zinc-300 hover:bg-zinc-800 hover:text-white"}`;
+                    return /* @__PURE__ */ s.jsx("div", { onClick: () => c(!1), children: h(C, z) }, C.to);
+                  })
+                ]
+              },
+              m.label
+            );
+          const k = `block rounded-md px-3 py-2 text-sm transition ${be(r, m.to) ? "bg-indigo-600 text-white" : "text-zinc-300 hover:bg-zinc-800 hover:text-white"}`;
+          return /* @__PURE__ */ s.jsx("div", { onClick: () => c(!1), children: h(m, k) }, m.to);
+        }) }) }) : null
+      ]
+    }
+  );
+}
+function Ci(e) {
+  return typeof e == "string" && e.toLowerCase() === "a";
+}
+function Me({ LinkComponent: e, to: t, className: r, children: n }) {
+  return Ci(e) ? /* @__PURE__ */ s.jsx("a", { href: t, className: r, children: n }) : /* @__PURE__ */ s.jsx(e, { to: t, className: r, children: n });
+}
+function Ai({
+  badgeText: e,
+  titlePrefix: t,
+  titleHighlight: r,
+  titleSuffix: n,
+  description: o,
+  primaryCta: a,
+  secondaryCta: c,
+  quickLinks: l = [],
+  LinkComponent: u = "a"
+}) {
+  return /* @__PURE__ */ s.jsxs("section", { className: "relative isolate overflow-hidden border-zinc-800 bg-zinc-950", children: [
+    /* @__PURE__ */ s.jsx("div", { className: "absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:28px_28px]" }),
+    /* @__PURE__ */ s.jsx("div", { className: "absolute inset-0 bg-[radial-gradient(circle_at_10%_15%,rgba(34,211,238,0.18),transparent_38%),radial-gradient(circle_at_85%_20%,rgba(59,130,246,0.16),transparent_35%),radial-gradient(circle_at_70%_80%,rgba(14,165,233,0.14),transparent_32%)]" }),
+    /* @__PURE__ */ s.jsx("div", { className: "absolute -top-24 -right-16 h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl" }),
+    /* @__PURE__ */ s.jsx("div", { className: "absolute -bottom-28 -left-20 h-80 w-80 rounded-full bg-blue-500/10 blur-3xl" }),
+    /* @__PURE__ */ s.jsx("div", { className: "absolute inset-0 bg-zinc-950/55" }),
+    /* @__PURE__ */ s.jsx("div", { className: "relative mx-auto max-w-6xl px-4 py-14 sm:py-20", children: /* @__PURE__ */ s.jsxs("div", { className: "max-w-3xl", children: [
+      e ? /* @__PURE__ */ s.jsx("p", { className: "inline-flex items-center gap-2 rounded-full border border-sky-400/40 bg-sky-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-200", children: e }) : null,
+      /* @__PURE__ */ s.jsxs("h1", { className: "mt-5 text-4xl font-extrabold leading-tight text-white sm:text-5xl md:text-6xl", children: [
+        t,
+        " ",
+        /* @__PURE__ */ s.jsx("span", { className: "text-sky-400", children: r }),
+        " ",
+        n
+      ] }),
+      o ? /* @__PURE__ */ s.jsx("p", { className: "mt-5 max-w-2xl text-base leading-7 text-zinc-200 sm:text-lg", children: o }) : null,
+      /* @__PURE__ */ s.jsxs("div", { className: "mt-8 flex flex-wrap items-center gap-3", children: [
+        a?.to && a?.label ? /* @__PURE__ */ s.jsx(
+          Me,
+          {
+            LinkComponent: u,
+            to: a.to,
+            className: "inline-flex items-center gap-2 rounded-lg bg-sky-500 px-4 py-2.5 text-sm font-semibold text-zinc-950 transition hover:bg-sky-400",
+            children: a.label
+          }
+        ) : null,
+        c?.to && c?.label ? /* @__PURE__ */ s.jsx(
+          Me,
+          {
+            LinkComponent: u,
+            to: c.to,
+            className: "inline-flex items-center gap-2 rounded-lg border border-zinc-500/40 bg-zinc-800 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-zinc-700",
+            children: c.label
+          }
+        ) : null
+      ] }),
+      l.length > 0 ? /* @__PURE__ */ s.jsx("div", { className: "mt-8 flex flex-wrap gap-2", children: l.map((d) => /* @__PURE__ */ s.jsx(
+        Me,
+        {
+          LinkComponent: u,
+          to: d.to,
+          className: "inline-flex items-center gap-2 rounded-full border border-zinc-700 bg-zinc-900/70 px-3 py-1.5 text-sm text-zinc-200 transition hover:border-sky-400/50 hover:text-white",
+          children: d.label
+        },
+        d.to
+      )) }) : null
+    ] }) })
+  ] });
+}
+function Ei(e) {
+  return typeof e == "string" && e.toLowerCase() === "a";
+}
+function Ni({
+  brand: e,
+  tagline: t,
+  socialHeading: r = "Social",
+  companyHeading: n = "Company",
+  newsletterHeading: o = "Newsletter",
+  socialLinks: a = [],
+  companyLinks: c = [],
+  newsletterPlaceholder: l = "Email address",
+  newsletterButtonLabel: u = "Subscribe",
+  onNewsletterSubmit: d,
+  LinkComponent: h = "a",
+  showCookiePreferences: p = !1,
+  onCookiePreferencesClick: m,
+  copyrightName: y
+}) {
+  const [k, C] = ne(""), L = Ei(h), z = (_) => L ? /* @__PURE__ */ s.jsx(
+    "a",
+    {
+      href: _.to,
+      className: "inline-flex items-center gap-2 hover:text-blue-600 hover:underline",
+      children: _.label
+    }
+  ) : /* @__PURE__ */ s.jsx(
+    h,
+    {
+      to: _.to,
+      className: "inline-flex items-center gap-2 hover:text-blue-600 hover:underline",
+      children: _.label
+    }
+  ), R = (_) => {
+    _.preventDefault(), d && d(k), C("");
+  };
+  return /* @__PURE__ */ s.jsxs("footer", { className: "mt-16 border-t border-zinc-200 bg-zinc-50 py-12 dark:border-zinc-800 dark:bg-zinc-900", children: [
+    /* @__PURE__ */ s.jsxs("div", { className: "mx-auto flex max-w-6xl flex-col justify-between gap-12 px-4 lg:flex-row", children: [
+      /* @__PURE__ */ s.jsxs("div", { className: "flex flex-shrink-0 flex-col items-center text-center lg:items-start lg:text-left", children: [
+        /* @__PURE__ */ s.jsxs("div", { className: "flex items-center space-x-3", children: [
+          e?.logoSrc ? /* @__PURE__ */ s.jsx(
+            "img",
+            {
+              src: e.logoSrc,
+              alt: e?.logoAlt || `${e?.name || "Site"} logo`,
+              width: 56,
+              height: 56,
+              className: "rounded-full",
+              loading: "lazy"
+            }
+          ) : null,
+          /* @__PURE__ */ s.jsx("span", { className: "text-xl font-bold text-zinc-800 dark:text-zinc-200", children: e?.name })
+        ] }),
+        t ? /* @__PURE__ */ s.jsx("p", { className: "mt-2 text-sm text-zinc-500 dark:text-zinc-400", children: t }) : null
+      ] }),
+      /* @__PURE__ */ s.jsxs("div", { className: "flex w-full flex-wrap justify-between gap-8 lg:w-3/4", children: [
+        /* @__PURE__ */ s.jsxs("div", { children: [
+          /* @__PURE__ */ s.jsx("h3", { className: "mb-3 font-semibold text-zinc-800 dark:text-zinc-200", children: r }),
+          /* @__PURE__ */ s.jsx("ul", { className: "space-y-2 text-zinc-600 dark:text-zinc-400", children: a.map((_) => /* @__PURE__ */ s.jsx("li", { children: /* @__PURE__ */ s.jsx(
+            "a",
+            {
+              href: _.href,
+              target: "_blank",
+              rel: "noopener noreferrer",
+              "aria-label": _.label,
+              className: "flex items-center space-x-2 transition-colors hover:text-blue-600",
+              children: /* @__PURE__ */ s.jsx("span", { children: _.label })
+            }
+          ) }, _.href)) })
+        ] }),
+        /* @__PURE__ */ s.jsxs("div", { children: [
+          /* @__PURE__ */ s.jsx("h3", { className: "mb-3 font-semibold text-zinc-800 dark:text-zinc-200", children: n }),
+          /* @__PURE__ */ s.jsxs("ul", { className: "space-y-2 text-zinc-600 dark:text-zinc-400", children: [
+            c.map((_) => /* @__PURE__ */ s.jsx("li", { children: z(_) }, _.to)),
+            p ? /* @__PURE__ */ s.jsx("li", { children: /* @__PURE__ */ s.jsx(
+              "button",
+              {
+                type: "button",
+                onClick: m,
+                className: "inline-flex items-center gap-2 hover:text-blue-600 hover:underline",
+                children: "Cookie Preferences"
+              }
+            ) }) : null
+          ] })
+        ] }),
+        /* @__PURE__ */ s.jsxs("div", { className: "w-full lg:w-auto", children: [
+          /* @__PURE__ */ s.jsx("h3", { className: "mb-3 font-semibold text-zinc-800 dark:text-zinc-200", children: o }),
+          /* @__PURE__ */ s.jsxs(
+            "form",
+            {
+              className: "flex flex-col items-start gap-2 sm:flex-row sm:items-center",
+              onSubmit: R,
+              children: [
+                /* @__PURE__ */ s.jsx("label", { htmlFor: "site-footer-email", className: "sr-only", children: "Email address" }),
+                /* @__PURE__ */ s.jsx(
+                  "input",
+                  {
+                    id: "site-footer-email",
+                    type: "email",
+                    required: !0,
+                    value: k,
+                    onChange: (_) => C(_.target.value),
+                    placeholder: l,
+                    className: "flex-grow rounded-md border border-zinc-300 bg-white px-4 py-2 text-zinc-800 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-zinc-800 dark:text-zinc-200"
+                  }
+                ),
+                /* @__PURE__ */ s.jsx(
+                  "button",
+                  {
+                    type: "submit",
+                    className: "inline-flex items-center gap-2 rounded-md bg-blue-600 px-5 py-2 text-white transition-colors hover:bg-blue-700",
+                    children: u
+                  }
+                )
+              ]
+            }
+          )
+        ] })
+      ] })
+    ] }),
+    /* @__PURE__ */ s.jsxs("div", { className: "mt-8 text-center text-sm text-zinc-500 dark:text-zinc-400", children: [
+      "Copyright ",
+      (/* @__PURE__ */ new Date()).getFullYear(),
+      " ",
+      y || e?.name,
+      ". All rights reserved."
+    ] })
+  ] });
+}
+function Li(e, t = 20) {
   const r = /<hr\s*\/?>|<!--pagebreak-->|<!--\s*page\s*break\s*-->/i;
-  let i = e.split(r).map((a) => a.trim()).filter(Boolean);
+  let n = e.split(r).map((a) => a.trim()).filter(Boolean);
   const o = [];
-  return i.forEach((a) => {
+  return n.forEach((a) => {
     a.replace(/<[^>]+>/g, "").split(/\s+/).length < t && o.length > 0 || o.push(a);
   }), o;
 }
 export {
-  Ri as ArticleCarousel,
-  ji as FAQ,
-  Ei as ReadModeToggle,
-  Si as SocialButtons,
-  _n as WhatsappProgress,
-  _i as splitAndNormalizeSections
+  Ti as ArticleCarousel,
+  Oi as FAQ,
+  Ai as HeroSection,
+  Pi as ReadModeToggle,
+  Ni as SiteFooter,
+  zi as SiteHeader,
+  _i as SocialButtons,
+  Tn as WhatsappProgress,
+  Li as splitAndNormalizeSections
 };
